@@ -61,11 +61,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     func windowScene(_ windowScene: UIWindowScene, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
         if shortcutItem.type == "com.developer.mode" {
-            let startVC = DeveloperViewController()
+            let window = UIWindow(windowScene: windowScene)
+            let storyboard: UIStoryboard = UIStoryboard(name: "DeveloperMode", bundle: nil)
+            let nextViewController = storyboard.instantiateViewController(withIdentifier: "Main")
+            window.rootViewController = nextViewController
+//            let startVC = DeveloperViewController()
 
-                let window = UIWindow(windowScene: windowScene)
-                let nav = UINavigationController(rootViewController: startVC)
-                window.rootViewController = nav
+                
+//                let nav = UINavigationController(rootViewController: startVC)
+//                window.rootViewController = nav
                 self.window = window
                 window.makeKeyAndVisible()
 //            }

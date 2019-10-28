@@ -36,17 +36,71 @@ class CoreDataHelper{
         }
     }
     
-    static func addMaterial(no: Int16, idMaterial: String, nameMaterial: String, descMaterial: String, imageMaterial: UIImage){
-        let material = Material(context: CoreDataHelper.managedContext)
-        material.no =  no
-        material.idMaterial = idMaterial
-        material.nameMaterial = nameMaterial
-        material.descMaterial = descMaterial
-        material.imageMaterial = imageMaterial.jpegData(compressionQuality: 1.0)
-        
-        CoreDataHelper.save()
-//        guard let image = UIImage(na) else { return <#return value#> }
-        
+    static func fetch<T>(entity: String)  -> [T] {
+        var result: [T] = []
+
+        let  request =  NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+    
+        do {
+            result = try CoreDataHelper.managedContext.fetch(request) as! [T]
+            print("success")
+        }
+        catch {
+            result = []
+            print("error")
+        }
+        return result
     }
     
+    
+}
+
+enum ContextSaveContextualInfo: String {
+    case addPost = "adding a post"
+    case deletePost = "deleting a post"
+    case batchAddPosts = "adding a batch of post"
+    case deduplicate = "deduplicating tags"
+    case updatePost = "saving post details"
+    case addMaterial = "adding a material"
+    case deleteTag = "deleting a tag"
+    case addAttachment = "adding an attachment"
+    case deleteAttachment = "deleting an attachment"
+    case saveFullImage = "saving a full image"
+}
+
+extension NSManagedObjectContext{
+    
+    /**
+        Handles save error by presenting an alert.
+        */
+       private func handleSavingError(_ error: Error, contextualInfo: ContextSaveContextualInfo) {
+           print("Context saving error: \(error)")
+           
+           DispatchQueue.main.async {
+               guard let window = UIApplication.shared.delegate?.window,
+                   let viewController = window?.rootViewController else { return }
+               
+               let message = "Failed to save the context when \(contextualInfo.rawValue)."
+               
+               // Append message to existing alert if present
+               if let currentAlert = viewController.presentedViewController as? UIAlertController {
+                   currentAlert.message = (currentAlert.message ?? "") + "\n\n\(message)"
+                   return
+               }
+               
+               // Otherwise present a new alert
+               let alert = UIAlertController(title: "Core Data Saving Error", message: message, preferredStyle: .alert)
+               alert.addAction(UIAlertAction(title: "OK", style: .default))
+               viewController.present(alert, animated: true)
+           }
+       }
+    
+    func save(with contextualInfo: ContextSaveContextualInfo) {
+        guard hasChanges else { return }
+        do {
+            try save()
+        } catch {
+            handleSavingError(error, contextualInfo: contextualInfo)
+        }
+    }
 }

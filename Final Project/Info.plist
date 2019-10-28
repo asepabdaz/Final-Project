@@ -69,5 +69,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>this apps want to promise to take picture</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>this apps want to promise to opem Library</string>
 </dict>
 </plist>

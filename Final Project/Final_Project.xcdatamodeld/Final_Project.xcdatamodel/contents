@@ -3,13 +3,22 @@
     <entity name="Account" representedClassName="Account" syncable="YES" codeGenerationType="class">
         <attribute name="fotoProfile" optional="YES" attributeType="Binary"/>
     </entity>
+    <entity name="Attachment" representedClassName="Attachment" syncable="YES" codeGenerationType="class">
+        <attribute name="thumnail" optional="YES" attributeType="Transformable"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="imageData" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ImageData" inverseName="attachment" inverseEntity="ImageData"/>
+        <relationship name="material" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Material" inverseName="attachments" inverseEntity="Material"/>
+    </entity>
+    <entity name="ImageData" representedClassName="ImageData" syncable="YES" codeGenerationType="class">
+        <attribute name="data" optional="YES" attributeType="Binary"/>
+        <relationship name="attachment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Attachment" inverseName="imageData" inverseEntity="Attachment"/>
+    </entity>
     <entity name="Material" representedClassName="Material" syncable="YES" codeGenerationType="class">
         <attribute name="descMaterial" optional="YES" attributeType="String"/>
-        <attribute name="idMaterial" optional="YES" attributeType="String"/>
-        <attribute name="imageMaterial" optional="YES" attributeType="Binary"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="nameMaterial" optional="YES" attributeType="String"/>
-        <attribute name="no" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="idmaterial" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="idmaterial" inverseEntity="Product"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="attachments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Attachment" inverseName="material" inverseEntity="Attachment"/>
     </entity>
     <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
         <attribute name="desc" optional="YES" attributeType="String"/>
@@ -19,11 +28,12 @@
         <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="subTitle" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
-        <relationship name="idmaterial" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Material" inverseName="idmaterial" inverseEntity="Material"/>
     </entity>
     <elements>
         <element name="Account" positionX="-63" positionY="-18" width="128" height="58"/>
-        <element name="Material" positionX="-54" positionY="0" width="128" height="133"/>
-        <element name="Product" positionX="-36" positionY="9" width="128" height="163"/>
+        <element name="Attachment" positionX="-45" positionY="54" width="128" height="103"/>
+        <element name="ImageData" positionX="-45" positionY="63" width="128" height="73"/>
+        <element name="Material" positionX="-54" positionY="0" width="128" height="118"/>
+        <element name="Product" positionX="-36" positionY="9" width="128" height="148"/>
     </elements>
 </model>
