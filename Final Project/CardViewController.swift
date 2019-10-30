@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class CardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return titleName.count
     }
@@ -23,12 +23,25 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         cell.labelDesc.text = desc[indexPath.row]
         
+        
+        cell.contentView.layer.cornerRadius = 4.0
+        cell.contentView.layer.borderWidth = 1.0
+        cell.contentView.layer.borderColor = UIColor.clear.cgColor
+        cell.contentView.layer.masksToBounds = false
+        cell.layer.shadowColor = UIColor.gray.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        cell.layer.shadowRadius = 4.0
+        cell.layer.shadowOpacity = 1.0
+        cell.layer.masksToBounds = false
+        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+        
+        
         return cell
         
     }
     
     
-    let imageView = [UIImage(named: "image1"), UIImage(named: "image2"), UIImage(named: "Image3")]
+    let imageView = [UIImage(named: "Cards 1"), UIImage(named: "Cards 2"), UIImage(named: "Cards 3")]
     
     let titleName = ["How to Scrub" , "Coffee Aroma","DIY Coffee Candle"]
     
@@ -38,8 +51,10 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+            
+        self.title = "Welcome, Ivan"
+        
+        
     }
     
 
@@ -54,3 +69,6 @@ class CardViewController: UIViewController, UICollectionViewDelegate, UICollecti
     */
 
 }
+
+
+
