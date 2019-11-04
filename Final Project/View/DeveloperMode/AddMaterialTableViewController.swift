@@ -55,6 +55,7 @@ extension AddMaterialTableViewController{
         
         
         MaterialController.addMaterial(name: namematerials, desc: descmaterials)
+        MaterialController.addMaterial(name: namematerials, desc: descmaterials, image: imageView.image?.pngData())
         let fatchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Material")
         
         do {
