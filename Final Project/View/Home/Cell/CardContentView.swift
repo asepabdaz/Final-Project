@@ -1,10 +1,4 @@
-//
-//  CardContentView.swift
-//  AppStoreHomeInteractiveTransition
-//
-//  Created by Wirawit Rueopas on 3/4/2561 BE.
-//  Copyright © 2561 Wirawit Rueopas. All rights reserved.
-//
+
 
 import UIKit
 
@@ -69,10 +63,10 @@ import UIKit
     func setFontState(isHighlighted: Bool) {
         if isHighlighted {
             primaryLabel.font = UIFont.systemFont(ofSize: 36 * GlobalConstants.cardHighlightedFactor, weight: .bold)
-            secondaryLabel.font = UIFont.systemFont(ofSize: 18 * GlobalConstants.cardHighlightedFactor, weight: .semibold)
+//            secondaryLabel.font = UIFont.systemFont(ofSize: 18 * GlobalConstants.cardHighlightedFactor, weight: .semibold)
         } else {
             primaryLabel.font = UIFont.systemFont(ofSize: 36, weight: .bold)
-            secondaryLabel.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+//            secondaryLabel.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         }
     }
 }

@@ -114,6 +114,7 @@ extension AddMaterialTableViewController: UIImagePickerControllerDelegate {
             let url = info[.imageURL] as? URL else {
                 fatalError("###\(#function): Failed to get JPG data and URL of the picked image!")
         }
+        
         dismiss(animated: true)
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

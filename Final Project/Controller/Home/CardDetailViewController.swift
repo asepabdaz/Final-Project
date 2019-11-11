@@ -17,10 +17,13 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     // When animating detail view controller to be full-screen size, it should gradually expands along the bottom edge.
     //
     // ***But we dismiss disable this after presenting***
+    
     @IBOutlet weak var cardBottomToRootBottomConstraint: NSLayoutConstraint!
 
+    @IBOutlet weak var outletShowMeHow: UIButton!
+    @IBOutlet weak var outletComplate: UIButton!
     @IBOutlet weak var cardContentView: CardContentView!
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     
     var cardViewModel: CardContentViewModel! {
@@ -31,11 +34,6 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         }
     }
     
-    var textModel: CardContentViewModel! {
-        didSet{
-            self.textView.text = "Test"
-        }
-    }
     
 
     var unhighlightedCardViewModel: CardContentViewModel!
@@ -77,7 +75,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         scrollView.delegate = self
         scrollView.contentInsetAdjustmentBehavior = .never
         cardContentView.viewModel = cardViewModel
-        textView.text = cardViewModel.secondary
+        textView.text = cardViewModel.description
         cardContentView.setFontState(isHighlighted: isFontStateHighlighted)
 
         dismissalPanGesture.addTarget(self, action: #selector(handleDismissalPan(gesture:)))
@@ -93,7 +91,21 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         loadViewIfNeeded()
         view.addGestureRecognizer(dismissalPanGesture)
         view.addGestureRecognizer(dismissalScreenEdgePanGesture)
+        
     }
+    
+    @IBAction func showMeHow(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        outletShowMeHow.layer.cornerRadius = 8
+        outletComplate.layer.borderWidth = 1.5
+        outletComplate.layer.cornerRadius = 8
+        outletComplate.layer.borderColor = #colorLiteral(red: 0.3394442201, green: 0.63580966, blue: 0.5225050449, alpha: 1)
+    }
+    
 
     func didSuccessfullyDragDownToDismiss() {
         cardViewModel = unhighlightedCardViewModel

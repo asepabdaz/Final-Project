@@ -16,13 +16,9 @@ final class HomeViewController: StatusBarAnimatableViewController {
 
     private lazy var cardModels: [CardContentViewModel] = [
         CardContentViewModel(primary: "How to scrub",
-                             secondary: "Minecraft makes a splash",
-                             description: "The ocean is a big place. Tap to read how Minecraft's just got even bigger.",
+                             secondary: "with coffee grounds as your main ingredients!",
+                             description: "Wonder how to use used coffee grounds? Those Grametically not correct words can somewhat make your brain like 'huh'? Well, instead of putting yourself on wonder world of use and used, you might want to try put your fingers on this simulation instead!",
                              image: UIImage(named: "Cards 1")!.resize(toWidth: UIScreen.main.bounds.size.width * (1/GlobalConstants.cardHighlightedFactor))),
-        CardContentViewModel(primary: "You won't believe this guy",
-                             secondary: "Something we want",
-                             description: "They have something we want which is not something we need.",
-                             image: #imageLiteral(resourceName: "mark-daynes-gzcoF6TNrkg-unsplash (1)").resize(toWidth: UIScreen.main.bounds.size.width * (1/GlobalConstants.cardHighlightedFactor))),
         CardContentViewModel(primary: "DIY coffee candle",
                              secondary: "Cats, cats, cats!",
                              description: "Play these games right meow.",
@@ -41,6 +37,10 @@ final class HomeViewController: StatusBarAnimatableViewController {
             layout.sectionInset = .init(top: 20, left: 0, bottom: 64, right: 0)
         }
 
+        cardModels.append(CardContentViewModel(primary: "Coffee aroma",
+        secondary: "indulge your warm, cozy home with scent of coffee!",
+        description: "They have something we want which is not something we need.",
+        image: #imageLiteral(resourceName: "mark-daynes-gzcoF6TNrkg-unsplash (1)").resize(toWidth: UIScreen.main.bounds.size.width * (1/GlobalConstants.cardHighlightedFactor))))
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.clipsToBounds = false
@@ -58,6 +58,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         return 1
     }
 
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cardModels.count
     }
