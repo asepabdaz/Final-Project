@@ -72,6 +72,13 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         cell.cardContentView?.viewModel = cardModels[indexPath.row]
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let sectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeaderView", for: indexPath) as!  SectionHeaderView
+        
+        sectionHeaderView.nameApp = "Welcome"
+        return sectionHeaderView
+    }
+    
 }
 
 extension HomeViewController {

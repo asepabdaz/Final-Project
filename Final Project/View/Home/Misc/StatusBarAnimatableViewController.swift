@@ -37,6 +37,7 @@ class StatusBarAnimatableViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         guard let coordinator = transitionCoordinator else { return }
         let config = statusBarAnimatableConfig
         let onlyAfterNonInteractive = config.animatesAfterInteractivityEnds
@@ -80,4 +81,6 @@ class StatusBarAnimatableViewController: UIViewController {
         return StatusBarAnimatableConfig(prefersHidden: false,
                                          animation: .none)
     }
+    
+    
 }
