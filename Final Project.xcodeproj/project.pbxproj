@@ -47,16 +47,10 @@
 		0EE313EA237406D000266DAF /* DismissCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313E6237406D000266DAF /* DismissCardAnimator.swift */; };
 		0EE313ED237406EF00266DAF /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313EB237406EF00266DAF /* CardCollectionViewCell.swift */; };
 		0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE313EC237406EF00266DAF /* CardCollectionViewCell.xib */; };
-		0EDCA3C6235EFC5900760D1C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCA3C4235EFC5900760D1C /* MainViewController.swift */; };
-		0EDCA3C7235EFC5900760D1C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EDCA3C5235EFC5900760D1C /* MainViewController.xib */; };
 		1B0EC0ED2371166500D0D057 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0EC0EC2371166500D0D057 /* Profile.storyboard */; };
 		1B0EC0EF2371185E00D0D057 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */; };
 		1B0EC0F123711DDE00D0D057 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */; };
 		1B0EC0F323711E7F00D0D057 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */; };
-		C5E76E8D2366950A004EA487 /* CardStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E76E8C23669509004EA487 /* CardStoryBoard.storyboard */; };
-		C5E76E8F2366A779004EA487 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E76E8E2366A779004EA487 /* CardViewController.swift */; };
-		C5E76E912366AB67004EA487 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E76E902366AB67004EA487 /* CardView.swift */; };
-		C5E76E9323693185004EA487 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E76E9223693185004EA487 /* CardCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,16 +117,10 @@
 		0EE313E6237406D000266DAF /* DismissCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissCardAnimator.swift; sourceTree = "<group>"; };
 		0EE313EB237406EF00266DAF /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		0EE313EC237406EF00266DAF /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
-		0EDCA3C4235EFC5900760D1C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		0EDCA3C5235EFC5900760D1C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		1B0EC0EC2371166500D0D057 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
-		C5E76E8C23669509004EA487 /* CardStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardStoryBoard.storyboard; sourceTree = "<group>"; };
-		C5E76E8E2366A779004EA487 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
-		C5E76E902366AB67004EA487 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		C5E76E9223693185004EA487 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +188,7 @@
 		0E4267322360432A00643ACC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0EB9E4D4237BA8B8004CB195 /* Profile */,
 				0EE313D72374061C00266DAF /* Main.storyboard */,
 				0EE313E2237406BF00266DAF /* Transition */,
 				0EE313C22374047C00266DAF /* Misc */,
@@ -228,6 +217,17 @@
 				0ECCCCB22365DD690049BBC0 /* ImagePicker.swift */,
 			);
 			path = Material;
+			sourceTree = "<group>";
+		};
+		0EB9E4D4237BA8B8004CB195 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1B0EC0EC2371166500D0D057 /* Profile.storyboard */,
+				1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */,
+				1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */,
+				1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		0ECCCCAB2365855B0049BBC0 /* Material */ = {
@@ -268,10 +268,6 @@
 				0E42672A23603BA800643ACC /* Controller */,
 				0EDCA391235D6FB800760D1C /* AppDelegate.swift */,
 				0EDCA393235D6FB800760D1C /* SceneDelegate.swift */,
-				1B0EC0EC2371166500D0D057 /* Profile.storyboard */,
-				1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */,
-				1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */,
-				1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */,
 				0EDCA39D235D6FB900760D1C /* Assets.xcassets */,
 				0EDCA39F235D6FB900760D1C /* LaunchScreen.storyboard */,
 				0EDCA3A2235D6FB900760D1C /* Info.plist */,

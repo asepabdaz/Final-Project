@@ -18,12 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-//        let startVC = DeveloperViewController()
-        
-//        let nav = UINavigationController(rootViewController: startVC)
-//        
-//        window?.rootViewController = nav
-//        window?.makeKeyAndVisible()
+        if UserDefaults.standard.bool(forKey: "firstTime") == false {
+
+            
+            /*
+             ArrayOf 1: Nama
+             ArrayOf 2: Umur
+             ArrayOf 3: Tinggi
+             ArrayOf 4: Berat
+             */
+            let dataProfile = ["Kavi","20","170","70"]
+            
+            UserDefaults.standard.set(dataProfile, forKey: "dataProfile")
+            UserDefaults.standard.set(true, forKey: "firstTime")
+        }
         
         return true
     }
