@@ -10,6 +10,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+
     @IBOutlet weak var picture: UIImageView!
         
         let image = UIImagePickerController()
@@ -22,7 +23,7 @@ class ProfileViewController: UIViewController {
             image.sourceType = .photoLibrary
             image.allowsEditing = false
             present(image, animated: true, completion: nil)
-            picture.contentMode = .scaleToFill
+            picture.contentMode = .scaleAspectFill
 
             
         }
@@ -38,7 +39,7 @@ class ProfileViewController: UIViewController {
                 
                 
                 picture.image = UIImage(data: data as Data)
-                picture.contentMode = .scaleToFill
+                picture.contentMode = .scaleAspectFill
             }
             
             

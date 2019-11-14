@@ -13,20 +13,37 @@
             <rect key="frame" x="0.0" y="0.0" width="446" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDp-Gg-X1n">
-                    <rect key="frame" x="20" y="15" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDp-Gg-X1n">
+                    <rect key="frame" x="20" y="0.0" width="147" height="50"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark-daynes-gzcoF6TNrkg-unsplash (1)" translatesAutoresizingMaskIntoConstraints="NO" id="QNi-WL-FtB">
+                    <rect key="frame" x="386" y="10" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="DjQ-Ce-bNZ"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QNi-WL-FtB" secondAttribute="trailing" constant="20" id="0BR-Ll-ly2"/>
+                <constraint firstAttribute="bottom" secondItem="QNi-WL-FtB" secondAttribute="bottom" id="3ON-5q-hj0"/>
+                <constraint firstItem="QNi-WL-FtB" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="BIC-Bd-oMk"/>
+                <constraint firstItem="HDp-Gg-X1n" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="QwH-Ww-Tny"/>
+                <constraint firstItem="HDp-Gg-X1n" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="20" id="s7R-YQ-0Yo"/>
+                <constraint firstAttribute="bottom" secondItem="HDp-Gg-X1n" secondAttribute="bottom" id="uMr-gO-gfY"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <connections>
+                <outlet property="imageView" destination="QNi-WL-FtB" id="Hyw-7P-MVe"/>
                 <outlet property="nameAppLabel" destination="HDp-Gg-X1n" id="D9f-cJ-qFV"/>
             </connections>
             <point key="canvasLocation" x="162.31884057971016" y="152.67857142857142"/>
         </collectionReusableView>
     </objects>
+    <resources>
+        <image name="mark-daynes-gzcoF6TNrkg-unsplash (1)" width="1824" height="1216"/>
+    </resources>
 </document>

@@ -74,10 +74,10 @@ final class PresentCardTransitionDriver {
     init(params: PresentCardAnimator.Params, transitionContext: UIViewControllerContextTransitioning, baseAnimator: UIViewPropertyAnimator) {
         let ctx = transitionContext
         let container = ctx.containerView
-        let screens: (home: HomeViewController, cardDetail: CardDetailViewController) = (
-            ctx.viewController(forKey: .from)! as! HomeViewController,
-            ctx.viewController(forKey: .to)! as! CardDetailViewController
-        )
+//        let screens: (home: HomeViewController, cardDetail: CardDetailViewController) = (
+//            ctx.viewController(forKey: .from)! as! HomeViewController,
+//            ctx.viewController(forKey: .to)! as! CardDetailViewController
+//        )
 
         let cardDetailView = ctx.view(forKey: .to)!
         let fromCardFrame = params.fromCardFrame
@@ -152,8 +152,8 @@ final class PresentCardTransitionDriver {
         params.fromCell.isHidden = true
         params.fromCell.resetTransform()
 
-        let topTemporaryFix = screens.cardDetail.cardContentView.topAnchor.constraint(equalTo: cardDetailView.topAnchor, constant: 0)
-        topTemporaryFix.isActive = GlobalConstants.isEnabledWeirdTopInsetsFix
+//        let topTemporaryFix = screens.cardDetail.cardContentView.topAnchor.constraint(equalTo: cardDetailView.topAnchor, constant: 0)
+//        topTemporaryFix.isActive = GlobalConstants.isEnabledWeirdTopInsetsFix
 
         container.layoutIfNeeded()
 
@@ -183,14 +183,14 @@ final class PresentCardTransitionDriver {
             // Re-add to the top
             container.addSubview(cardDetailView)
 
-            cardDetailView.removeConstraints([topTemporaryFix, cardWidthConstraint, cardHeightConstraint])
+//            cardDetailView.removeConstraints([topTemporaryFix, cardWidthConstraint, cardHeightConstraint])
 
             // Keep -1 to be consistent with the weird bug above.
             cardDetailView.edges(to: container, top: -1)
 
             // No longer need the bottom constraint that pins bottom of card content to its root.
-            screens.cardDetail.cardBottomToRootBottomConstraint.isActive = false
-            screens.cardDetail.scrollView.isScrollEnabled = true
+//            screens.cardDetail.cardBottomToRootBottomConstraint.isActive = false
+//            screens.cardDetail.scrollView.isScrollEnabled = true
 
             let success = !ctx.transitionWasCancelled
             ctx.completeTransition(success)

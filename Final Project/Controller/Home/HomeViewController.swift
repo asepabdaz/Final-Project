@@ -1,18 +1,13 @@
-//
-//  ViewController.swift
-//  AppStoreInteractiveTransition
-//
-//  Created by Wirawit Rueopas on 31/7/18.
-//  Copyright © 2018 Wirawit Rueopas. All rights reserved.
-//
+
 
 import UIKit
 
-final class HomeViewController: StatusBarAnimatableViewController {
+final class HomeViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
     private var transition: CardTransition?
+    
 
     private lazy var cardModels: [CardContentViewModel] = [
         CardContentViewModel(primary: "How to scrub",
@@ -48,10 +43,16 @@ final class HomeViewController: StatusBarAnimatableViewController {
         collectionView.register(UINib(nibName: "HeaderCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerCollectionView")
     }
 
-    override var statusBarAnimatableConfig: StatusBarAnimatableConfig {
-        return StatusBarAnimatableConfig(prefersHidden: false,
-                                         animation: .slide)
+    override func viewWillAppear(_ animated: Bool) {
+         self.navigationController?.isNavigationBarHidden = true
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+//    override var statusBarAnimatableConfig: StatusBarAnimatableConfig {
+//        return StatusBarAnimatableConfig(prefersHidden: false,
+//                                         animation: .slide)
+//    }
 }
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -75,14 +76,23 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if let sectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCollectionView", for: indexPath) as? HeaderCollectionReusableView {
+            if UserDefaults.standard.object(forKey: "savedImage") as? NSData != nil {
+                let imageProfile = UserDefaults.standard.object(forKey: "savedImage") as! NSData
+                sectionHeaderView.imageView.image = UIImage(data: imageProfile as Data)
+            }
+            
+            
+
+            sectionHeaderView.nameApp = Bundle.main.infoDictionary![kCFBundleNameKey as String] as? String
+             let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+            sectionHeaderView.imageView.isUserInteractionEnabled = true
+            sectionHeaderView.imageView.addGestureRecognizer(tapGestureRecognizer)
             
             return sectionHeaderView
         }
-//
-//        sectionHeaderView.nameAppLabel.text = "Welcome"
-//        return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
         return UICollectionReusableView()
     }
+
     
 }
 
@@ -126,7 +136,7 @@ extension HomeViewController {
 
         // Set up card detail view controller
         let vc = CardDetailViewController(nibName: "DetailView", bundle: nil)
-//        let vc = storyboard!.instantiateViewController(withIdentifier: "cardDetailVc") as! CardDetailViewController
+
         vc.cardViewModel = cardModel.highlightedImage()
         vc.unhighlightedCardViewModel = cardModel // Keep the original one to restore when dismiss
         let params = CardTransition.Params(fromCardFrame: cardPresentationFrameOnScreen,
@@ -144,4 +154,23 @@ extension HomeViewController {
             cell.unfreezeAnimations()
         })
     }
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){
+        // Push View controller to Profile
+        
+        
+        //define xib file view controller
+        
+        /*
+         let newViewController = NewViewController()
+         self.navigationController?.pushViewController(newViewController, animated: true)
+         */
+        
+        // Define storyboard
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+        let newController = storyBoard.instantiateViewController(identifier: "ProfileStoryBoard") as! ProfileViewController
+        navigationController?.pushViewController(newController, animated: true)
+        
+    }
+    
 }

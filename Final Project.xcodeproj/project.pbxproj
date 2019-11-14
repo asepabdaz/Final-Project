@@ -31,16 +31,12 @@
 		0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EDCA39F235D6FB900760D1C /* LaunchScreen.storyboard */; };
 		0EDCA3AC235D6FB900760D1C /* Final_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCA3AB235D6FB900760D1C /* Final_ProjectTests.swift */; };
 		0EDCA3B7235D6FB900760D1C /* Final_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCA3B6235D6FB900760D1C /* Final_ProjectUITests.swift */; };
-		0EE313C82374055A00266DAF /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EE313C52374055A00266DAF /* img2.jpg */; };
-		0EE313C92374055A00266DAF /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE313C62374055A00266DAF /* img1.png */; };
-		0EE313CA2374055A00266DAF /* drowning.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE313C72374055A00266DAF /* drowning.png */; };
 		0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE313CB2374058D00266DAF /* CardContentView.xib */; };
 		0EE313CE2374058D00266DAF /* CardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313CC2374058D00266DAF /* CardContentView.swift */; };
 		0EE313D0237405A600266DAF /* CardContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313CF237405A600266DAF /* CardContentViewModel.swift */; };
 		0EE313D2237405C500266DAF /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313D1237405C500266DAF /* GlobalConstants.swift */; };
 		0EE313D4237405ED00266DAF /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313D3237405ED00266DAF /* NibLoadable.swift */; };
 		0EE313D62374060400266DAF /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313D52374060400266DAF /* UIView+AutoLayout.swift */; };
-		0EE313D82374061C00266DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE313D72374061C00266DAF /* Main.storyboard */; };
 		0EE313DC2374065B00266DAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313DA2374065B00266DAF /* HomeViewController.swift */; };
 		0EE313DD2374065B00266DAF /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313DB2374065B00266DAF /* CardDetailViewController.swift */; };
 		0EE313DF2374069600266DAF /* StatusBarAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313DE2374069600266DAF /* StatusBarAnimatable.swift */; };
@@ -106,16 +102,12 @@
 		0EDCA3B2235D6FB900760D1C /* Final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Final ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDCA3B6235D6FB900760D1C /* Final_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectUITests.swift; sourceTree = "<group>"; };
 		0EDCA3B8235D6FB900760D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0EE313C52374055A00266DAF /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
-		0EE313C62374055A00266DAF /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
-		0EE313C72374055A00266DAF /* drowning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drowning.png; sourceTree = "<group>"; };
 		0EE313CB2374058D00266DAF /* CardContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
 		0EE313CC2374058D00266DAF /* CardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardContentView.swift; sourceTree = "<group>"; };
 		0EE313CF237405A600266DAF /* CardContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardContentViewModel.swift; sourceTree = "<group>"; };
 		0EE313D1237405C500266DAF /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		0EE313D3237405ED00266DAF /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		0EE313D52374060400266DAF /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
-		0EE313D72374061C00266DAF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0EE313DA2374065B00266DAF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0EE313DB2374065B00266DAF /* CardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		0EE313DE2374069600266DAF /* StatusBarAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarAnimatable.swift; sourceTree = "<group>"; };
@@ -200,7 +192,6 @@
 			children = (
 				0EB9E4DD237BCEB1004CB195 /* HomeView.xib */,
 				0EB9E4D4237BA8B8004CB195 /* Profile */,
-				0EE313D72374061C00266DAF /* Main.storyboard */,
 				0EE313E2237406BF00266DAF /* Transition */,
 				0EE313C22374047C00266DAF /* Misc */,
 				0EE313BB2374043600266DAF /* Cell */,
@@ -276,7 +267,7 @@
 		0EDCA390235D6FB800760D1C /* Final Project */ = {
 			isa = PBXGroup;
 			children = (
-				0EE313B4237403DC00266DAF /* Resources */,
+				0EE313B4237403DC00266DAF /* Supporting File */,
 				0E42672E23603D9D00643ACC /* Model */,
 				0E42672F23603DAB00643ACC /* View */,
 				0E42672A23603BA800643ACC /* Controller */,
@@ -286,7 +277,6 @@
 				0EDCA39D235D6FB900760D1C /* Assets.xcassets */,
 				0EDCA39F235D6FB900760D1C /* LaunchScreen.storyboard */,
 				0EDCA3A2235D6FB900760D1C /* Info.plist */,
-				0EDCA39A235D6FB800760D1C /* Final_Project.xcdatamodeld */,
 			);
 			path = "Final Project";
 			sourceTree = "<group>";
@@ -309,14 +299,12 @@
 			path = "Final ProjectUITests";
 			sourceTree = "<group>";
 		};
-		0EE313B4237403DC00266DAF /* Resources */ = {
+		0EE313B4237403DC00266DAF /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
-				0EE313C72374055A00266DAF /* drowning.png */,
-				0EE313C62374055A00266DAF /* img1.png */,
-				0EE313C52374055A00266DAF /* img2.jpg */,
+				0EDCA39A235D6FB800760D1C /* Final_Project.xcdatamodeld */,
 			);
-			path = Resources;
+			path = "Supporting File";
 			sourceTree = "<group>";
 		};
 		0EE313BB2374043600266DAF /* Cell */ = {
@@ -470,14 +458,10 @@
 				1B0EC0ED2371166500D0D057 /* Profile.storyboard in Resources */,
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
-				0EE313CA2374055A00266DAF /* drowning.png in Resources */,
 				1BC90024237BE76000635CEF /* tutorialScrub.storyboard in Resources */,
 				0EB9E4E4237BD9BB004CB195 /* HeaderCollectionReusableView.xib in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
-				0EE313D82374061C00266DAF /* Main.storyboard in Resources */,
-				0EE313C92374055A00266DAF /* img1.png in Resources */,
 				0E42673C23617F2400643ACC /* DeveloperMode.storyboard in Resources */,
-				0EE313C82374055A00266DAF /* img2.jpg in Resources */,
 				0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */,
 				0EDCA39E235D6FB900760D1C /* Assets.xcassets in Resources */,
 				0EB9E4DE237BCEB1004CB195 /* HomeView.xib in Resources */,

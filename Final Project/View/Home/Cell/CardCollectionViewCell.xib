@@ -16,9 +16,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BcV-92-55m" customClass="CardContentView" customModule="Final_Project" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="img1.png"/>
-                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -36,7 +33,4 @@
             <point key="canvasLocation" x="-3.2000000000000002" y="-105.69715142428787"/>
         </view>
     </objects>
-    <resources>
-        <image name="img1.png" width="640" height="1136"/>
-    </resources>
 </document>
