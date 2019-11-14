@@ -45,6 +45,7 @@ final class HomeViewController: StatusBarAnimatableViewController {
         collectionView.dataSource = self
         collectionView.clipsToBounds = false
         collectionView.register(UINib(nibName: "\(CardCollectionViewCell.self)", bundle: nil), forCellWithReuseIdentifier: "card")
+        collectionView.register(UINib(nibName: "HeaderCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerCollectionView")
     }
 
     override var statusBarAnimatableConfig: StatusBarAnimatableConfig {
@@ -73,10 +74,14 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let sectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeaderView", for: indexPath) as!  SectionHeaderView
-        
-        sectionHeaderView.nameApp = "Welcome"
-        return sectionHeaderView
+        if let sectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCollectionView", for: indexPath) as? HeaderCollectionReusableView {
+            
+            return sectionHeaderView
+        }
+//
+//        sectionHeaderView.nameAppLabel.text = "Welcome"
+//        return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+        return UICollectionReusableView()
     }
     
 }
@@ -120,7 +125,8 @@ extension HomeViewController {
         let cardModel = cardModels[indexPath.row]
 
         // Set up card detail view controller
-        let vc = storyboard!.instantiateViewController(withIdentifier: "cardDetailVc") as! CardDetailViewController
+        let vc = CardDetailViewController(nibName: "DetailView", bundle: nil)
+//        let vc = storyboard!.instantiateViewController(withIdentifier: "cardDetailVc") as! CardDetailViewController
         vc.cardViewModel = cardModel.highlightedImage()
         vc.unhighlightedCardViewModel = cardModel // Keep the original one to restore when dismiss
         let params = CardTransition.Params(fromCardFrame: cardPresentationFrameOnScreen,
