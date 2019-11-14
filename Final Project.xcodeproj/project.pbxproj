@@ -51,6 +51,7 @@
 		1B0EC0EF2371185E00D0D057 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */; };
 		1B0EC0F123711DDE00D0D057 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */; };
 		1B0EC0F323711E7F00D0D057 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */; };
+		1BC90024237BE76000635CEF /* tutorialScrub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC90023237BE76000635CEF /* tutorialScrub.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		1BC90023237BE76000635CEF /* tutorialScrub.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tutorialScrub.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +270,7 @@
 				0E42672A23603BA800643ACC /* Controller */,
 				0EDCA391235D6FB800760D1C /* AppDelegate.swift */,
 				0EDCA393235D6FB800760D1C /* SceneDelegate.swift */,
+				1BC90023237BE76000635CEF /* tutorialScrub.storyboard */,
 				0EDCA39D235D6FB900760D1C /* Assets.xcassets */,
 				0EDCA39F235D6FB900760D1C /* LaunchScreen.storyboard */,
 				0EDCA3A2235D6FB900760D1C /* Info.plist */,
@@ -456,6 +459,7 @@
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
 				0EE313CA2374055A00266DAF /* drowning.png in Resources */,
+				1BC90024237BE76000635CEF /* tutorialScrub.storyboard in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
 				0EE313D82374061C00266DAF /* Main.storyboard in Resources */,
 				0EE313C92374055A00266DAF /* img1.png in Resources */,
