@@ -167,8 +167,14 @@ extension HomeViewController {
          */
         
         // Define storyboard
+        /*
         let storyBoard: UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
         let newController = storyBoard.instantiateViewController(identifier: "ProfileStoryBoard") as! ProfileViewController
+        navigationController?.pushViewController(newController, animated: true)
+        */
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "tutorialScrub", bundle: nil)
+        let newController = storyBoard.instantiateViewController(identifier: "tutorialScrub") as! tutorialScrub
         navigationController?.pushViewController(newController, animated: true)
         
     }

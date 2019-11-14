@@ -20,6 +20,7 @@
 		0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DF237BD06F004CB195 /* DetailView.xib */; };
 		0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */; };
 		0EB9E4E4237BD9BB004CB195 /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */; };
+		0EB9E4E6237D10F7004CB195 /* tutorialScrub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E5237D10F7004CB195 /* tutorialScrub.swift */; };
 		0ECCCCAD236585710049BBC0 /* MaterialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCAC236585710049BBC0 /* MaterialController.swift */; };
 		0ECCCCAF23658A550049BBC0 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCAE23658A550049BBC0 /* DataProvider.swift */; };
 		0ECCCCB123658DBA0049BBC0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCB023658DBA0049BBC0 /* CoreDataStack.swift */; };
@@ -85,6 +86,7 @@
 		0EB9E4DF237BD06F004CB195 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		0EB9E4E5237D10F7004CB195 /* tutorialScrub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialScrub.swift; sourceTree = "<group>"; };
 		0ECCCCAC236585710049BBC0 /* MaterialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialController.swift; sourceTree = "<group>"; };
 		0ECCCCAE23658A550049BBC0 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		0ECCCCB023658DBA0049BBC0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -191,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				0EB9E4DD237BCEB1004CB195 /* HomeView.xib */,
-				0EB9E4D4237BA8B8004CB195 /* Profile */,
 				0EE313E2237406BF00266DAF /* Transition */,
 				0EE313C22374047C00266DAF /* Misc */,
 				0EE313BB2374043600266DAF /* Cell */,
@@ -205,6 +206,8 @@
 		0E4267332360433A00643ACC /* DeveloperMode */ = {
 			isa = PBXGroup;
 			children = (
+				0EB9E4E7237D129E004CB195 /* Main Feature */,
+				0EB9E4D4237BA8B8004CB195 /* Profile */,
 				0E491D222362A462005E7399 /* Material */,
 				0E42673B23617F2400643ACC /* DeveloperMode.storyboard */,
 				0E42673F23617F5F00643ACC /* DeveloperMode.swift */,
@@ -233,6 +236,15 @@
 				1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		0EB9E4E7237D129E004CB195 /* Main Feature */ = {
+			isa = PBXGroup;
+			children = (
+				1BC90023237BE76000635CEF /* tutorialScrub.storyboard */,
+				0EB9E4E5237D10F7004CB195 /* tutorialScrub.swift */,
+			);
+			path = "Main Feature";
 			sourceTree = "<group>";
 		};
 		0ECCCCAB2365855B0049BBC0 /* Material */ = {
@@ -273,7 +285,6 @@
 				0E42672A23603BA800643ACC /* Controller */,
 				0EDCA391235D6FB800760D1C /* AppDelegate.swift */,
 				0EDCA393235D6FB800760D1C /* SceneDelegate.swift */,
-				1BC90023237BE76000635CEF /* tutorialScrub.storyboard */,
 				0EDCA39D235D6FB900760D1C /* Assets.xcassets */,
 				0EDCA39F235D6FB900760D1C /* LaunchScreen.storyboard */,
 				0EDCA3A2235D6FB900760D1C /* Info.plist */,
@@ -492,6 +503,7 @@
 				1B0EC0F323711E7F00D0D057 /* DetailTableViewController.swift in Sources */,
 				0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */,
 				0E491D262362A728005E7399 /* AttachmentCollectionCell.swift in Sources */,
+				0EB9E4E6237D10F7004CB195 /* tutorialScrub.swift in Sources */,
 				0EE313E8237406D000266DAF /* PresentCardAnimator.swift in Sources */,
 				0E491D242362A48B005E7399 /* AttachmentInteractionDelegate.swift in Sources */,
 				0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */,

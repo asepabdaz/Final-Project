@@ -61,7 +61,7 @@ extension AddMaterialTableViewController{
         do {
             let result = try CoreDataHelper.managedContext.fetch(fatchRequest)
             for data in result as! [NSManagedObject] {
-                print(data.value(forKey: "nameMaterial"))
+//                print(data.value(forKey: "nameMaterial"))
             }
         } catch {
             fatalError()
