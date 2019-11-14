@@ -16,6 +16,10 @@
 		0E491D242362A48B005E7399 /* AttachmentInteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E491D232362A48B005E7399 /* AttachmentInteractionDelegate.swift */; };
 		0E491D262362A728005E7399 /* AttachmentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E491D252362A728005E7399 /* AttachmentCollectionCell.swift */; };
 		0E491D282362A807005E7399 /* AttachmentCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E491D272362A807005E7399 /* AttachmentCVCell.swift */; };
+		0EB9E4DE237BCEB1004CB195 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DD237BCEB1004CB195 /* HomeView.xib */; };
+		0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DF237BD06F004CB195 /* DetailView.xib */; };
+		0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */; };
+		0EB9E4E4237BD9BB004CB195 /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */; };
 		0ECCCCAD236585710049BBC0 /* MaterialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCAC236585710049BBC0 /* MaterialController.swift */; };
 		0ECCCCAF23658A550049BBC0 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCAE23658A550049BBC0 /* DataProvider.swift */; };
 		0ECCCCB123658DBA0049BBC0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCB023658DBA0049BBC0 /* CoreDataStack.swift */; };
@@ -81,6 +85,10 @@
 		0E491D232362A48B005E7399 /* AttachmentInteractionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentInteractionDelegate.swift; sourceTree = "<group>"; };
 		0E491D252362A728005E7399 /* AttachmentCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentCollectionCell.swift; sourceTree = "<group>"; };
 		0E491D272362A807005E7399 /* AttachmentCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentCVCell.swift; sourceTree = "<group>"; };
+		0EB9E4DD237BCEB1004CB195 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		0EB9E4DF237BD06F004CB195 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		0ECCCCAC236585710049BBC0 /* MaterialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialController.swift; sourceTree = "<group>"; };
 		0ECCCCAE23658A550049BBC0 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		0ECCCCB023658DBA0049BBC0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -190,11 +198,15 @@
 		0E4267322360432A00643ACC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0EB9E4DD237BCEB1004CB195 /* HomeView.xib */,
 				0EB9E4D4237BA8B8004CB195 /* Profile */,
 				0EE313D72374061C00266DAF /* Main.storyboard */,
 				0EE313E2237406BF00266DAF /* Transition */,
 				0EE313C22374047C00266DAF /* Misc */,
 				0EE313BB2374043600266DAF /* Cell */,
+				0EB9E4DF237BD06F004CB195 /* DetailView.xib */,
+				0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */,
+				0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -460,12 +472,15 @@
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
 				0EE313CA2374055A00266DAF /* drowning.png in Resources */,
 				1BC90024237BE76000635CEF /* tutorialScrub.storyboard in Resources */,
+				0EB9E4E4237BD9BB004CB195 /* HeaderCollectionReusableView.xib in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
 				0EE313D82374061C00266DAF /* Main.storyboard in Resources */,
 				0EE313C92374055A00266DAF /* img1.png in Resources */,
 				0E42673C23617F2400643ACC /* DeveloperMode.storyboard in Resources */,
 				0EE313C82374055A00266DAF /* img2.jpg in Resources */,
+				0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */,
 				0EDCA39E235D6FB900760D1C /* Assets.xcassets in Resources */,
+				0EB9E4DE237BCEB1004CB195 /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0EC0F323711E7F00D0D057 /* DetailTableViewController.swift in Sources */,
+				0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */,
 				0E491D262362A728005E7399 /* AttachmentCollectionCell.swift in Sources */,
 				0EE313E8237406D000266DAF /* PresentCardAnimator.swift in Sources */,
 				0E491D242362A48B005E7399 /* AttachmentInteractionDelegate.swift in Sources */,

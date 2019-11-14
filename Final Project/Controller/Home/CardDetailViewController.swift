@@ -20,6 +20,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     
     @IBOutlet weak var cardBottomToRootBottomConstraint: NSLayoutConstraint!
 
+    @IBOutlet weak var dismisButtonOutlet: UIButton!
     @IBOutlet weak var outletShowMeHow: UIButton!
     @IBOutlet weak var outletComplate: UIButton!
     @IBOutlet weak var cardContentView: CardContentView!
@@ -94,8 +95,11 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         
     }
     
-    @IBAction func showMeHow(_ sender: UIButton) {
+    @IBAction func dismissButton(_ sender: UIButton) {
         self.dismiss(animated: true)
+    }
+    @IBAction func showMeHow(_ sender: UIButton) {
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -104,6 +108,8 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         outletComplate.layer.borderWidth = 1.5
         outletComplate.layer.cornerRadius = 8
         outletComplate.layer.borderColor = #colorLiteral(red: 0.3394442201, green: 0.63580966, blue: 0.5225050449, alpha: 1)
+        
+        dismisButtonOutlet.layer.cornerRadius = dismisButtonOutlet.bounds.width / 2
     }
     
 
