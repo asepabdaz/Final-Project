@@ -8,34 +8,25 @@ final class HomeViewController: UIViewController {
 
     private var transition: CardTransition?
     
+    let path = Bundle.main.path(forResource: "ExampleData", ofType: "plist")
+    
+    private lazy var cardModels: [CardContentViewModel] = []
 
-    private lazy var cardModels: [CardContentViewModel] = [
-        CardContentViewModel(primary: "How to scrub",
-                             secondary: "with coffee grounds as your main ingredients!",
-                             description: "Wonder how to use used coffee grounds? Those Grametically not correct words can somewhat make your brain like 'huh'? Well, instead of putting yourself on wonder world of use and used, you might want to try put your fingers on this simulation instead!",
-                             image: UIImage(named: "Cards 1")!.resize(toWidth: UIScreen.main.bounds.size.width * (1/GlobalConstants.cardHighlightedFactor))),
-        CardContentViewModel(primary: "DIY coffee candle",
-                             secondary: "Cats, cats, cats!",
-                             description: "Play these games right meow.",
-                             image: #imageLiteral(resourceName: "Cards 3").resize(toWidth: UIScreen.main.bounds.size.width * (1/GlobalConstants.cardHighlightedFactor)))
-    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Make it responds to highlight state faster
         collectionView.delaysContentTouches = false
-
+        
+        
         if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.minimumLineSpacing = 20
             layout.minimumInteritemSpacing = 0
             layout.sectionInset = .init(top: 20, left: 0, bottom: 64, right: 0)
         }
 
-        cardModels.append(CardContentViewModel(primary: "Coffee aroma",
-        secondary: "indulge your warm, cozy home with scent of coffee!",
-        description: "They have something we want which is not something we need.",
-        image: #imageLiteral(resourceName: "mark-daynes-gzcoF6TNrkg-unsplash (1)").resize(toWidth: UIScreen.main.bounds.size.width * (1/GlobalConstants.cardHighlightedFactor))))
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.clipsToBounds = false
@@ -44,7 +35,22 @@ final class HomeViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-         self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = true
+        let dict = NSDictionary(contentsOfFile: path!)
+        for allData in dict! {
+            let data = allData.value as? [String: Any]
+            let material = data!["material"] as! [[String:String]]
+            cardModels.append(
+                CardContentViewModel(primary: data!["nameProduct"] as! String,
+                                     secondary: data!["summery"] as! String,
+                                     description: data!["desc"] as! String,
+                                     image: UIImage(named: data!["image"] as! String)!
+                                                    .resize(toWidth: UIScreen.main.bounds.size.width *
+                                                    (1/GlobalConstants.cardHighlightedFactor)),
+                                     material: material,
+                                     after: data!["after"] as! String,
+                                     storyBoard: data!["storyBoard"] as! String))
+        }
     }
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
@@ -167,15 +173,17 @@ extension HomeViewController {
          */
         
         // Define storyboard
-        /*
+        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
         let newController = storyBoard.instantiateViewController(identifier: "ProfileStoryBoard") as! ProfileViewController
         navigationController?.pushViewController(newController, animated: true)
-        */
         
+        
+        /*
         let storyBoard: UIStoryboard = UIStoryboard(name: "tutorialScrub", bundle: nil)
         let newController = storyBoard.instantiateViewController(identifier: "tutorialScrub") as! tutorialScrub
         navigationController?.pushViewController(newController, animated: true)
+         */
         
     }
     

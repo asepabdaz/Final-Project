@@ -21,6 +21,9 @@
 		0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */; };
 		0EB9E4E4237BD9BB004CB195 /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */; };
 		0EB9E4E6237D10F7004CB195 /* tutorialScrub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E5237D10F7004CB195 /* tutorialScrub.swift */; };
+		0EB9E4EB237D7C43004CB195 /* ExampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4EA237D7C43004CB195 /* ExampleData.plist */; };
+		0EB9E4EF237D9A21004CB195 /* MaterialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9E4ED237D9A21004CB195 /* MaterialTableViewCell.swift */; };
+		0EB9E4F0237D9A21004CB195 /* MaterialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4EE237D9A21004CB195 /* MaterialTableViewCell.xib */; };
 		0ECCCCAD236585710049BBC0 /* MaterialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCAC236585710049BBC0 /* MaterialController.swift */; };
 		0ECCCCAF23658A550049BBC0 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCAE23658A550049BBC0 /* DataProvider.swift */; };
 		0ECCCCB123658DBA0049BBC0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCB023658DBA0049BBC0 /* CoreDataStack.swift */; };
@@ -87,6 +90,9 @@
 		0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		0EB9E4E5237D10F7004CB195 /* tutorialScrub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialScrub.swift; sourceTree = "<group>"; };
+		0EB9E4EA237D7C43004CB195 /* ExampleData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExampleData.plist; sourceTree = "<group>"; };
+		0EB9E4ED237D9A21004CB195 /* MaterialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTableViewCell.swift; sourceTree = "<group>"; };
+		0EB9E4EE237D9A21004CB195 /* MaterialTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaterialTableViewCell.xib; sourceTree = "<group>"; };
 		0ECCCCAC236585710049BBC0 /* MaterialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialController.swift; sourceTree = "<group>"; };
 		0ECCCCAE23658A550049BBC0 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		0ECCCCB023658DBA0049BBC0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 		0E42672F23603DAB00643ACC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0EB9E4E7237D129E004CB195 /* Main Feature */,
 				0E4267332360433A00643ACC /* DeveloperMode */,
 				0E4267322360432A00643ACC /* Home */,
 			);
@@ -192,10 +199,11 @@
 		0E4267322360432A00643ACC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				0EB9E4DD237BCEB1004CB195 /* HomeView.xib */,
+				0EB9E4EC237D99FC004CB195 /* Material Cell */,
 				0EE313E2237406BF00266DAF /* Transition */,
 				0EE313C22374047C00266DAF /* Misc */,
 				0EE313BB2374043600266DAF /* Cell */,
+				0EB9E4DD237BCEB1004CB195 /* HomeView.xib */,
 				0EB9E4DF237BD06F004CB195 /* DetailView.xib */,
 				0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */,
 				0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */,
@@ -206,7 +214,6 @@
 		0E4267332360433A00643ACC /* DeveloperMode */ = {
 			isa = PBXGroup;
 			children = (
-				0EB9E4E7237D129E004CB195 /* Main Feature */,
 				0EB9E4D4237BA8B8004CB195 /* Profile */,
 				0E491D222362A462005E7399 /* Material */,
 				0E42673B23617F2400643ACC /* DeveloperMode.storyboard */,
@@ -245,6 +252,15 @@
 				0EB9E4E5237D10F7004CB195 /* tutorialScrub.swift */,
 			);
 			path = "Main Feature";
+			sourceTree = "<group>";
+		};
+		0EB9E4EC237D99FC004CB195 /* Material Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0EB9E4ED237D9A21004CB195 /* MaterialTableViewCell.swift */,
+				0EB9E4EE237D9A21004CB195 /* MaterialTableViewCell.xib */,
+			);
+			path = "Material Cell";
 			sourceTree = "<group>";
 		};
 		0ECCCCAB2365855B0049BBC0 /* Material */ = {
@@ -314,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				0EDCA39A235D6FB800760D1C /* Final_Project.xcdatamodeld */,
+				0EB9E4EA237D7C43004CB195 /* ExampleData.plist */,
 			);
 			path = "Supporting File";
 			sourceTree = "<group>";
@@ -466,12 +483,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB9E4F0237D9A21004CB195 /* MaterialTableViewCell.xib in Resources */,
 				1B0EC0ED2371166500D0D057 /* Profile.storyboard in Resources */,
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
 				1BC90024237BE76000635CEF /* tutorialScrub.storyboard in Resources */,
 				0EB9E4E4237BD9BB004CB195 /* HeaderCollectionReusableView.xib in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
+				0EB9E4EB237D7C43004CB195 /* ExampleData.plist in Resources */,
 				0E42673C23617F2400643ACC /* DeveloperMode.storyboard in Resources */,
 				0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */,
 				0EDCA39E235D6FB900760D1C /* Assets.xcassets in Resources */,
@@ -506,6 +525,7 @@
 				0EB9E4E6237D10F7004CB195 /* tutorialScrub.swift in Sources */,
 				0EE313E8237406D000266DAF /* PresentCardAnimator.swift in Sources */,
 				0E491D242362A48B005E7399 /* AttachmentInteractionDelegate.swift in Sources */,
+				0EB9E4EF237D9A21004CB195 /* MaterialTableViewCell.swift in Sources */,
 				0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */,
 				0EE313ED237406EF00266DAF /* CardCollectionViewCell.swift in Sources */,
 				0EE313D4237405ED00266DAF /* NibLoadable.swift in Sources */,

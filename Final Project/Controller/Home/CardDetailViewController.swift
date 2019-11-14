@@ -1,22 +1,11 @@
-//
-//  CardDetailViewController.swift
-//  AppStoreHomeInteractiveTransition
-//
-//  Created by Wirawit Rueopas on 4/4/2561 BE.
-//  Copyright © 2561 Wirawit Rueopas. All rights reserved.
-//
+
 
 import UIKit
 
 
 class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewDelegate {
 
-    // This constraint limits card content to not be covered by root view.
-    // This is useful to make the card content expands when presenting,
-    // as intially the card is fully contained in a smaller environment (card cell).
-    // When animating detail view controller to be full-screen size, it should gradually expands along the bottom edge.
-    //
-    // ***But we dismiss disable this after presenting***
+    
     
     @IBOutlet weak var cardBottomToRootBottomConstraint: NSLayoutConstraint!
 
@@ -26,6 +15,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     @IBOutlet weak var cardContentView: CardContentView!
     @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var materialTabel: UITableView!
     
     var cardViewModel: CardContentViewModel! {
         didSet {
@@ -34,6 +24,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
             }
         }
     }
+    var data = ["Test":"test"]
     
     
 
@@ -73,10 +64,15 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
             scrollView.subviews.first!.layer.borderColor = UIColor.purple.cgColor
         }
 
+        materialTabel.delegate = self
+        materialTabel.dataSource = self
+        materialTabel.register(UINib(nibName: "\(MaterialTableViewCell.self)", bundle: nil), forCellReuseIdentifier: "MaterialCell")
+        
         scrollView.delegate = self
         scrollView.contentInsetAdjustmentBehavior = .never
         cardContentView.viewModel = cardViewModel
         textView.text = cardViewModel.description
+        print(cardViewModel.material)
         cardContentView.setFontState(isHighlighted: isFontStateHighlighted)
 
         dismissalPanGesture.addTarget(self, action: #selector(handleDismissalPan(gesture:)))
@@ -99,11 +95,17 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         self.dismiss(animated: true)
     }
     @IBAction func showMeHow(_ sender: UIButton) {
-        
+        let storyBoard: UIStoryboard = UIStoryboard(name: cardViewModel.storyBoard, bundle: nil)
+        let newController = storyBoard.instantiateViewController(identifier: cardViewModel.storyBoard) as! tutorialScrub
+        newController.modalPresentationCapturesStatusBarAppearance = false
+        newController.modalPresentationStyle = .fullScreen
+        present(newController, animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+       
+//        modelMaterial = modelMaterials[0]
         outletShowMeHow.layer.cornerRadius = 8
         outletComplate.layer.borderWidth = 1.5
         outletComplate.layer.cornerRadius = 8
@@ -257,4 +259,30 @@ extension CardDetailViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
+}
+extension CardDetailViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cardViewModel.material.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MaterialCell", for: indexPath) as! MaterialTableViewCell
+        
+        cell.imageMaterial?.image = #imageLiteral(resourceName: "mark-daynes-gzcoF6TNrkg-unsplash (1)")
+//        let test:[String: String] = cardViewModel.material[indexPath] as [String:Any]
+//        let dictMaaterial = cardViewModel.material[]
+        
+//        print(cardViewModel.material[indexPath] as? Any)
+////        let mat = <#value#>
+        
+//        print(modelMaterial.nameMaterial)
+//        print(cardViewModel.material as? [[String]1])
+        let materialData: [String: String] = cardViewModel.material[indexPath.row]
+        cell.nameMaterial.text = materialData["name"]
+        cell.descMaterial.text = materialData["desc"]
+        
+        return cell
+    }
+    
+    
 }
