@@ -25,7 +25,7 @@ class tutorialScrub: UIViewController {
     
     
     var descriptionText = ["Step 1: Put coffee grounds into the bowl", "Step 2: Put coconut oil into bowl", "Step 3: Mix all ingredients", "Step 4: Put cornstarch in", "Step 5: Mix together again until evenly", "Step 6: Put 2-3 drops of essential oil (optional)", "Step 7: Mix together"]
-    var instructionText = ["Add between 12 tablespoons", "We need 3 tablespoon", "", "Add around 3 tablespoon", "", "We need 3 drops", ""]
+    var instructionText = ["Add 8 tablespoons", "We need 3 tablespoon", "", "Add around 3 tablespoon", "", "We need 3 drops", ""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +68,7 @@ class tutorialScrub: UIViewController {
                 } else if miniStep == 8 {
                     bowl.image = UIImage(named: "BowlVer3.png")
                 }
+                instructionLabel.text = "Add \(8-miniStep) tablespoons"
             }
             
             if miniStep == 8 {
@@ -104,6 +105,7 @@ class tutorialScrub: UIViewController {
             if (bowl.frame.intersects(coconutOil.frame)){
                 miniStep += 1
                 print(miniStep)
+                instructionLabel.text = "We need \(11 - miniStep) tablespoon"
             }
             
             if miniStep == 11 {
@@ -137,6 +139,7 @@ class tutorialScrub: UIViewController {
             if (bowl.frame.intersects(flour.frame)){
                 miniStep += 1
                 print(miniStep)
+                instructionLabel.text = "Add around \(15 - miniStep) tablespoon"
             }
             
             if miniStep == 15 {
@@ -168,6 +171,7 @@ class tutorialScrub: UIViewController {
             if (bowl.frame.intersects(essentialOil.frame)){
                 miniStep += 1
                 print(miniStep)
+                instructionLabel.text = "We need \(19 - miniStep) drops"
             }
             
             if miniStep == 19 {
