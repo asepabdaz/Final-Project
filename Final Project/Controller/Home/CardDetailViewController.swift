@@ -9,6 +9,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     
     @IBOutlet weak var cardBottomToRootBottomConstraint: NSLayoutConstraint!
 
+    @IBOutlet weak var heightTableMaterial: NSLayoutConstraint!
     @IBOutlet weak var dismisButtonOutlet: UIButton!
     @IBOutlet weak var outletShowMeHow: UIButton!
     @IBOutlet weak var outletComplate: UIButton!
@@ -105,7 +106,16 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         super.viewWillAppear(animated)
         
        
-//        modelMaterial = modelMaterials[0]
+        var tableViewHeight: CGFloat = 0;
+        
+        var heightTable = 0
+
+        for _ in cardViewModel.material{
+            heightTable += 50 // 50 is magic number
+        }
+        tableViewHeight = CGFloat(heightTable)
+        heightTableMaterial.constant = tableViewHeight
+        
         outletShowMeHow.layer.cornerRadius = 8
         outletComplate.layer.borderWidth = 1.5
         outletComplate.layer.cornerRadius = 8
@@ -268,19 +278,12 @@ extension CardDetailViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MaterialCell", for: indexPath) as! MaterialTableViewCell
         
-        cell.imageMaterial?.image = #imageLiteral(resourceName: "mark-daynes-gzcoF6TNrkg-unsplash (1)")
-//        let test:[String: String] = cardViewModel.material[indexPath] as [String:Any]
-//        let dictMaaterial = cardViewModel.material[]
         
-//        print(cardViewModel.material[indexPath] as? Any)
-////        let mat = <#value#>
-        
-//        print(modelMaterial.nameMaterial)
-//        print(cardViewModel.material as? [[String]1])
+
         let materialData: [String: String] = cardViewModel.material[indexPath.row]
         cell.nameMaterial.text = materialData["name"]
         cell.descMaterial.text = materialData["desc"]
-        
+        cell.imageMaterial?.image = UIImage(named: materialData["image"]!)
         return cell
     }
     

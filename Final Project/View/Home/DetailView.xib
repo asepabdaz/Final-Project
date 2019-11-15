@@ -12,6 +12,7 @@
                 <outlet property="cardBottomToRootBottomConstraint" destination="Uk9-VQ-lgS" id="fDr-eH-lSd"/>
                 <outlet property="cardContentView" destination="WxU-hc-VK8" id="xui-wo-c5X"/>
                 <outlet property="dismisButtonOutlet" destination="ygH-c6-B6l" id="2GZ-PS-cGX"/>
+                <outlet property="heightTableMaterial" destination="JDV-S2-4cP" id="diW-fX-OLj"/>
                 <outlet property="materialTabel" destination="m30-YN-eyS" id="mCs-RN-Lrv"/>
                 <outlet property="outletComplate" destination="wQV-N5-RhO" id="YpO-Nq-wN2"/>
                 <outlet property="outletShowMeHow" destination="NY4-am-EuW" id="MKL-Ck-3WZ"/>
@@ -65,7 +66,7 @@
                                     <color key="textColor" red="0.22045379879999999" green="0.36116188760000001" blue="0.32940953969999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m30-YN-eyS">
+                                <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m30-YN-eyS">
                                     <rect key="frame" x="20" y="662" width="374" height="128"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
