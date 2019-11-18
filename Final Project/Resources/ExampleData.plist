@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cofeAroma</key>
+	<dict>
+		<key>nameProduct</key>
+		<string>Coffee aroma</string>
+		<key>summery</key>
+		<string>indulge your warm, cozy home with scant of coffee!</string>
+		<key>desc</key>
+		<string>fragrances using coffee can eleminate unpleasant odors in the car trunk, the scent can last up to 30 days with right composition. you can make yourself according to taste with the kit that has been provided without having to store product packaging</string>
+		<key>image</key>
+		<string>Cards 1</string>
+		<key>material</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Gelatine</string>
+				<key>image</key>
+				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<key>desc</key>
+				<string>5 sendok makan</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Garam dapur</string>
+				<key>image</key>
+				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<key>desc</key>
+				<string>1 sendok teh garam dapur</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Air</string>
+				<key>image</key>
+				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<key>desc</key>
+				<string>200 ml</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Coffe ground</string>
+				<key>image</key>
+				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<key>desc</key>
+				<string>5 sendok coffe grounds</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>dye</string>
+				<key>image</key>
+				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<key>desc</key>
+				<string>1 sendok teh</string>
+			</dict>
+		</array>
+		<key>after</key>
+		<string>You have finished the simulation of making your coffee scrub using coffe grounds. Would you like to get the real stuffs so you can do some real hands on</string>
+		<key>storyBoard</key>
+		<string>tutorCofeAroma</string>
+	</dict>
+	<key>scrub</key>
+	<dict>
+		<key>nameProduct</key>
+		<string>How to scrub</string>
+		<key>summery</key>
+		<string>with coffee grounds as your main ingredients!</string>
+		<key>desc</key>
+		<string>wonder how to used coffee grounds? those grammatically not correct words can somewhat make your brain like &apos;huh&apos;? Well instead of putting yourself on wonder world of use and used, you might want to try put your fingers on this simulation instead</string>
+		<key>image</key>
+		<string>Cards 1</string>
+		<key>material</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Spant Coffe Grounds</string>
+				<key>image</key>
+				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<key>desc</key>
+				<string>8-12 tablespoons</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Coconut Oil / Olive Oil</string>
+				<key>image</key>
+				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<key>desc</key>
+				<string>1-3 tablespoons(45ml)</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Cornstrach</string>
+				<key>image</key>
+				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<key>desc</key>
+				<string>3 tablespoons</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Essential Oil</string>
+				<key>image</key>
+				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<key>desc</key>
+				<string>3 tablespoons</string>
+			</dict>
+		</array>
+		<key>after</key>
+		<string>You have finished the simulation of making your coffee scrub using coffe grounds. Would you like to get the real stuffs so you can do some real hands on</string>
+		<key>storyBoard</key>
+		<string>tutorialScrub</string>
+	</dict>
+</dict>
+</plist>

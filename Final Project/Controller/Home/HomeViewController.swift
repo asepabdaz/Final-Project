@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  AppStoreInteractiveTransition
-//
-//  Created by Wirawit Rueopas on 31/7/18.
-//  Copyright © 2018 Wirawit Rueopas. All rights reserved.
-//
+
 
 import UIKit
 
@@ -13,34 +7,26 @@ final class HomeViewController: StatusBarAnimatableViewController {
     @IBOutlet weak var collectionView: UICollectionView!
 
     private var transition: CardTransition?
+    
+    let path = Bundle.main.path(forResource: "ExampleData", ofType: "plist")
+    
+    private lazy var cardModels: [CardContentViewModel] = []
 
-    private lazy var cardModels: [CardContentViewModel] = [
-        CardContentViewModel(primary: "How to scrub",
-                             secondary: "with coffee grounds as your main ingredients!",
-                             description: "Wonder how to use used coffee grounds? Those Grametically not correct words can somewhat make your brain like 'huh'? Well, instead of putting yourself on wonder world of use and used, you might want to try put your fingers on this simulation instead!",
-                             image: UIImage(named: "Cards 1")!.resize(toWidth: UIScreen.main.bounds.size.width * (1/GlobalConstants.cardHighlightedFactor))),
-        CardContentViewModel(primary: "DIY coffee candle",
-                             secondary: "Cats, cats, cats!",
-                             description: "Play these games right meow.",
-                             image: #imageLiteral(resourceName: "Cards 3").resize(toWidth: UIScreen.main.bounds.size.width * (1/GlobalConstants.cardHighlightedFactor)))
-    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Make it responds to highlight state faster
         collectionView.delaysContentTouches = false
-
+        
+        
         if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.minimumLineSpacing = 20
             layout.minimumInteritemSpacing = 0
             layout.sectionInset = .init(top: 20, left: 0, bottom: 64, right: 0)
         }
 
-        cardModels.append(CardContentViewModel(primary: "Coffee aroma",
-        secondary: "indulge your warm, cozy home with scent of coffee!",
-        description: "They have something we want which is not something we need.",
-        image: #imageLiteral(resourceName: "mark-daynes-gzcoF6TNrkg-unsplash (1)").resize(toWidth: UIScreen.main.bounds.size.width * (1/GlobalConstants.cardHighlightedFactor))))
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.clipsToBounds = false
@@ -48,10 +34,31 @@ final class HomeViewController: StatusBarAnimatableViewController {
         collectionView.register(UINib(nibName: "HeaderCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerCollectionView")
     }
 
-    override var statusBarAnimatableConfig: StatusBarAnimatableConfig {
-        return StatusBarAnimatableConfig(prefersHidden: false,
-                                         animation: .slide)
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+        let dict = NSDictionary(contentsOfFile: path!)
+        for allData in dict! {
+            let data = allData.value as? [String: Any]
+            let material = data!["material"] as! [[String:String]]
+            cardModels.append(
+                CardContentViewModel(primary: data!["nameProduct"] as! String,
+                                     secondary: data!["summery"] as! String,
+                                     description: data!["desc"] as! String,
+                                     image: UIImage(named: data!["image"] as! String)!
+                                                    .resize(toWidth: UIScreen.main.bounds.size.width *
+                                                    (1/GlobalConstants.cardHighlightedFactor)),
+                                     material: material,
+                                     after: data!["after"] as! String,
+                                     storyBoard: data!["storyBoard"] as! String))
+        }
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+//    override var statusBarAnimatableConfig: StatusBarAnimatableConfig {
+//        return StatusBarAnimatableConfig(prefersHidden: false,
+//                                         animation: .slide)
+//    }
 }
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -75,14 +82,23 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if let sectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCollectionView", for: indexPath) as? HeaderCollectionReusableView {
+            if UserDefaults.standard.object(forKey: "savedImage") as? NSData != nil {
+                let imageProfile = UserDefaults.standard.object(forKey: "savedImage") as! NSData
+                sectionHeaderView.imageView.image = UIImage(data: imageProfile as Data)
+            }
+            
+            
+
+            sectionHeaderView.nameApp = Bundle.main.infoDictionary![kCFBundleNameKey as String] as? String
+             let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+            sectionHeaderView.imageView.isUserInteractionEnabled = true
+            sectionHeaderView.imageView.addGestureRecognizer(tapGestureRecognizer)
             
             return sectionHeaderView
         }
-//
-//        sectionHeaderView.nameAppLabel.text = "Welcome"
-//        return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
         return UICollectionReusableView()
     }
+
     
 }
 
@@ -126,7 +142,7 @@ extension HomeViewController {
 
         // Set up card detail view controller
         let vc = CardDetailViewController(nibName: "DetailView", bundle: nil)
-//        let vc = storyboard!.instantiateViewController(withIdentifier: "cardDetailVc") as! CardDetailViewController
+
         vc.cardViewModel = cardModel.highlightedImage()
         vc.unhighlightedCardViewModel = cardModel // Keep the original one to restore when dismiss
         let params = CardTransition.Params(fromCardFrame: cardPresentationFrameOnScreen,
@@ -144,4 +160,27 @@ extension HomeViewController {
             cell.unfreezeAnimations()
         })
     }
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){
+        // Push View controller to Profile
+        
+        
+        //define xib file view controller
+        
+        /*
+         let newViewController = NewViewController()
+         self.navigationController?.pushViewController(newViewController, animated: true)
+         */
+        
+        // Define storyboard
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+        let newController = storyBoard.instantiateViewController(identifier: "ProfileStoryBoard") as! ProfileViewController
+        present(newController, animated: true)
+        
+        
+       
+        
+    }
+    
 }

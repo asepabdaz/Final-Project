@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0E08461023828E9200B2156D /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E08460E23828E9200B2156D /* HeaderCollectionReusableView.xib */; };
 		0E08461123828E9200B2156D /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E08460F23828E9200B2156D /* HeaderCollectionReusableView.swift */; };
+		0E0846132382912700B2156D /* ExampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E0846122382912700B2156D /* ExampleData.plist */; };
+		0E0846172382921300B2156D /* MaterialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E0846152382921300B2156D /* MaterialTableViewCell.xib */; };
+		0E0846182382921300B2156D /* MaterialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0846162382921300B2156D /* MaterialTableViewCell.swift */; };
 		0E3358FC23790C9800231BFD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3358FB23790C9800231BFD /* SectionHeaderView.swift */; };
 		0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42672C23603BD700643ACC /* CoreDataHelper.swift */; };
 		0E42673123603DE600643ACC /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42673023603DE600643ACC /* MaterialModel.swift */; };
@@ -77,6 +80,9 @@
 /* Begin PBXFileReference section */
 		0E08460E23828E9200B2156D /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		0E08460F23828E9200B2156D /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		0E0846122382912700B2156D /* ExampleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExampleData.plist; sourceTree = "<group>"; };
+		0E0846152382921300B2156D /* MaterialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaterialTableViewCell.xib; sourceTree = "<group>"; };
+		0E0846162382921300B2156D /* MaterialTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTableViewCell.swift; sourceTree = "<group>"; };
 		0E3358FB23790C9800231BFD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		0E42672C23603BD700643ACC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		0E42673023603DE600643ACC /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
@@ -156,6 +162,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E084614238291F700B2156D /* Material Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0E0846162382921300B2156D /* MaterialTableViewCell.swift */,
+				0E0846152382921300B2156D /* MaterialTableViewCell.xib */,
+			);
+			path = "Material Cell";
+			sourceTree = "<group>";
+		};
 		0E42672A23603BA800643ACC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +211,7 @@
 		0E4267322360432A00643ACC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0E084614238291F700B2156D /* Material Cell */,
 				0E08460F23828E9200B2156D /* HeaderCollectionReusableView.swift */,
 				0E08460E23828E9200B2156D /* HeaderCollectionReusableView.xib */,
 				0EB9E4DD237BCEB1004CB195 /* HomeView.xib */,
@@ -309,6 +325,7 @@
 		0EE313B4237403DC00266DAF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0E0846122382912700B2156D /* ExampleData.plist */,
 				0EE313C72374055A00266DAF /* drowning.png */,
 				0EE313C62374055A00266DAF /* img1.png */,
 				0EE313C52374055A00266DAF /* img2.jpg */,
@@ -464,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0846172382921300B2156D /* MaterialTableViewCell.xib in Resources */,
 				1B0EC0ED2371166500D0D057 /* Profile.storyboard in Resources */,
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
@@ -471,6 +489,7 @@
 				0E08461023828E9200B2156D /* HeaderCollectionReusableView.xib in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
 				0EE313D82374061C00266DAF /* Main.storyboard in Resources */,
+				0E0846132382912700B2156D /* ExampleData.plist in Resources */,
 				0EE313C92374055A00266DAF /* img1.png in Resources */,
 				0E42673C23617F2400643ACC /* DeveloperMode.storyboard in Resources */,
 				0EE313C82374055A00266DAF /* img2.jpg in Resources */,
@@ -529,6 +548,7 @@
 				0EE313DC2374065B00266DAF /* HomeViewController.swift in Sources */,
 				0ECCCCAD236585710049BBC0 /* MaterialController.swift in Sources */,
 				0ECCCCB32365DD690049BBC0 /* ImagePicker.swift in Sources */,
+				0E0846182382921300B2156D /* MaterialTableViewCell.swift in Sources */,
 				0EE313EA237406D000266DAF /* DismissCardAnimator.swift in Sources */,
 				0EE313E1237406A200266DAF /* StatusBarAnimatableViewController.swift in Sources */,
 				0E491D282362A807005E7399 /* AttachmentCVCell.swift in Sources */,
