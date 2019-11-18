@@ -12,18 +12,22 @@ class HeaderCollectionReusableView: UICollectionReusableView {
 
     @IBOutlet weak var nameAppLabel: UILabel!
     
-//    var nameApp: String!{
-//        didSet{
-//            nameAppLabel.text = nameApp
-//        }
-//    }
+    @IBOutlet weak var imageView: UIImageView!
+
+    var nameApp: String!{
+        didSet{
+            nameAppLabel.text = nameApp
+        }
+    }
+    var heightHeader = 40
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-//        nameAppLabel.text = "Welcome"
-        backgroundColor = .red
+//        heightAnchor.
+        nameAppLabel.text = "Test"
+        imageView.layer.cornerRadius = imageView.bounds.width / 2
         // Initialization code
     }
+    
     
 }
