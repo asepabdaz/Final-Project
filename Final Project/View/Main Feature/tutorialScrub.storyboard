@@ -107,6 +107,10 @@
                                     <action selector="dismiss:" destination="rsl-Vj-2BG" eventType="touchUpInside" id="OCg-cm-a3r"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heand" translatesAutoresizingMaskIntoConstraints="NO" id="8YQ-bH-oWN">
+                                <rect key="frame" x="56" y="700" width="63" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.96079725029999996" green="0.96076112989999995" blue="0.960785687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -124,6 +128,7 @@
                         <outlet property="dismisButton" destination="qKo-w6-mLz" id="1kJ-Ay-L3o"/>
                         <outlet property="essentialOil" destination="kpL-Sf-fgu" id="6vp-zb-Yvp"/>
                         <outlet property="flour" destination="HQS-qy-kYC" id="hfP-oN-uet"/>
+                        <outlet property="handImageView" destination="8YQ-bH-oWN" id="K4F-oJ-n1h"/>
                         <outlet property="instructionLabel" destination="QBG-3H-FBt" id="Ctr-jN-wL2"/>
                     </connections>
                 </viewController>
@@ -165,5 +170,6 @@
         <image name="Coffee" width="64" height="122"/>
         <image name="Essential Oil" width="48" height="88"/>
         <image name="Flour" width="127" height="184"/>
+        <image name="heand" width="116" height="126"/>
     </resources>
 </document>

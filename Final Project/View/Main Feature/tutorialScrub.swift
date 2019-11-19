@@ -23,6 +23,9 @@ class tutorialScrub: UIViewController {
     @IBOutlet weak var dismisButton: UIButton!
     var currentStep = 0
     var miniStep = 0
+    var temp: CGPoint?
+    
+    @IBOutlet weak var handImageView: UIImageView!
     
   
     
@@ -35,7 +38,23 @@ class tutorialScrub: UIViewController {
         updateLabel()
         currentTouch.text = ""
         dismisButton.layer.cornerRadius = dismisButton.frame.width / 2
+        print(handImageView.frame.size)
 
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        temp = self.handImageView.center
+        animate()
+    }
+        func animate(){
+            UIImageView.animate(withDuration: 2, delay: 0, options: .repeat, animations: {
+//            self.handImageView.center.x = self.bowl.center.x
+            self.handImageView.center = self.bowl.center
+//            (self.handImageView.center.x, self.handImageView.center.y) = (self.bowl.center.x, self.bowl.center.y)
+            print("true")
+        }, completion: nil)
+            
+            
+        
     }
     
     func updateLabel(){
@@ -49,18 +68,26 @@ class tutorialScrub: UIViewController {
         guard let recognizerView = recognizer.view else{
             return
         }
-        
+                
         let translation = recognizer.translation(in: view)
         recognizer.view?.center.x += translation.x
         recognizer.view?.center.y += translation.y
         recognizer.setTranslation(.zero, in: view)
+
         
         if recognizer.state == .began {
             currentTouch.text = "coffee ground"
+            handImageView.alpha = 0
+            handImageView.layer.removeAllAnimations()
+            print(handImageView.animationRepeatCount)
         }
         
         if recognizer.state == .ended {
             
+            
+            handImageView.alpha = 1
+            handImageView.center = temp!
+            animate()
             currentTouch.text = ""
             
             if (bowl.frame.intersects(coffee.frame)){
@@ -80,6 +107,8 @@ class tutorialScrub: UIViewController {
                 coffee.isUserInteractionEnabled = false
                 coconutOil.isUserInteractionEnabled = true
                 updateLabel()
+                handImageView.layer.removeAllAnimations()
+                handImageView.center = coconutOil.center
             }
             
             recognizerView.center.x = 60
