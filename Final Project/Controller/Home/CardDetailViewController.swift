@@ -97,7 +97,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     }
     @IBAction func showMeHow(_ sender: UIButton) {
         let storyBoard: UIStoryboard = UIStoryboard(name: cardViewModel.storyBoard, bundle: nil)
-        let newController = storyBoard.instantiateViewController(identifier: cardViewModel.storyBoard) as! tutorialScrub
+        let newController = storyBoard.instantiateViewController(identifier: cardViewModel.storyBoard)
         newController.modalPresentationCapturesStatusBarAppearance = false
         newController.modalPresentationStyle = .fullScreen
         present(newController, animated: true)

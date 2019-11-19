@@ -91,8 +91,28 @@
                                 <color key="textColor" red="0.2205531597" green="0.36122393609999998" blue="0.32940977809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKo-w6-mLz">
+                                <rect key="frame" x="369" y="20" width="25" height="25"/>
+                                <color key="backgroundColor" red="0.22045379879999999" green="0.36116188760000001" blue="0.32940953969999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="12j-Aw-I50"/>
+                                    <constraint firstAttribute="width" constant="25" id="bmD-bu-u2R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="tintColor" red="0.22045379879999999" green="0.36116188760000001" blue="0.32940953969999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="rsl-Vj-2BG" eventType="touchUpInside" id="OCg-cm-a3r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96079725029999996" green="0.96076112989999995" blue="0.960785687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="GNZ-wc-X0R" firstAttribute="trailing" secondItem="qKo-w6-mLz" secondAttribute="trailing" constant="20" id="E2M-yT-GXd"/>
+                            <constraint firstItem="qKo-w6-mLz" firstAttribute="top" secondItem="Fc2-u3-XBk" secondAttribute="top" constant="20" id="LP3-Wj-wPg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GNZ-wc-X0R"/>
                     </view>
                     <connections>
@@ -101,6 +121,7 @@
                         <outlet property="coffee" destination="FDM-zv-bUA" id="cL4-nI-pxX"/>
                         <outlet property="currentTouch" destination="hc5-Ua-u1M" id="5DE-3n-7kV"/>
                         <outlet property="descriptionLabel" destination="wHL-HQ-PXS" id="lfo-nO-yKl"/>
+                        <outlet property="dismisButton" destination="qKo-w6-mLz" id="1kJ-Ay-L3o"/>
                         <outlet property="essentialOil" destination="kpL-Sf-fgu" id="6vp-zb-Yvp"/>
                         <outlet property="flour" destination="HQS-qy-kYC" id="hfP-oN-uet"/>
                         <outlet property="instructionLabel" destination="QBG-3H-FBt" id="Ctr-jN-wL2"/>

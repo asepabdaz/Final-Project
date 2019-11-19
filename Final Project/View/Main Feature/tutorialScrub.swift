@@ -20,6 +20,7 @@ class tutorialScrub: UIViewController {
     @IBOutlet weak var flour: UIImageView!
     @IBOutlet weak var essentialOil: UIImageView!
     
+    @IBOutlet weak var dismisButton: UIButton!
     var currentStep = 0
     var miniStep = 0
     
@@ -33,6 +34,7 @@ class tutorialScrub: UIViewController {
         super.viewDidLoad()
         updateLabel()
         currentTouch.text = ""
+        dismisButton.layer.cornerRadius = dismisButton.frame.width / 2
 
     }
     
@@ -189,6 +191,9 @@ class tutorialScrub: UIViewController {
     
     }
     
+    @IBAction func dismiss(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
     
     @IBAction func bowl(_ recognizer: UIRotationGestureRecognizer) {
         guard recognizer.view != nil else{
@@ -228,6 +233,14 @@ class tutorialScrub: UIViewController {
         //add gesture recognizer
 
         
+    }
+//    override var statusBarAnimatableConfig: StatusBarAnimatableConfig {
+//        return StatusBarAnimatableConfig(prefersHidden: true,
+//                                         animation: .slide)
+//    }
+//    
+    override var prefersStatusBarHidden: Bool{
+        return true
     }
     
     
