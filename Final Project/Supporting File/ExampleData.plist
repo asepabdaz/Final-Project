@@ -11,14 +11,14 @@
 		<key>desc</key>
 		<string>fragrances using coffee can eleminate unpleasant odors in the car trunk, the scent can last up to 30 days with right composition. you can make yourself according to taste with the kit that has been provided without having to store product packaging</string>
 		<key>image</key>
-		<string>Cards 1</string>
+		<string>Cards 2</string>
 		<key>material</key>
 		<array>
 			<dict>
 				<key>name</key>
 				<string>Gelatine</string>
 				<key>image</key>
-				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<string>Cards 2</string>
 				<key>desc</key>
 				<string>5 sendok makan</string>
 			</dict>
@@ -26,7 +26,7 @@
 				<key>name</key>
 				<string>Garam dapur</string>
 				<key>image</key>
-				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<string>Cards 2</string>
 				<key>desc</key>
 				<string>1 sendok teh garam dapur</string>
 			</dict>
@@ -34,7 +34,7 @@
 				<key>name</key>
 				<string>Air</string>
 				<key>image</key>
-				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<string>Cards 2</string>
 				<key>desc</key>
 				<string>200 ml</string>
 			</dict>
@@ -42,7 +42,7 @@
 				<key>name</key>
 				<string>Coffe ground</string>
 				<key>image</key>
-				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<string>Cards 2</string>
 				<key>desc</key>
 				<string>5 sendok coffe grounds</string>
 			</dict>
@@ -50,7 +50,7 @@
 				<key>name</key>
 				<string>dye</string>
 				<key>image</key>
-				<string>mark-daynes-gzcoF6TNrkg-unsplash (1)</string>
+				<string>Cards 2</string>
 				<key>desc</key>
 				<string>1 sendok teh</string>
 			</dict>

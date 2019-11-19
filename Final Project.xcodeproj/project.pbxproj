@@ -189,6 +189,7 @@
 		0E42672F23603DAB00643ACC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0ED628B42383C13F00745D3D /* Finish */,
 				0EB9E4E7237D129E004CB195 /* Main Feature */,
 				0E4267332360433A00643ACC /* DeveloperMode */,
 				0E4267322360432A00643ACC /* Home */,
@@ -270,6 +271,13 @@
 				0ECCCCAE23658A550049BBC0 /* DataProvider.swift */,
 			);
 			path = Material;
+			sourceTree = "<group>";
+		};
+		0ED628B42383C13F00745D3D /* Finish */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Finish;
 			sourceTree = "<group>";
 		};
 		0EDCA385235D6FB800760D1C = {
@@ -720,7 +728,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZFS657T4Z;
+				DEVELOPMENT_TEAM = 36PQW8N3MG;
 				INFOPLIST_FILE = "Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -740,7 +748,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZFS657T4Z;
+				DEVELOPMENT_TEAM = 36PQW8N3MG;
 				INFOPLIST_FILE = "Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
