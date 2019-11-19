@@ -97,7 +97,7 @@
 		0ECCCCAE23658A550049BBC0 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		0ECCCCB023658DBA0049BBC0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0ECCCCB22365DD690049BBC0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		0EDCA38E235D6FB800760D1C /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EDCA38E235D6FB800760D1C /* Kavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDCA391235D6FB800760D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EDCA393235D6FB800760D1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0EDCA39B235D6FB800760D1C /* Final_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Final_Project.xcdatamodel; sourceTree = "<group>"; };
@@ -293,7 +293,7 @@
 		0EDCA38F235D6FB800760D1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0EDCA38E235D6FB800760D1C /* Final Project.app */,
+				0EDCA38E235D6FB800760D1C /* Kavi.app */,
 				0EDCA3A7235D6FB900760D1C /* Final ProjectTests.xctest */,
 				0EDCA3B2235D6FB900760D1C /* Final ProjectUITests.xctest */,
 			);
@@ -404,7 +404,7 @@
 			);
 			name = "Final Project";
 			productName = "Final Project";
-			productReference = 0EDCA38E235D6FB800760D1C /* Final Project.app */;
+			productReference = 0EDCA38E235D6FB800760D1C /* Kavi.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0EDCA3A6235D6FB900760D1C /* Final ProjectTests */ = {
@@ -735,7 +735,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "organic.waste.Final-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Kavi;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -755,7 +755,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "organic.waste.Final-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Kavi;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

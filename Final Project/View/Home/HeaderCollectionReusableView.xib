@@ -7,9 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderCollectionReusableView" customModule="Final_Project" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderCollectionReusableView" customModule="Kavi" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerCollectionView" id="U6b-Vx-4bR" customClass="HeaderCollectionReusableView" customModule="Final_Project" customModuleProvider="target">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerCollectionView" id="U6b-Vx-4bR" customClass="HeaderCollectionReusableView" customModule="Kavi" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="446" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -19,7 +19,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark-daynes-gzcoF6TNrkg-unsplash (1)" translatesAutoresizingMaskIntoConstraints="NO" id="QNi-WL-FtB">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BowlVer3" translatesAutoresizingMaskIntoConstraints="NO" id="QNi-WL-FtB">
                     <rect key="frame" x="386" y="10" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="DjQ-Ce-bNZ"/>
@@ -44,6 +44,6 @@
         </collectionReusableView>
     </objects>
     <resources>
-        <image name="mark-daynes-gzcoF6TNrkg-unsplash (1)" width="1824" height="1216"/>
+        <image name="BowlVer3" width="329" height="329"/>
     </resources>
 </document>

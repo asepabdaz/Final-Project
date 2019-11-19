@@ -18,7 +18,21 @@ final class HomeViewController: UIViewController {
 
         // Make it responds to highlight state faster
         collectionView.delaysContentTouches = false
-        
+        let dict = NSDictionary(contentsOfFile: path!)
+        for allData in dict! {
+            let data = allData.value as? [String: Any]
+            let material = data!["material"] as! [[String:String]]
+            cardModels.append(
+                CardContentViewModel(primary: data!["nameProduct"] as! String,
+                                     secondary: data!["summery"] as! String,
+                                     description: data!["desc"] as! String,
+                                     image: UIImage(named: data!["image"] as! String)!
+                                                    .resize(toWidth: UIScreen.main.bounds.size.width *
+                                                    (1/GlobalConstants.cardHighlightedFactor)),
+                                     material: material,
+                                     after: data!["after"] as! String,
+                                     storyBoard: data!["storyBoard"] as! String))
+        }
         
         if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.minimumLineSpacing = 20
@@ -35,25 +49,14 @@ final class HomeViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        collectionView.reloadData()
         self.navigationController?.isNavigationBarHidden = true
-        let dict = NSDictionary(contentsOfFile: path!)
-        for allData in dict! {
-            let data = allData.value as? [String: Any]
-            let material = data!["material"] as! [[String:String]]
-            cardModels.append(
-                CardContentViewModel(primary: data!["nameProduct"] as! String,
-                                     secondary: data!["summery"] as! String,
-                                     description: data!["desc"] as! String,
-                                     image: UIImage(named: data!["image"] as! String)!
-                                                    .resize(toWidth: UIScreen.main.bounds.size.width *
-                                                    (1/GlobalConstants.cardHighlightedFactor)),
-                                     material: material,
-                                     after: data!["after"] as! String,
-                                     storyBoard: data!["storyBoard"] as! String))
-        }
+        
     }
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
+        
+        
     }
 //    override var statusBarAnimatableConfig: StatusBarAnimatableConfig {
 //        return StatusBarAnimatableConfig(prefersHidden: false,
