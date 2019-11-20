@@ -10,12 +10,6 @@
 		0E3358FC23790C9800231BFD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3358FB23790C9800231BFD /* SectionHeaderView.swift */; };
 		0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42672C23603BD700643ACC /* CoreDataHelper.swift */; };
 		0E42673123603DE600643ACC /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42673023603DE600643ACC /* MaterialModel.swift */; };
-		0E42673C23617F2400643ACC /* DeveloperMode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E42673B23617F2400643ACC /* DeveloperMode.storyboard */; };
-		0E42674023617F5F00643ACC /* DeveloperMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42673F23617F5F00643ACC /* DeveloperMode.swift */; };
-		0E491D212362A022005E7399 /* AddMaterialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E491D202362A022005E7399 /* AddMaterialTableViewController.swift */; };
-		0E491D242362A48B005E7399 /* AttachmentInteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E491D232362A48B005E7399 /* AttachmentInteractionDelegate.swift */; };
-		0E491D262362A728005E7399 /* AttachmentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E491D252362A728005E7399 /* AttachmentCollectionCell.swift */; };
-		0E491D282362A807005E7399 /* AttachmentCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E491D272362A807005E7399 /* AttachmentCVCell.swift */; };
 		0EB9E4DE237BCEB1004CB195 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DD237BCEB1004CB195 /* HomeView.xib */; };
 		0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DF237BD06F004CB195 /* DetailView.xib */; };
 		0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */; };
@@ -27,7 +21,7 @@
 		0ECCCCAD236585710049BBC0 /* MaterialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCAC236585710049BBC0 /* MaterialController.swift */; };
 		0ECCCCAF23658A550049BBC0 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCAE23658A550049BBC0 /* DataProvider.swift */; };
 		0ECCCCB123658DBA0049BBC0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCB023658DBA0049BBC0 /* CoreDataStack.swift */; };
-		0ECCCCB32365DD690049BBC0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCB22365DD690049BBC0 /* ImagePicker.swift */; };
+		0ECDDDF72384DF0E00CF2629 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDDDF62384DF0E00CF2629 /* TextField.swift */; };
 		0EDCA392235D6FB800760D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCA391235D6FB800760D1C /* AppDelegate.swift */; };
 		0EDCA394235D6FB800760D1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCA393235D6FB800760D1C /* SceneDelegate.swift */; };
 		0EDCA39C235D6FB800760D1C /* Final_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCA39A235D6FB800760D1C /* Final_Project.xcdatamodeld */; };
@@ -58,6 +52,20 @@
 		1BC90024237BE76000635CEF /* tutorialScrub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC90023237BE76000635CEF /* tutorialScrub.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		0ED628B62384D59100745D3D /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		0EDCA3A8235D6FB900760D1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -79,12 +87,6 @@
 		0E3358FB23790C9800231BFD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		0E42672C23603BD700643ACC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		0E42673023603DE600643ACC /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
-		0E42673B23617F2400643ACC /* DeveloperMode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeveloperMode.storyboard; sourceTree = "<group>"; };
-		0E42673F23617F5F00643ACC /* DeveloperMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperMode.swift; sourceTree = "<group>"; };
-		0E491D202362A022005E7399 /* AddMaterialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMaterialTableViewController.swift; sourceTree = "<group>"; };
-		0E491D232362A48B005E7399 /* AttachmentInteractionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentInteractionDelegate.swift; sourceTree = "<group>"; };
-		0E491D252362A728005E7399 /* AttachmentCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentCollectionCell.swift; sourceTree = "<group>"; };
-		0E491D272362A807005E7399 /* AttachmentCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentCVCell.swift; sourceTree = "<group>"; };
 		0EB9E4DD237BCEB1004CB195 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		0EB9E4DF237BD06F004CB195 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
@@ -96,7 +98,7 @@
 		0ECCCCAC236585710049BBC0 /* MaterialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialController.swift; sourceTree = "<group>"; };
 		0ECCCCAE23658A550049BBC0 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		0ECCCCB023658DBA0049BBC0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		0ECCCCB22365DD690049BBC0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0ECDDDF62384DF0E00CF2629 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		0EDCA38E235D6FB800760D1C /* Kavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDCA391235D6FB800760D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EDCA393235D6FB800760D1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,7 +193,6 @@
 			children = (
 				0ED628B42383C13F00745D3D /* Finish */,
 				0EB9E4E7237D129E004CB195 /* Main Feature */,
-				0E4267332360433A00643ACC /* DeveloperMode */,
 				0E4267322360432A00643ACC /* Home */,
 			);
 			path = View;
@@ -200,6 +201,7 @@
 		0E4267322360432A00643ACC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0EB9E4D4237BA8B8004CB195 /* Profile */,
 				0EB9E4EC237D99FC004CB195 /* Material Cell */,
 				0EE313E2237406BF00266DAF /* Transition */,
 				0EE313C22374047C00266DAF /* Misc */,
@@ -212,29 +214,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		0E4267332360433A00643ACC /* DeveloperMode */ = {
-			isa = PBXGroup;
-			children = (
-				0EB9E4D4237BA8B8004CB195 /* Profile */,
-				0E491D222362A462005E7399 /* Material */,
-				0E42673B23617F2400643ACC /* DeveloperMode.storyboard */,
-				0E42673F23617F5F00643ACC /* DeveloperMode.swift */,
-				0E491D202362A022005E7399 /* AddMaterialTableViewController.swift */,
-			);
-			path = DeveloperMode;
-			sourceTree = "<group>";
-		};
-		0E491D222362A462005E7399 /* Material */ = {
-			isa = PBXGroup;
-			children = (
-				0E491D232362A48B005E7399 /* AttachmentInteractionDelegate.swift */,
-				0E491D252362A728005E7399 /* AttachmentCollectionCell.swift */,
-				0E491D272362A807005E7399 /* AttachmentCVCell.swift */,
-				0ECCCCB22365DD690049BBC0 /* ImagePicker.swift */,
-			);
-			path = Material;
-			sourceTree = "<group>";
-		};
 		0EB9E4D4237BA8B8004CB195 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +221,7 @@
 				1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */,
 				1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */,
 				1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */,
+				0ECDDDF62384DF0E00CF2629 /* TextField.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -399,6 +379,7 @@
 				0EDCA38C235D6FB800760D1C /* Resources */,
 			);
 			buildRules = (
+				0ED628B62384D59100745D3D /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -499,7 +480,6 @@
 				0EB9E4E4237BD9BB004CB195 /* HeaderCollectionReusableView.xib in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
 				0EB9E4EB237D7C43004CB195 /* ExampleData.plist in Resources */,
-				0E42673C23617F2400643ACC /* DeveloperMode.storyboard in Resources */,
 				0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */,
 				0EDCA39E235D6FB900760D1C /* Assets.xcassets in Resources */,
 				0EB9E4DE237BCEB1004CB195 /* HomeView.xib in Resources */,
@@ -529,10 +509,9 @@
 			files = (
 				1B0EC0F323711E7F00D0D057 /* DetailTableViewController.swift in Sources */,
 				0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */,
-				0E491D262362A728005E7399 /* AttachmentCollectionCell.swift in Sources */,
 				0EB9E4E6237D10F7004CB195 /* tutorialScrub.swift in Sources */,
+				0ECDDDF72384DF0E00CF2629 /* TextField.swift in Sources */,
 				0EE313E8237406D000266DAF /* PresentCardAnimator.swift in Sources */,
-				0E491D242362A48B005E7399 /* AttachmentInteractionDelegate.swift in Sources */,
 				0EB9E4EF237D9A21004CB195 /* MaterialTableViewCell.swift in Sources */,
 				0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */,
 				0EE313ED237406EF00266DAF /* CardCollectionViewCell.swift in Sources */,
@@ -541,7 +520,6 @@
 				0EDCA392235D6FB800760D1C /* AppDelegate.swift in Sources */,
 				0EE313DF2374069600266DAF /* StatusBarAnimatable.swift in Sources */,
 				0EE313D2237405C500266DAF /* GlobalConstants.swift in Sources */,
-				0E42674023617F5F00643ACC /* DeveloperMode.swift in Sources */,
 				0EDCA39C235D6FB800760D1C /* Final_Project.xcdatamodeld in Sources */,
 				0EE313D0237405A600266DAF /* CardContentViewModel.swift in Sources */,
 				1B0EC0F123711DDE00D0D057 /* ProfileTableViewController.swift in Sources */,
@@ -553,13 +531,10 @@
 				0EE313DD2374065B00266DAF /* CardDetailViewController.swift in Sources */,
 				0EE313D62374060400266DAF /* UIView+AutoLayout.swift in Sources */,
 				1B0EC0EF2371185E00D0D057 /* ProfileViewController.swift in Sources */,
-				0E491D212362A022005E7399 /* AddMaterialTableViewController.swift in Sources */,
 				0EE313DC2374065B00266DAF /* HomeViewController.swift in Sources */,
 				0ECCCCAD236585710049BBC0 /* MaterialController.swift in Sources */,
-				0ECCCCB32365DD690049BBC0 /* ImagePicker.swift in Sources */,
 				0EE313EA237406D000266DAF /* DismissCardAnimator.swift in Sources */,
 				0EE313E1237406A200266DAF /* StatusBarAnimatableViewController.swift in Sources */,
-				0E491D282362A807005E7399 /* AttachmentCVCell.swift in Sources */,
 				0EE313E9237406D000266DAF /* CardPresentationController.swift in Sources */,
 				0ECCCCAF23658A550049BBC0 /* DataProvider.swift in Sources */,
 			);

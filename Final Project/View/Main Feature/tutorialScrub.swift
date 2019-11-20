@@ -24,9 +24,7 @@ class tutorialScrub: UIViewController {
     var currentStep = 0
     var miniStep = 0
     
-  
-    
-    
+
     var descriptionText = ["Step 1: Put coffee grounds into the bowl", "Step 2: Put coconut oil into bowl", "Step 3: Mix all ingredients", "Step 4: Put cornstarch in", "Step 5: Mix together again until evenly", "Step 6: Put 2-3 drops of essential oil (optional)", "Step 7: Mix together"]
     var instructionText = ["Add 8 tablespoons", "We need 3 tablespoon", "", "Add around 3 tablespoon", "", "We need 3 drops", ""]
     
@@ -108,7 +106,6 @@ class tutorialScrub: UIViewController {
             
             if (bowl.frame.intersects(coconutOil.frame)){
                 miniStep += 1
-                print(miniStep)
                 instructionLabel.text = "We need \(11 - miniStep) tablespoon"
             }
             
@@ -142,7 +139,6 @@ class tutorialScrub: UIViewController {
             
             if (bowl.frame.intersects(flour.frame)){
                 miniStep += 1
-                print(miniStep)
                 instructionLabel.text = "Add around \(15 - miniStep) tablespoon"
             }
             
@@ -171,10 +167,8 @@ class tutorialScrub: UIViewController {
         
         if recognizer.state == .ended {
             
-            print("masuk")
             if (bowl.frame.intersects(essentialOil.frame)){
                 miniStep += 1
-                print(miniStep)
                 instructionLabel.text = "We need \(19 - miniStep) drops"
             }
             
@@ -201,44 +195,41 @@ class tutorialScrub: UIViewController {
         }
         
 
-//        if recognizer.state == .began || recognizer.state == .changed {
-//
-//
-//            if miniStep == 11{
-//                miniStep += 1
-//            if miniStep == 12 {
-//                currentStep += 1
-//                updateLabel()
-//                bowl.isUserInteractionEnabled = false
-//                flour.isUserInteractionEnabled = true
-//                print(miniStep)
-//                }
-//            } else if miniStep == 15 {
-//                miniStep += 1
-//
-//                if miniStep == 16 {
-//                    currentStep += 1
-//                    updateLabel()
-//                    bowl.isUserInteractionEnabled = false
-//                    essentialOil.isUserInteractionEnabled = true
-//                }
-//
-//            } else if miniStep == 19 {
-//                miniStep += 1
-//                if miniStep == 20{
-//                    bowl.isUserInteractionEnabled = false
-//                }
-//            }
+        if recognizer.state == .began || recognizer.state == .changed {
+
+
+            if miniStep == 11{
+                miniStep += 1
+            if miniStep == 12 {
+                currentStep += 1
+                updateLabel()
+                bowl.isUserInteractionEnabled = false
+                flour.isUserInteractionEnabled = true
+                }
+            } else if miniStep == 15 {
+                miniStep += 1
+
+                if miniStep == 16 {
+                    currentStep += 1
+                    updateLabel()
+                    bowl.isUserInteractionEnabled = false
+                    essentialOil.isUserInteractionEnabled = true
+                }
+
+            } else if miniStep == 19 {
+                miniStep += 1
+                if miniStep == 20{
+                    bowl.isUserInteractionEnabled = false
+                    //MARK: alert
+                    self.dismiss(animated: true)
+                }
+            }
         
         //add gesture recognizer
 
-        
+        }
     }
-//    override var statusBarAnimatableConfig: StatusBarAnimatableConfig {
-//        return StatusBarAnimatableConfig(prefersHidden: true,
-//                                         animation: .slide)
-//    }
-//    
+
     override var prefersStatusBarHidden: Bool{
         return true
     }

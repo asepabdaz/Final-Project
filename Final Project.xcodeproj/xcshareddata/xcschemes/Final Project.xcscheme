@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0EDCA38D235D6FB800760D1C"
-               BuildableName = "Final Project.app"
+               BuildableName = "Kavi.app"
                BlueprintName = "Final Project"
                ReferencedContainer = "container:Final Project.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0EDCA38D235D6FB800760D1C"
-            BuildableName = "Final Project.app"
+            BuildableName = "Kavi.app"
             BlueprintName = "Final Project"
             ReferencedContainer = "container:Final Project.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0EDCA38D235D6FB800760D1C"
-            BuildableName = "Final Project.app"
+            BuildableName = "Kavi.app"
             BlueprintName = "Final Project"
             ReferencedContainer = "container:Final Project.xcodeproj">
          </BuildableReference>
