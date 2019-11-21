@@ -81,10 +81,18 @@ class tutorialScrub2: UIViewController {
         if currentStep == 0 {
             
             if miniStep == 8 {
+                bowl.image = UIImage(named: "BowlVer3.png")
                 currentStep += 1
                 currentItem += 1
                 miniStep = 0
                 updateLabel()
+            }
+            
+            if miniStep == 1 {
+                bowl.image = UIImage(named: "BowlVer1.png")
+            }
+            if miniStep == 4 {
+                bowl.image = UIImage(named: "BowlVer2.png")
             }
         }
         
