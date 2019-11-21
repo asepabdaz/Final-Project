@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E3120772386795100BCB1E7 /* tutorialScrub2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3120752386795100BCB1E7 /* tutorialScrub2.swift */; };
+		0E3120782386795100BCB1E7 /* tutorialScrub2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3120762386795100BCB1E7 /* tutorialScrub2.storyboard */; };
 		0E3358FC23790C9800231BFD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3358FB23790C9800231BFD /* SectionHeaderView.swift */; };
 		0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42672C23603BD700643ACC /* CoreDataHelper.swift */; };
 		0E42673123603DE600643ACC /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42673023603DE600643ACC /* MaterialModel.swift */; };
@@ -84,6 +86,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E3120752386795100BCB1E7 /* tutorialScrub2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialScrub2.swift; sourceTree = "<group>"; };
+		0E3120762386795100BCB1E7 /* tutorialScrub2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = tutorialScrub2.storyboard; sourceTree = "<group>"; };
 		0E3358FB23790C9800231BFD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		0E42672C23603BD700643ACC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		0E42673023603DE600643ACC /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
@@ -349,6 +353,8 @@
 		0EE313D92374064800266DAF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0E3120762386795100BCB1E7 /* tutorialScrub2.storyboard */,
+				0E3120752386795100BCB1E7 /* tutorialScrub2.swift */,
 				0EE313DB2374065B00266DAF /* CardDetailViewController.swift */,
 				0EE313DA2374065B00266DAF /* HomeViewController.swift */,
 				0E3358FB23790C9800231BFD /* SectionHeaderView.swift */,
@@ -477,6 +483,7 @@
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
 				1BC90024237BE76000635CEF /* tutorialScrub.storyboard in Resources */,
+				0E3120782386795100BCB1E7 /* tutorialScrub2.storyboard in Resources */,
 				0EB9E4E4237BD9BB004CB195 /* HeaderCollectionReusableView.xib in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
 				0EB9E4EB237D7C43004CB195 /* ExampleData.plist in Resources */,
@@ -510,6 +517,7 @@
 				1B0EC0F323711E7F00D0D057 /* DetailTableViewController.swift in Sources */,
 				0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */,
 				0EB9E4E6237D10F7004CB195 /* tutorialScrub.swift in Sources */,
+				0E3120772386795100BCB1E7 /* tutorialScrub2.swift in Sources */,
 				0ECDDDF72384DF0E00CF2629 /* TextField.swift in Sources */,
 				0EE313E8237406D000266DAF /* PresentCardAnimator.swift in Sources */,
 				0EB9E4EF237D9A21004CB195 /* MaterialTableViewCell.swift in Sources */,
