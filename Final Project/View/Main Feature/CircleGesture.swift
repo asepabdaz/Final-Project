@@ -47,14 +47,12 @@ class CircleGesture: UIGestureRecognizer {
                 var rotation = angleBetween(pointA: currentPoint, andPointB: previousPoint)
                 
                 if (rotation > π) {
-//                    print(/ 360 * 100π)
                     rotation -= π*2
                 } else if (rotation < -π) {
-//                    print(π)
 
                     rotation += π*2
                 }
-//                print(rotation)
+
 
                 
                 return rotation
@@ -75,7 +73,6 @@ class CircleGesture: UIGestureRecognizer {
     
     // distance from midpoint
     var distance:CGFloat? {
-//        print(self.midPoint)
         if let nowPoint = self.currentPoint {
             return self.distanceBetween(pointA: self.midPoint, andPointB: nowPoint)
         }
@@ -116,8 +113,7 @@ class CircleGesture: UIGestureRecognizer {
     
     func angleForPoint(point:CGPoint) -> CGFloat {
         var angle = CGFloat(-atan2f(Float(point.x - midPoint.x), Float(point.y - midPoint.y))) + π/2
-        
-        
+
         if (angle < 0) {
             angle += π*2;
         }

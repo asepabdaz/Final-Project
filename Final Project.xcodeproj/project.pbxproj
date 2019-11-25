@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E3120772386795100BCB1E7 /* tutorialScrub2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3120752386795100BCB1E7 /* tutorialScrub2.swift */; };
 		0E3120782386795100BCB1E7 /* tutorialScrub2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3120762386795100BCB1E7 /* tutorialScrub2.storyboard */; };
+		0E31207A23867B5300BCB1E7 /* CircleGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E31207923867B5300BCB1E7 /* CircleGesture.swift */; };
 		0E3358FC23790C9800231BFD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3358FB23790C9800231BFD /* SectionHeaderView.swift */; };
 		0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42672C23603BD700643ACC /* CoreDataHelper.swift */; };
 		0E42673123603DE600643ACC /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42673023603DE600643ACC /* MaterialModel.swift */; };
@@ -88,6 +89,7 @@
 /* Begin PBXFileReference section */
 		0E3120752386795100BCB1E7 /* tutorialScrub2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialScrub2.swift; sourceTree = "<group>"; };
 		0E3120762386795100BCB1E7 /* tutorialScrub2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = tutorialScrub2.storyboard; sourceTree = "<group>"; };
+		0E31207923867B5300BCB1E7 /* CircleGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGesture.swift; sourceTree = "<group>"; };
 		0E3358FB23790C9800231BFD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		0E42672C23603BD700643ACC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		0E42673023603DE600643ACC /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
@@ -233,8 +235,11 @@
 		0EB9E4E7237D129E004CB195 /* Main Feature */ = {
 			isa = PBXGroup;
 			children = (
+				0E31207923867B5300BCB1E7 /* CircleGesture.swift */,
 				1BC90023237BE76000635CEF /* tutorialScrub.storyboard */,
 				0EB9E4E5237D10F7004CB195 /* tutorialScrub.swift */,
+				0E3120762386795100BCB1E7 /* tutorialScrub2.storyboard */,
+				0E3120752386795100BCB1E7 /* tutorialScrub2.swift */,
 			);
 			path = "Main Feature";
 			sourceTree = "<group>";
@@ -353,8 +358,6 @@
 		0EE313D92374064800266DAF /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				0E3120762386795100BCB1E7 /* tutorialScrub2.storyboard */,
-				0E3120752386795100BCB1E7 /* tutorialScrub2.swift */,
 				0EE313DB2374065B00266DAF /* CardDetailViewController.swift */,
 				0EE313DA2374065B00266DAF /* HomeViewController.swift */,
 				0E3358FB23790C9800231BFD /* SectionHeaderView.swift */,
@@ -545,6 +548,7 @@
 				0EE313E1237406A200266DAF /* StatusBarAnimatableViewController.swift in Sources */,
 				0EE313E9237406D000266DAF /* CardPresentationController.swift in Sources */,
 				0ECCCCAF23658A550049BBC0 /* DataProvider.swift in Sources */,
+				0E31207A23867B5300BCB1E7 /* CircleGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
