@@ -13,6 +13,8 @@
 		0E3358FC23790C9800231BFD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3358FB23790C9800231BFD /* SectionHeaderView.swift */; };
 		0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42672C23603BD700643ACC /* CoreDataHelper.swift */; };
 		0E42673123603DE600643ACC /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42673023603DE600643ACC /* MaterialModel.swift */; };
+		0E9F4294238B7125000A71D4 /* CongratViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F4292238B7125000A71D4 /* CongratViewController.swift */; };
+		0E9F4295238B7125000A71D4 /* CongratViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9F4293238B7125000A71D4 /* CongratViewController.xib */; };
 		0EB9E4DE237BCEB1004CB195 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DD237BCEB1004CB195 /* HomeView.xib */; };
 		0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DF237BD06F004CB195 /* DetailView.xib */; };
 		0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */; };
@@ -93,6 +95,8 @@
 		0E3358FB23790C9800231BFD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		0E42672C23603BD700643ACC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		0E42673023603DE600643ACC /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
+		0E9F4292238B7125000A71D4 /* CongratViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratViewController.swift; sourceTree = "<group>"; };
+		0E9F4293238B7125000A71D4 /* CongratViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CongratViewController.xib; sourceTree = "<group>"; };
 		0EB9E4DD237BCEB1004CB195 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		0EB9E4DF237BD06F004CB195 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 		0E42672F23603DAB00643ACC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E9F4291238B70E2000A71D4 /* Congratulation */,
 				0ED628B42383C13F00745D3D /* Finish */,
 				0EB9E4E7237D129E004CB195 /* Main Feature */,
 				0E4267322360432A00643ACC /* Home */,
@@ -218,6 +223,15 @@
 				0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		0E9F4291238B70E2000A71D4 /* Congratulation */ = {
+			isa = PBXGroup;
+			children = (
+				0E9F4292238B7125000A71D4 /* CongratViewController.swift */,
+				0E9F4293238B7125000A71D4 /* CongratViewController.xib */,
+			);
+			path = Congratulation;
 			sourceTree = "<group>";
 		};
 		0EB9E4D4237BA8B8004CB195 /* Profile */ = {
@@ -485,6 +499,7 @@
 				1B0EC0ED2371166500D0D057 /* Profile.storyboard in Resources */,
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
+				0E9F4295238B7125000A71D4 /* CongratViewController.xib in Resources */,
 				1BC90024237BE76000635CEF /* tutorialScrub.storyboard in Resources */,
 				0E3120782386795100BCB1E7 /* tutorialScrub2.storyboard in Resources */,
 				0EB9E4E4237BD9BB004CB195 /* HeaderCollectionReusableView.xib in Resources */,
@@ -527,6 +542,7 @@
 				0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */,
 				0EE313ED237406EF00266DAF /* CardCollectionViewCell.swift in Sources */,
 				0EE313D4237405ED00266DAF /* NibLoadable.swift in Sources */,
+				0E9F4294238B7125000A71D4 /* CongratViewController.swift in Sources */,
 				0EE313E7237406D000266DAF /* CardTransition.swift in Sources */,
 				0EDCA392235D6FB800760D1C /* AppDelegate.swift in Sources */,
 				0EE313DF2374069600266DAF /* StatusBarAnimatable.swift in Sources */,
