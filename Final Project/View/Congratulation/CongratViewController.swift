@@ -20,7 +20,11 @@ class CongratViewController: UIViewController {
     }
     
     @objc func close(){
-        self.dismiss(animated: false)
+        guard let vc = self.presentingViewController else { return }
+
+        while (vc.presentingViewController != nil) {
+            vc.dismiss(animated: true, completion: nil)
+        }
     }
     
     override var prefersStatusBarHidden: Bool{

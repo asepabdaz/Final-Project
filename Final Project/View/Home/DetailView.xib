@@ -84,6 +84,7 @@
                                     <state key="normal" title="Show me how!">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <state key="disabled" title="Coming Soon"/>
                                     <connections>
                                         <action selector="showMeHow:" destination="-1" eventType="touchUpInside" id="Kae-I6-pVK"/>
                                     </connections>

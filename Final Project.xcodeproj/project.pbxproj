@@ -205,6 +205,7 @@
 		0E42672F23603DAB00643ACC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E7A3A4B238B842A00F70101 /* Coming Soon */,
 				0E9F4291238B70E2000A71D4 /* Congratulation */,
 				0ED628B42383C13F00745D3D /* Finish */,
 				0EB9E4E7237D129E004CB195 /* Main Feature */,
@@ -227,6 +228,13 @@
 				0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		0E7A3A4B238B842A00F70101 /* Coming Soon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Coming Soon";
 			sourceTree = "<group>";
 		};
 		0E9F4291238B70E2000A71D4 /* Congratulation */ = {

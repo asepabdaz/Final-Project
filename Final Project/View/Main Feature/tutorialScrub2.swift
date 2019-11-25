@@ -23,6 +23,7 @@ class tutorialScrub2: UIViewController {
     var miniStep = 0
     var currentStep = 0
     var currentItem = 0
+    var imageName = ""
     
     let stepText = ["Langkah 1: Tuang ampas kopi ke dalam mangkuk", "Langkah 2: Tuang minyak kelapa ", "Langkah 3: Campur semua bahan", "Langkah 4: Tuang tepung tapioka ke dalam mangkuk","Langkah 5: Aduk hingga tercampur rata","Langkah 6: Teteskan minyak essensial", "Langkah 7: Aduk hingga tercampur rata"]
     let descriptionText = ["Kurang Lebih 6-8 sendok makan ya guys!", "3 Sendok Makan Ya!", "Diaduk sampai tercampur rata ya, kak!", "Tambahkan sekitar 3 sendok ya","","3 tetes sudah cukup", ""]
@@ -113,14 +114,7 @@ class tutorialScrub2: UIViewController {
         
         if currentStep == 0 {
             if miniStep == 1 {
-//                UIImageView.animate(withDuration: 1) {
-//
-//                    //kalo menggunakan ui Animate bounds
-////                    self.mainObject.bounds = self.originImageView.bound
-//
-//                    //ini menggunakan asset
-//
-//                }
+
                 step(imageView: mainObject, image: kopi😘)
                 updateLabel()
             }
@@ -153,7 +147,7 @@ class tutorialScrub2: UIViewController {
             if miniStep == 2 {
                 step(imageView: mainObject, image: createImageArray(total😘: 21, imagePrefix: "oilKedua"))
             }
-//
+
             if miniStep == 3 {
                 
                 currentStep += 1
@@ -161,35 +155,33 @@ class tutorialScrub2: UIViewController {
                 miniStep = 0
                 updateLabel()
                 step(imageView: mainObject, image: createImageArray(total😘: 21, imagePrefix: "oilKetiga"))
+                self.imageName = "S"
                 self.view.addGestureRecognizer(CircleGesture(midPoint: mainObject.center, target: self, action: #selector(self.rotateGesture(recognizer:))))
                 itemImage.isUserInteractionEnabled = false
                 
             }
         }
         
-//        if currentStep == 2 {
-//            //Gesture goyang 1 jari
-//            if miniStep == 0 {
-//                print("Goyang dumang")
-//
-//                currentStep += 1
-//                currentItem += 1
-////                updateLabel()
-//            }
-//        }
             
         if currentStep == 3 {
         
-            if miniStep == 3 {
+            
+            mainObject.image = UIImage(named: "CS\(miniStep)")
+            print(currentStep )
+            print(miniStep)
+            if miniStep == 4 {
                 currentStep += 1
                 currentItem += 1
                 miniStep = 0
+                
             }
         }
             
         if currentStep == 4 {
-            //Gesture goyang 1 jari
-            if miniStep == 0 {
+
+            mainObject.image = UIImage(named: "esential\(miniStep)")
+            print(miniStep)
+            if miniStep == 3 {
                 currentStep += 1
                 currentItem += 1
                 updateLabel()
@@ -208,9 +200,12 @@ class tutorialScrub2: UIViewController {
             
         if currentStep == 6 {
             //Gesture 1 jari
-            let congrat = CongratViewController()
-            congrat.modalPresentationStyle = .fullScreen
-            present(congrat, animated: false)
+            imageName = "mix"
+            currentValue = 0
+            self.view.addGestureRecognizer(CircleGesture(midPoint: mainObject.center, target: self, action: #selector(self.rotateGesture(recognizer:))))
+            itemImage.isUserInteractionEnabled = false
+            
+
         }
         
         }
@@ -227,6 +222,10 @@ class tutorialScrub2: UIViewController {
                         currentItem += 1
                         currentStep += 1
                         updateLabel()
+                    } else if currentStep == 6{
+                        let congrat = CongratViewController()
+                        congrat.modalPresentationStyle = .fullScreen
+                        present(congrat, animated: false)
                     }
                     
                     print(currentStep)
@@ -246,7 +245,9 @@ class tutorialScrub2: UIViewController {
             
 //            nameLabel.text = "\(currentValue)"
             mainObject.transform =  CGAffineTransform(rotationAngle: currentValue)
-            print(String(format:"image-%.0f%", currentValue))
+            let putaran = currentValue / 5
+            print(String(format:"\(imageName)%.0f%", putaran))
+            mainObject.image = UIImage(named: String(format: "\(imageName)%.0f%", putaran))
 //            if currentValue >= CGFloat(integerLiteral: 31) {
 //
 //
