@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardDetailViewController" customModule="Final_Project" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardDetailViewController" customModule="Kavi" customModuleProvider="target">
             <connections>
                 <outlet property="cardBottomToRootBottomConstraint" destination="Uk9-VQ-lgS" id="fDr-eH-lSd"/>
                 <outlet property="cardContentView" destination="WxU-hc-VK8" id="xui-wo-c5X"/>
@@ -43,7 +43,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WxU-hc-VK8" customClass="CardContentView" customModule="Final_Project" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WxU-hc-VK8" customClass="CardContentView" customModule="Kavi" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -66,7 +66,7 @@
                                     <color key="textColor" red="0.22045379879999999" green="0.36116188760000001" blue="0.32940953969999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m30-YN-eyS">
+                                <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m30-YN-eyS">
                                     <rect key="frame" x="20" y="662" width="374" height="128"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -168,7 +168,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Cards 1" width="383" height="314"/>
+        <image name="Cards 1" width="414" height="320"/>
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
 </document>

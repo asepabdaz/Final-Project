@@ -208,6 +208,9 @@ class tutorialScrub2: UIViewController {
             
         if currentStep == 6 {
             //Gesture 1 jari
+            let congrat = CongratViewController()
+            congrat.modalPresentationStyle = .fullScreen
+            present(congrat, animated: false)
         }
         
         }
