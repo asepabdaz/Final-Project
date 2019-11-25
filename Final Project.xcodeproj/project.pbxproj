@@ -13,6 +13,8 @@
 		0E3358FC23790C9800231BFD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3358FB23790C9800231BFD /* SectionHeaderView.swift */; };
 		0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42672C23603BD700643ACC /* CoreDataHelper.swift */; };
 		0E42673123603DE600643ACC /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42673023603DE600643ACC /* MaterialModel.swift */; };
+		0E7A3A49238B797E00F70101 /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A3A47238B797E00F70101 /* ComingSoonViewController.swift */; };
+		0E7A3A4A238B797E00F70101 /* ComingSoonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7A3A48238B797E00F70101 /* ComingSoonViewController.xib */; };
 		0E9F4294238B7125000A71D4 /* CongratViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F4292238B7125000A71D4 /* CongratViewController.swift */; };
 		0E9F4295238B7125000A71D4 /* CongratViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9F4293238B7125000A71D4 /* CongratViewController.xib */; };
 		0EB9E4DE237BCEB1004CB195 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DD237BCEB1004CB195 /* HomeView.xib */; };
@@ -95,6 +97,8 @@
 		0E3358FB23790C9800231BFD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		0E42672C23603BD700643ACC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		0E42673023603DE600643ACC /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
+		0E7A3A47238B797E00F70101 /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
+		0E7A3A48238B797E00F70101 /* ComingSoonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComingSoonViewController.xib; sourceTree = "<group>"; };
 		0E9F4292238B7125000A71D4 /* CongratViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratViewController.swift; sourceTree = "<group>"; };
 		0E9F4293238B7125000A71D4 /* CongratViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CongratViewController.xib; sourceTree = "<group>"; };
 		0EB9E4DD237BCEB1004CB195 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -254,6 +258,8 @@
 				0EB9E4E5237D10F7004CB195 /* tutorialScrub.swift */,
 				0E3120762386795100BCB1E7 /* tutorialScrub2.storyboard */,
 				0E3120752386795100BCB1E7 /* tutorialScrub2.swift */,
+				0E7A3A47238B797E00F70101 /* ComingSoonViewController.swift */,
+				0E7A3A48238B797E00F70101 /* ComingSoonViewController.xib */,
 			);
 			path = "Main Feature";
 			sourceTree = "<group>";
@@ -497,6 +503,7 @@
 			files = (
 				0EB9E4F0237D9A21004CB195 /* MaterialTableViewCell.xib in Resources */,
 				1B0EC0ED2371166500D0D057 /* Profile.storyboard in Resources */,
+				0E7A3A4A238B797E00F70101 /* ComingSoonViewController.xib in Resources */,
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
 				0E9F4295238B7125000A71D4 /* CongratViewController.xib in Resources */,
@@ -536,6 +543,7 @@
 				0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */,
 				0EB9E4E6237D10F7004CB195 /* tutorialScrub.swift in Sources */,
 				0E3120772386795100BCB1E7 /* tutorialScrub2.swift in Sources */,
+				0E7A3A49238B797E00F70101 /* ComingSoonViewController.swift in Sources */,
 				0ECDDDF72384DF0E00CF2629 /* TextField.swift in Sources */,
 				0EE313E8237406D000266DAF /* PresentCardAnimator.swift in Sources */,
 				0EB9E4EF237D9A21004CB195 /* MaterialTableViewCell.swift in Sources */,
