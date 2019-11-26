@@ -9,12 +9,19 @@
 import UIKit
 
 class CongratViewController: UIViewController {
-
+    @IBOutlet weak var head1lbl: UILabel!
+    @IBOutlet weak var ayoBtn: UIButton!
+    @IBOutlet weak var shareBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Rectangle")!)
+       
         // Do any additional setup after loading the view.
+        
+        ayoBtn.layer.cornerRadius = 12
+        shareBtn.layer.cornerRadius = 12
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(close))
         self.view.addGestureRecognizer(tap)
     }

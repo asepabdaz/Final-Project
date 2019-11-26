@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rsl-Vj-2BG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <!--Tutorial Scrub-->
         <scene sceneID="6nG-Yw-Rg7">
             <objects>
-                <viewController storyboardIdentifier="tutorialScrub" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rsl-Vj-2BG" customClass="tutorialScrub" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tutorialScrub" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rsl-Vj-2BG" customClass="tutorialScrub" customModule="Kavi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fc2-u3-XBk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,6 +155,21 @@
                 </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="108.69565217391305" y="135.9375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fEi-Hv-HvB">
+            <objects>
+                <viewController id="W6J-ie-mBc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0nY-8C-pUU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="o42-18-AHB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELE-oA-AkB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1275" y="413"/>
         </scene>
     </scenes>
     <resources>
