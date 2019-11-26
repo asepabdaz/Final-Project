@@ -169,7 +169,8 @@ extension HomeViewController {
         
         
         //define xib file view controller
-        
+        let newViewController = CongratViewController()
+        self.navigationController?.pushViewController(newViewController, animated: true)
         /*
          let newViewController = NewViewController()
          self.navigationController?.pushViewController(newViewController, animated: true)
@@ -177,9 +178,9 @@ extension HomeViewController {
         
         // Define storyboard
         
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
-        let newController = storyBoard.instantiateViewController(identifier: "ProfileStoryBoard") as! ProfileViewController
-        navigationController?.pushViewController(newController, animated: true)
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+//        let newController = storyBoard.instantiateViewController(identifier: "ProfileStoryBoard") as! ProfileViewController
+//        navigationController?.pushViewController(newController, animated: true)
         
         
         /*
