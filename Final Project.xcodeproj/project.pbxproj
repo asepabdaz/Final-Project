@@ -21,7 +21,6 @@
 		0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DF237BD06F004CB195 /* DetailView.xib */; };
 		0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */; };
 		0EB9E4E4237BD9BB004CB195 /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */; };
-		0EB9E4E6237D10F7004CB195 /* tutorialScrub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9E4E5237D10F7004CB195 /* tutorialScrub.swift */; };
 		0EB9E4EB237D7C43004CB195 /* ExampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4EA237D7C43004CB195 /* ExampleData.plist */; };
 		0EB9E4EF237D9A21004CB195 /* MaterialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9E4ED237D9A21004CB195 /* MaterialTableViewCell.swift */; };
 		0EB9E4F0237D9A21004CB195 /* MaterialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4EE237D9A21004CB195 /* MaterialTableViewCell.xib */; };
@@ -56,7 +55,6 @@
 		1B0EC0EF2371185E00D0D057 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */; };
 		1B0EC0F123711DDE00D0D057 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */; };
 		1B0EC0F323711E7F00D0D057 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */; };
-		1BC90024237BE76000635CEF /* tutorialScrub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC90023237BE76000635CEF /* tutorialScrub.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -105,7 +103,6 @@
 		0EB9E4DF237BD06F004CB195 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		0EB9E4E1237BD9BB004CB195 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		0EB9E4E2237BD9BB004CB195 /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
-		0EB9E4E5237D10F7004CB195 /* tutorialScrub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialScrub.swift; sourceTree = "<group>"; };
 		0EB9E4EA237D7C43004CB195 /* ExampleData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExampleData.plist; sourceTree = "<group>"; };
 		0EB9E4ED237D9A21004CB195 /* MaterialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTableViewCell.swift; sourceTree = "<group>"; };
 		0EB9E4EE237D9A21004CB195 /* MaterialTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaterialTableViewCell.xib; sourceTree = "<group>"; };
@@ -146,7 +143,6 @@
 		1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
-		1BC90023237BE76000635CEF /* tutorialScrub.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tutorialScrub.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,8 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				0E31207923867B5300BCB1E7 /* CircleGesture.swift */,
-				1BC90023237BE76000635CEF /* tutorialScrub.storyboard */,
-				0EB9E4E5237D10F7004CB195 /* tutorialScrub.swift */,
 				0E3120762386795100BCB1E7 /* tutorialScrub2.storyboard */,
 				0E3120752386795100BCB1E7 /* tutorialScrub2.swift */,
 				0E7A3A47238B797E00F70101 /* ComingSoonViewController.swift */,
@@ -515,7 +509,6 @@
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
 				0E9F4295238B7125000A71D4 /* CongratViewController.xib in Resources */,
-				1BC90024237BE76000635CEF /* tutorialScrub.storyboard in Resources */,
 				0E3120782386795100BCB1E7 /* tutorialScrub2.storyboard in Resources */,
 				0EB9E4E4237BD9BB004CB195 /* HeaderCollectionReusableView.xib in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
@@ -549,7 +542,6 @@
 			files = (
 				1B0EC0F323711E7F00D0D057 /* DetailTableViewController.swift in Sources */,
 				0EB9E4E3237BD9BB004CB195 /* HeaderCollectionReusableView.swift in Sources */,
-				0EB9E4E6237D10F7004CB195 /* tutorialScrub.swift in Sources */,
 				0E3120772386795100BCB1E7 /* tutorialScrub2.swift in Sources */,
 				0E7A3A49238B797E00F70101 /* ComingSoonViewController.swift in Sources */,
 				0ECDDDF72384DF0E00CF2629 /* TextField.swift in Sources */,
