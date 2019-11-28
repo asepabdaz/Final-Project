@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bYB-rf-rv8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -10,18 +10,18 @@
         <!--Profile-->
         <scene sceneID="mRy-BY-zw0">
             <objects>
-                <viewController id="52f-Qc-bGo" customClass="ProfileViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="52f-Qc-bGo" customClass="ProfileViewController" customModule="Kavi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zcu-pv-gdt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJy-hO-nLp">
                                 <rect key="frame" x="143" y="117" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svm-DU-InV">
                                 <rect key="frame" x="184" y="253" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="import:" destination="52f-Qc-bGo" eventType="touchUpInside" id="Ia4-gn-fMy"/>
@@ -29,7 +29,7 @@
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CLH-q0-Dw8">
                                 <rect key="frame" x="0.0" y="318" width="414" height="185"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="kO3-vc-Frz" kind="embed" id="FLb-yV-VHg"/>
                                 </connections>
@@ -45,12 +45,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mM-d8-bUW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668.11594202898561" y="-76.339285714285708"/>
+            <point key="canvasLocation" x="1578.2608695652175" y="-76.339285714285708"/>
         </scene>
         <!--Profile Table View Controller-->
         <scene sceneID="eZg-BD-sWe">
             <objects>
-                <tableViewController id="kO3-vc-Frz" customClass="ProfileTableViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="kO3-vc-Frz" customClass="ProfileTableViewController" customModule="Kavi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jvt-jf-3nG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="185"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,20 +90,20 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VoB-x3-31I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3459.420289855073" y="-76.674107142857139"/>
+            <point key="canvasLocation" x="4369.5652173913049" y="-76.674107142857139"/>
         </scene>
         <!--Detail Table View Controller-->
         <scene sceneID="Wo2-7V-0dN">
             <objects>
-                <tableViewController id="67Y-1A-OIM" customClass="DetailTableViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="2aG-bH-9G3">
+                <tableViewController id="67Y-1A-OIM" customClass="DetailTableViewController" customModule="Kavi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="2aG-bH-9G3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="185"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <textField key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="51E-T9-Azd">
+                        <textField key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" id="51E-T9-Azd" customClass="UITextFieldPadding" customModule="Kavi" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <sections/>
@@ -126,25 +126,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeT-5A-apW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="6ug-Tl-EgT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4213.04347826087" y="-75.669642857142847"/>
+            <point key="canvasLocation" x="5123.188405797102" y="-76.004464285714278"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="iQj-NV-E1T">
+        <scene sceneID="j2H-B5-Xjz">
             <objects>
-                <navigationController storyboardIdentifier="ProfileStoryBoard" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bYB-rf-rv8" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProfileStoryBoard" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yhu-OC-HVb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jwj-Fs-RaW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Mb-bU-hCA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="52f-Qc-bGo" kind="relationship" relationship="rootViewController" id="i3R-La-iaa"/>
+                        <segue destination="52f-Qc-bGo" kind="relationship" relationship="rootViewController" id="pKV-Pc-aaK"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bwO-CL-LhL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAd-Hq-6ni" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242.0289855072464" y="-76.339285714285708"/>
+            <point key="canvasLocation" x="668.11594202898561" y="-76.339285714285708"/>
         </scene>
     </scenes>
 </document>

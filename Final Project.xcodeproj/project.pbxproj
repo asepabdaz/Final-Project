@@ -21,6 +21,11 @@
 		0EA5818D238F7B6200E2A4D4 /* tutorialScrub2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA5818C238F7B6200E2A4D4 /* tutorialScrub2.swift */; };
 		0EA58191238F813700E2A4D4 /* CongratViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA5818F238F813700E2A4D4 /* CongratViewController.swift */; };
 		0EA58192238F813700E2A4D4 /* CongratViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EA58190238F813700E2A4D4 /* CongratViewController.xib */; };
+		0EA58198238F95F800E2A4D4 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA58193238F95F800E2A4D4 /* ProfileTableViewController.swift */; };
+		0EA58199238F95F800E2A4D4 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA58194238F95F800E2A4D4 /* DetailTableViewController.swift */; };
+		0EA5819A238F95F800E2A4D4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EA58195238F95F800E2A4D4 /* Profile.storyboard */; };
+		0EA5819B238F95F800E2A4D4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA58196238F95F800E2A4D4 /* ProfileViewController.swift */; };
+		0EA5819C238F95F800E2A4D4 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA58197238F95F800E2A4D4 /* TextField.swift */; };
 		0EB9E4DE237BCEB1004CB195 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DD237BCEB1004CB195 /* HomeView.xib */; };
 		0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DF237BD06F004CB195 /* DetailView.xib */; };
 		0ECCCCAD236585710049BBC0 /* MaterialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCAC236585710049BBC0 /* MaterialController.swift */; };
@@ -49,10 +54,6 @@
 		0EE313EA237406D000266DAF /* DismissCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313E6237406D000266DAF /* DismissCardAnimator.swift */; };
 		0EE313ED237406EF00266DAF /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313EB237406EF00266DAF /* CardCollectionViewCell.swift */; };
 		0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE313EC237406EF00266DAF /* CardCollectionViewCell.xib */; };
-		1B0EC0ED2371166500D0D057 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0EC0EC2371166500D0D057 /* Profile.storyboard */; };
-		1B0EC0EF2371185E00D0D057 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */; };
-		1B0EC0F123711DDE00D0D057 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */; };
-		1B0EC0F323711E7F00D0D057 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,12 +88,17 @@
 		0EA5818C238F7B6200E2A4D4 /* tutorialScrub2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorialScrub2.swift; sourceTree = "<group>"; };
 		0EA5818F238F813700E2A4D4 /* CongratViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratViewController.swift; sourceTree = "<group>"; };
 		0EA58190238F813700E2A4D4 /* CongratViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CongratViewController.xib; sourceTree = "<group>"; };
+		0EA58193238F95F800E2A4D4 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		0EA58194238F95F800E2A4D4 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		0EA58195238F95F800E2A4D4 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		0EA58196238F95F800E2A4D4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0EA58197238F95F800E2A4D4 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		0EB9E4DD237BCEB1004CB195 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		0EB9E4DF237BD06F004CB195 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		0ECCCCAC236585710049BBC0 /* MaterialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialController.swift; sourceTree = "<group>"; };
 		0ECCCCAE23658A550049BBC0 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		0ECCCCB023658DBA0049BBC0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		0EDCA38E235D6FB800760D1C /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EDCA38E235D6FB800760D1C /* Kavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDCA391235D6FB800760D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EDCA393235D6FB800760D1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0EDCA39B235D6FB800760D1C /* Final_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Final_Project.xcdatamodel; sourceTree = "<group>"; };
@@ -121,10 +127,6 @@
 		0EE313E6237406D000266DAF /* DismissCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissCardAnimator.swift; sourceTree = "<group>"; };
 		0EE313EB237406EF00266DAF /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		0EE313EC237406EF00266DAF /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
-		1B0EC0EC2371166500D0D057 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
-		1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,10 +229,11 @@
 		0EB9E4D4237BA8B8004CB195 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				1B0EC0EC2371166500D0D057 /* Profile.storyboard */,
-				1B0EC0F023711DDE00D0D057 /* ProfileTableViewController.swift */,
-				1B0EC0EE2371185E00D0D057 /* ProfileViewController.swift */,
-				1B0EC0F223711E7F00D0D057 /* DetailTableViewController.swift */,
+				0EA58194238F95F800E2A4D4 /* DetailTableViewController.swift */,
+				0EA58195238F95F800E2A4D4 /* Profile.storyboard */,
+				0EA58193238F95F800E2A4D4 /* ProfileTableViewController.swift */,
+				0EA58196238F95F800E2A4D4 /* ProfileViewController.swift */,
+				0EA58197238F95F800E2A4D4 /* TextField.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -257,7 +260,7 @@
 		0EDCA38F235D6FB800760D1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0EDCA38E235D6FB800760D1C /* Final Project.app */,
+				0EDCA38E235D6FB800760D1C /* Kavi.app */,
 				0EDCA3A7235D6FB900760D1C /* Final ProjectTests.xctest */,
 				0EDCA3B2235D6FB900760D1C /* Final ProjectUITests.xctest */,
 			);
@@ -371,7 +374,7 @@
 			);
 			name = "Final Project";
 			productName = "Final Project";
-			productReference = 0EDCA38E235D6FB800760D1C /* Final Project.app */;
+			productReference = 0EDCA38E235D6FB800760D1C /* Kavi.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0EDCA3A6235D6FB900760D1C /* Final ProjectTests */ = {
@@ -459,12 +462,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EA58186238F76A800E2A4D4 /* MaterialTableViewCell.xib in Resources */,
-				1B0EC0ED2371166500D0D057 /* Profile.storyboard in Resources */,
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
 				0E08461023828E9200B2156D /* HeaderCollectionReusableView.xib in Resources */,
 				0EA5818B238F7B3900E2A4D4 /* tutorialScrub2.storyboard in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
+				0EA5819A238F95F800E2A4D4 /* Profile.storyboard in Resources */,
 				0EA58180238F70FA00E2A4D4 /* ExampleData.plist in Resources */,
 				0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */,
 				0EDCA39E235D6FB900760D1C /* Assets.xcassets in Resources */,
@@ -495,22 +498,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EA58182238F762A00E2A4D4 /* UILabel+Highlighting.swift in Sources */,
-				1B0EC0F323711E7F00D0D057 /* DetailTableViewController.swift in Sources */,
 				0E08461123828E9200B2156D /* HeaderCollectionReusableView.swift in Sources */,
 				0EA58191238F813700E2A4D4 /* CongratViewController.swift in Sources */,
 				0EA5818D238F7B6200E2A4D4 /* tutorialScrub2.swift in Sources */,
 				0EE313E8237406D000266DAF /* PresentCardAnimator.swift in Sources */,
 				0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */,
+				0EA5819B238F95F800E2A4D4 /* ProfileViewController.swift in Sources */,
+				0EA58198238F95F800E2A4D4 /* ProfileTableViewController.swift in Sources */,
 				0EE313ED237406EF00266DAF /* CardCollectionViewCell.swift in Sources */,
 				0EE313D4237405ED00266DAF /* NibLoadable.swift in Sources */,
 				0EA58189238F7A6000E2A4D4 /* CircleGesture.swift in Sources */,
 				0EE313E7237406D000266DAF /* CardTransition.swift in Sources */,
+				0EA5819C238F95F800E2A4D4 /* TextField.swift in Sources */,
 				0EDCA392235D6FB800760D1C /* AppDelegate.swift in Sources */,
 				0EE313DF2374069600266DAF /* StatusBarAnimatable.swift in Sources */,
 				0EE313D2237405C500266DAF /* GlobalConstants.swift in Sources */,
 				0EDCA39C235D6FB800760D1C /* Final_Project.xcdatamodeld in Sources */,
 				0EE313D0237405A600266DAF /* CardContentViewModel.swift in Sources */,
-				1B0EC0F123711DDE00D0D057 /* ProfileTableViewController.swift in Sources */,
+				0EA58199238F95F800E2A4D4 /* DetailTableViewController.swift in Sources */,
 				0E42673123603DE600643ACC /* MaterialModel.swift in Sources */,
 				0EE313CE2374058D00266DAF /* CardContentView.swift in Sources */,
 				0E3358FC23790C9800231BFD /* SectionHeaderView.swift in Sources */,
@@ -518,7 +523,6 @@
 				0EDCA394235D6FB800760D1C /* SceneDelegate.swift in Sources */,
 				0EE313DD2374065B00266DAF /* CardDetailViewController.swift in Sources */,
 				0EE313D62374060400266DAF /* UIView+AutoLayout.swift in Sources */,
-				1B0EC0EF2371185E00D0D057 /* ProfileViewController.swift in Sources */,
 				0EE313DC2374065B00266DAF /* HomeViewController.swift in Sources */,
 				0ECCCCAD236585710049BBC0 /* MaterialController.swift in Sources */,
 				0EE313EA237406D000266DAF /* DismissCardAnimator.swift in Sources */,
@@ -697,8 +701,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "organic.waste.Final-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.organic.waste.Final-Project";
+				PRODUCT_NAME = Kavi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -715,8 +719,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "organic.waste.Final-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.organic.waste.Final-Project";
+				PRODUCT_NAME = Kavi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

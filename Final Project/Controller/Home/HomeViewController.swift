@@ -58,6 +58,11 @@ final class HomeViewController: StatusBarAnimatableViewController {
         return StatusBarAnimatableConfig(prefersHidden: false,
                                          animation: .slide)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        collectionView.reloadData()
+        self.navigationController?.isNavigationBarHidden = true
+        
+    }
 }
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
