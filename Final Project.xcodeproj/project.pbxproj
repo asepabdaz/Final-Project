@@ -26,6 +26,8 @@
 		0EA5819A238F95F800E2A4D4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EA58195238F95F800E2A4D4 /* Profile.storyboard */; };
 		0EA5819B238F95F800E2A4D4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA58196238F95F800E2A4D4 /* ProfileViewController.swift */; };
 		0EA5819C238F95F800E2A4D4 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA58197238F95F800E2A4D4 /* TextField.swift */; };
+		0EA5819F238FC41100E2A4D4 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA5819D238FC41100E2A4D4 /* ShareViewController.swift */; };
+		0EA581A0238FC41100E2A4D4 /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EA5819E238FC41100E2A4D4 /* ShareViewController.xib */; };
 		0EB9E4DE237BCEB1004CB195 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DD237BCEB1004CB195 /* HomeView.xib */; };
 		0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB9E4DF237BD06F004CB195 /* DetailView.xib */; };
 		0ECCCCAD236585710049BBC0 /* MaterialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCCCAC236585710049BBC0 /* MaterialController.swift */; };
@@ -93,6 +95,8 @@
 		0EA58195238F95F800E2A4D4 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		0EA58196238F95F800E2A4D4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0EA58197238F95F800E2A4D4 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		0EA5819D238FC41100E2A4D4 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		0EA5819E238FC41100E2A4D4 /* ShareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareViewController.xib; sourceTree = "<group>"; };
 		0EB9E4DD237BCEB1004CB195 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		0EB9E4DF237BD06F004CB195 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		0ECCCCAC236585710049BBC0 /* MaterialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialController.swift; sourceTree = "<group>"; };
@@ -222,6 +226,8 @@
 			children = (
 				0EA5818F238F813700E2A4D4 /* CongratViewController.swift */,
 				0EA58190238F813700E2A4D4 /* CongratViewController.xib */,
+				0EA5819D238FC41100E2A4D4 /* ShareViewController.swift */,
+				0EA5819E238FC41100E2A4D4 /* ShareViewController.xib */,
 			);
 			path = Finish;
 			sourceTree = "<group>";
@@ -467,6 +473,7 @@
 				0E08461023828E9200B2156D /* HeaderCollectionReusableView.xib in Resources */,
 				0EA5818B238F7B3900E2A4D4 /* tutorialScrub2.storyboard in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
+				0EA581A0238FC41100E2A4D4 /* ShareViewController.xib in Resources */,
 				0EA5819A238F95F800E2A4D4 /* Profile.storyboard in Resources */,
 				0EA58180238F70FA00E2A4D4 /* ExampleData.plist in Resources */,
 				0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */,
@@ -513,6 +520,7 @@
 				0EDCA392235D6FB800760D1C /* AppDelegate.swift in Sources */,
 				0EE313DF2374069600266DAF /* StatusBarAnimatable.swift in Sources */,
 				0EE313D2237405C500266DAF /* GlobalConstants.swift in Sources */,
+				0EA5819F238FC41100E2A4D4 /* ShareViewController.swift in Sources */,
 				0EDCA39C235D6FB800760D1C /* Final_Project.xcdatamodeld in Sources */,
 				0EE313D0237405A600266DAF /* CardContentViewModel.swift in Sources */,
 				0EA58199238F95F800E2A4D4 /* DetailTableViewController.swift in Sources */,

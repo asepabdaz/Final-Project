@@ -23,21 +23,16 @@ class CongratViewController: UIViewController, UIDocumentInteractionControllerDe
      
 
      
-        let secondActivityItem : NSURL = NSURL(string: "https://www.instagram.com/kavi_id/")!
-        let activityController  =  UIActivityViewController(activityItems: [image, secondActivityItem], applicationActivities: nil)
+        guard let secondActivityItem = URL(string: "https://www.instagram.com/kavi_id/") else { return }
+
+        let activityViewController = UIActivityViewController(
+            activityItems: [secondActivityItem],
+            applicationActivities: nil
+        )
         
-        activityController.completionWithItemsHandler = { (nil, completed, _, error)
-            in
-            if completed{
-                print("Completed")
-            }else{
-                print("Canceled")
-            }
-            
-        }
-        present(activityController, animated: true)
-        {
-            print("Present")
+
+        present(activityViewController, animated: true) {
+            // ...
         }
         
         
