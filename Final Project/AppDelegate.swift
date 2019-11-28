@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              ArrayOf 3: Tinggi
              ArrayOf 4: Berat
              */
-            let dataProfile = ["Kavi","","",""]
+            let dataProfile = ["Kavi"," "," "," "]
             
             UserDefaults.standard.set(dataProfile, forKey: "dataProfile")
             UserDefaults.standard.set(true, forKey: "firstTime")

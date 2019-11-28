@@ -43,17 +43,6 @@
 			</array>
 		</dict>
 	</dict>
-	<key>UIApplicationShortcutItems</key>
-	<array>
-		<dict>
-			<key>UIApplicationShortcutItemIconFile</key>
-			<string>setting</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Developer Mode</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>com.developer.mode</string>
-		</dict>
-	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
