@@ -7,11 +7,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardDetailViewController" customModule="Final_Project" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardDetailViewController" customModule="Kavi" customModuleProvider="target">
             <connections>
                 <outlet property="cardBottomToRootBottomConstraint" destination="Uk9-VQ-lgS" id="fDr-eH-lSd"/>
                 <outlet property="cardContentView" destination="WxU-hc-VK8" id="xui-wo-c5X"/>
+                <outlet property="descriptionLabel" destination="fah-AF-QJ3" id="dS0-t0-RR9"/>
                 <outlet property="dismisButtonOutlet" destination="ygH-c6-B6l" id="2GZ-PS-cGX"/>
+                <outlet property="heightTableMaterial" destination="JDV-S2-4cP" id="diW-fX-OLj"/>
+                <outlet property="materialTabel" destination="m30-YN-eyS" id="mCs-RN-Lrv"/>
                 <outlet property="outletComplate" destination="wQV-N5-RhO" id="YpO-Nq-wN2"/>
                 <outlet property="outletShowMeHow" destination="NY4-am-EuW" id="MKL-Ck-3WZ"/>
                 <outlet property="scrollView" destination="BGH-cB-qXs" id="3ay-l8-6BF"/>
@@ -35,13 +38,13 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNx-76-tGY" userLabel="ContentView">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="973"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="980.5"/>
                             <subviews>
                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRq-64-Gif" userLabel="Card Layout Standin View">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WxU-hc-VK8" customClass="CardContentView" customModule="Final_Project" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WxU-hc-VK8" customClass="CardContentView" customModule="Kavi" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -61,22 +64,25 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What we need?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CX-SQ-EY4">
                                     <rect key="frame" x="20" y="616" width="374" height="21"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                    <color key="textColor" red="0.22045379879999999" green="0.36116188760000001" blue="0.32940953969999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.46669161320000002" green="0.62363713980000002" blue="0.47448343040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m30-YN-eyS">
+                                <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m30-YN-eyS">
                                     <rect key="frame" x="20" y="662" width="374" height="128"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="128" id="JDV-S2-4cP"/>
                                     </constraints>
+                                    <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
+                                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY4-am-EuW">
-                                    <rect key="frame" x="20" y="843" width="374" height="51"/>
+                                    <rect key="frame" x="20" y="850.5" width="374" height="51"/>
                                     <color key="backgroundColor" red="0.22045379879999999" green="0.36116188760000001" blue="0.32940953969999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
-                                    <state key="normal" title="Show me how!">
+                                    <state key="normal" title="OK">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
@@ -84,12 +90,15 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQV-N5-RhO">
-                                    <rect key="frame" x="20" y="902" width="374" height="51"/>
+                                    <rect key="frame" x="20" y="909.5" width="374" height="51"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
-                                    <state key="normal" title="Get the complete kit!">
+                                    <state key="normal" title="Dapatkan kit lengkap">
                                         <color key="titleColor" red="0.22045379879999999" green="0.36116188760000001" blue="0.32940953969999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
+                                    <connections>
+                                        <action selector="getThecComplete:" destination="-1" eventType="touchUpInside" id="7UR-gi-YDU"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygH-c6-B6l">
                                     <rect key="frame" x="369" y="20" width="25" height="25"/>
@@ -105,21 +114,29 @@
                                         <action selector="dismissButton:" destination="-1" eventType="touchUpInside" id="JsF-gV-XZ6"/>
                                     </connections>
                                 </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fah-AF-QJ3">
+                                    <rect key="frame" x="20" y="810" width="374" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.57647460699999997" green="0.57646340129999996" blue="0.57647103070000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" red="0.95487881720000001" green="0.95487881720000001" blue="0.95487881720000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstItem="oRq-64-Gif" firstAttribute="width" secondItem="WxU-hc-VK8" secondAttribute="width" id="2Ez-Sh-8te"/>
-                                <constraint firstItem="wQV-N5-RhO" firstAttribute="top" secondItem="NY4-am-EuW" secondAttribute="bottom" constant="8" id="3to-Fo-bMM"/>
+                                <constraint firstItem="wQV-N5-RhO" firstAttribute="top" secondItem="NY4-am-EuW" secondAttribute="bottom" constant="8" symbolic="YES" id="3to-Fo-bMM"/>
                                 <constraint firstItem="wQV-N5-RhO" firstAttribute="leading" secondItem="JNx-76-tGY" secondAttribute="leading" constant="20" id="4mW-gY-neO"/>
                                 <constraint firstItem="pA7-Ww-WpN" firstAttribute="top" secondItem="oRq-64-Gif" secondAttribute="bottom" constant="40" id="5Xr-8m-alr"/>
+                                <constraint firstItem="fah-AF-QJ3" firstAttribute="leading" secondItem="JNx-76-tGY" secondAttribute="leading" constant="20" id="6Fs-3Z-Doa"/>
+                                <constraint firstItem="fah-AF-QJ3" firstAttribute="top" secondItem="m30-YN-eyS" secondAttribute="bottom" constant="20" id="6mn-Fn-Lti"/>
                                 <constraint firstAttribute="trailing" secondItem="ygH-c6-B6l" secondAttribute="trailing" constant="20" id="8Hx-sk-bE4"/>
                                 <constraint firstAttribute="trailing" secondItem="NY4-am-EuW" secondAttribute="trailing" constant="20" id="8ls-rE-b4z"/>
                                 <constraint firstAttribute="trailing" secondItem="pA7-Ww-WpN" secondAttribute="trailing" constant="20" id="H5j-Jm-3yd"/>
                                 <constraint firstItem="3CX-SQ-EY4" firstAttribute="top" secondItem="pA7-Ww-WpN" secondAttribute="bottom" constant="40" id="HDE-xS-p2a"/>
                                 <constraint firstAttribute="trailing" secondItem="m30-YN-eyS" secondAttribute="trailing" constant="20" id="HKG-GA-jYb"/>
                                 <constraint firstItem="oRq-64-Gif" firstAttribute="top" secondItem="JNx-76-tGY" secondAttribute="top" id="Irs-Dn-77b"/>
+                                <constraint firstAttribute="trailing" secondItem="fah-AF-QJ3" secondAttribute="trailing" constant="20" id="Kuq-ub-l4v"/>
                                 <constraint firstItem="WxU-hc-VK8" firstAttribute="top" secondItem="JNx-76-tGY" secondAttribute="top" priority="999" id="L8A-Tm-SkR"/>
-                                <constraint firstItem="NY4-am-EuW" firstAttribute="top" secondItem="m30-YN-eyS" secondAttribute="bottom" constant="53" id="NYE-QN-cW4"/>
                                 <constraint firstItem="pA7-Ww-WpN" firstAttribute="leading" secondItem="JNx-76-tGY" secondAttribute="leading" constant="20" id="Ncm-Kr-2Eh"/>
                                 <constraint firstItem="WxU-hc-VK8" firstAttribute="leading" secondItem="JNx-76-tGY" secondAttribute="leading" id="O5b-wc-ASP"/>
                                 <constraint firstAttribute="bottom" secondItem="wQV-N5-RhO" secondAttribute="bottom" constant="20" id="Qe0-UJ-n4y"/>
@@ -128,6 +145,7 @@
                                 <constraint firstItem="oRq-64-Gif" firstAttribute="centerX" secondItem="JNx-76-tGY" secondAttribute="centerX" id="cKI-vn-kv6"/>
                                 <constraint firstItem="oRq-64-Gif" firstAttribute="height" secondItem="WxU-hc-VK8" secondAttribute="height" id="dk8-G5-b2k"/>
                                 <constraint firstItem="ygH-c6-B6l" firstAttribute="top" secondItem="JNx-76-tGY" secondAttribute="top" constant="20" id="f7E-QA-QE2"/>
+                                <constraint firstItem="NY4-am-EuW" firstAttribute="top" secondItem="fah-AF-QJ3" secondAttribute="bottom" constant="20" id="m9B-KD-Jpz"/>
                                 <constraint firstItem="m30-YN-eyS" firstAttribute="top" secondItem="3CX-SQ-EY4" secondAttribute="bottom" constant="25" id="mrF-Fb-w5x"/>
                                 <constraint firstAttribute="trailing" secondItem="wQV-N5-RhO" secondAttribute="trailing" constant="20" id="oDq-34-p1T"/>
                                 <constraint firstAttribute="trailing" secondItem="WxU-hc-VK8" secondAttribute="trailing" id="rKe-9t-Bpd"/>
@@ -163,7 +181,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Cards 1" width="383" height="314"/>
+        <image name="Cards 1" width="414" height="320"/>
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
 </document>

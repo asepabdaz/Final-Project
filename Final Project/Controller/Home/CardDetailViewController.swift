@@ -1,31 +1,22 @@
-//
-//  CardDetailViewController.swift
-//  AppStoreHomeInteractiveTransition
-//
-//  Created by Wirawit Rueopas on 4/4/2561 BE.
-//  Copyright © 2561 Wirawit Rueopas. All rights reserved.
-//
 
 import UIKit
 
 
 class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewDelegate {
 
-    // This constraint limits card content to not be covered by root view.
-    // This is useful to make the card content expands when presenting,
-    // as intially the card is fully contained in a smaller environment (card cell).
-    // When animating detail view controller to be full-screen size, it should gradually expands along the bottom edge.
-    //
-    // ***But we dismiss disable this after presenting***
+    
     
     @IBOutlet weak var cardBottomToRootBottomConstraint: NSLayoutConstraint!
 
+    @IBOutlet weak var heightTableMaterial: NSLayoutConstraint!
     @IBOutlet weak var dismisButtonOutlet: UIButton!
     @IBOutlet weak var outletShowMeHow: UIButton!
     @IBOutlet weak var outletComplate: UIButton!
     @IBOutlet weak var cardContentView: CardContentView!
     @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var materialTabel: UITableView!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     var cardViewModel: CardContentViewModel! {
         didSet {
@@ -34,6 +25,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
             }
         }
     }
+    var data = ["Test":"test"]
     
     
 
@@ -65,6 +57,11 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if cardViewModel.storyBoard == "comingSoon" {
+            outletShowMeHow.isUserInteractionEnabled = false
+            outletShowMeHow.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+            outletShowMeHow.setTitle("Coming Soon", for: .normal)
+        }
         if GlobalConstants.isEnabledDebugAnimatingViews {
             scrollView.layer.borderWidth = 3
             scrollView.layer.borderColor = UIColor.green.cgColor
@@ -73,10 +70,23 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
             scrollView.subviews.first!.layer.borderColor = UIColor.purple.cgColor
         }
 
+        materialTabel.delegate = self
+        materialTabel.dataSource = self
+        materialTabel.register(UINib(nibName: "\(MaterialTableViewCell.self)", bundle: nil), forCellReuseIdentifier: "MaterialCell")
+        
+        
+        
         scrollView.delegate = self
         scrollView.contentInsetAdjustmentBehavior = .never
         cardContentView.viewModel = cardViewModel
         textView.text = cardViewModel.description
+        var descText: String = ""
+        for desc in 0..<cardViewModel.descTable.count {
+            descText.append("\n\n\n\(cardViewModel.descTable[desc])")
+        }
+        
+//        descriptionLabel.text = descText
+        descriptionLabel.highlightedText = descText
         cardContentView.setFontState(isHighlighted: isFontStateHighlighted)
 
         dismissalPanGesture.addTarget(self, action: #selector(handleDismissalPan(gesture:)))
@@ -98,16 +108,36 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     @IBAction func dismissButton(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
+    
+    @IBAction func getThecComplete(_ sender: Any) {
+        guard let url = URL(string: "https://wa.me/+6281296940970?text=Hai%20saya%20ingin%20membeli%20Scrub%20Coffe%20Ground%20bisa%20dibantu%20kak?") else { return }
+        UIApplication.shared.open(url)
+    }
     @IBAction func showMeHow(_ sender: UIButton) {
-        
+        let storyBoard: UIStoryboard = UIStoryboard(name: cardViewModel.storyBoard, bundle: nil)
+        let newController = storyBoard.instantiateViewController(identifier: cardViewModel.storyBoard)
+        newController.modalPresentationCapturesStatusBarAppearance = false
+        newController.modalPresentationStyle = .fullScreen
+        present(newController, animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+       
+        var tableViewHeight: CGFloat = 0;
+        
+        var heightTable = 0
+
+        for _ in cardViewModel.material{
+            heightTable += 50 // 50 is magic number
+        }
+        tableViewHeight = CGFloat(heightTable)
+        heightTableMaterial.constant = tableViewHeight
+        
         outletShowMeHow.layer.cornerRadius = 8
         outletComplate.layer.borderWidth = 1.5
         outletComplate.layer.cornerRadius = 8
-        outletComplate.layer.borderColor = #colorLiteral(red: 0.3394442201, green: 0.63580966, blue: 0.5225050449, alpha: 1)
+        outletComplate.layer.borderColor = #colorLiteral(red: 0.1705375016, green: 0.3657338321, blue: 0.3284526467, alpha: 1)
         
         dismisButtonOutlet.layer.cornerRadius = dismisButtonOutlet.bounds.width / 2
     }
@@ -205,7 +235,6 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
             // NOTE:
             // If user lift fingers -> ended
             // If gesture.isEnabled -> cancelled
-
             // Ended, Animate back to start
             dismissalAnimator!.pauseAnimation()
             dismissalAnimator!.isReversed = true
@@ -257,4 +286,33 @@ extension CardDetailViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
+}
+extension CardDetailViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if tableView == materialTabel {
+            return cardViewModel.material.count
+        }
+        return cardViewModel.material.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if tableView == materialTabel {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MaterialCell", for: indexPath) as! MaterialTableViewCell
+            
+            
+
+            let materialData: [String: String] = cardViewModel.material[indexPath.row]
+            cell.nameMaterial.text = materialData["name"]
+            cell.descMaterial.text = materialData["desc"]
+            cell.imageMaterial?.image = UIImage(named: materialData["image"]!)
+            return cell
+        }
+        return UITableViewCell()
+    }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    
+    
 }

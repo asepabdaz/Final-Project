@@ -13,12 +13,16 @@ struct CardContentViewModel {
     let secondary: String
     let description: String
     let image: UIImage
+    let material: [[String:String]]
+    let after: String
+    let storyBoard: String
+    let descTable: [String]
 
     func highlightedImage() -> CardContentViewModel {
         let scaledImage = image.resize(toWidth: image.size.width * GlobalConstants.cardHighlightedFactor)
         return CardContentViewModel(primary: primary,
                                     secondary: secondary,
                                     description: description,
-                                    image: scaledImage)
+                                    image: scaledImage, material: material, after: after, storyBoard: storyBoard, descTable: descTable)
     }
 }
