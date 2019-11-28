@@ -228,7 +228,7 @@ class tutorialScrub2: UIViewController {
 
                         self.dismiss(animated: false, completion: {
                             let vc = CongratViewController()
-                            vc.modalPresentationStyle = .popover
+                            vc.modalPresentationStyle = .overFullScreen
                             pvc?.present(vc, animated: false, completion: nil)
                         })
                     }
