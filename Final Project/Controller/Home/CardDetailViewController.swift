@@ -117,7 +117,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         let storyBoard: UIStoryboard = UIStoryboard(name: cardViewModel.storyBoard, bundle: nil)
         let newController = storyBoard.instantiateViewController(identifier: cardViewModel.storyBoard)
         newController.modalPresentationCapturesStatusBarAppearance = false
-        newController.modalPresentationStyle = .fullScreen
+        newController.modalPresentationStyle = .overFullScreen
         present(newController, animated: true)
     }
     override func viewWillAppear(_ animated: Bool) {
