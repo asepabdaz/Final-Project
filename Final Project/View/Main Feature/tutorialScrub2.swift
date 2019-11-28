@@ -104,18 +104,7 @@ class tutorialScrub2: UIViewController {
         
         
         if recognizer.state == .ended {
-//            weak var pvc = self.presentingViewController
-
-            print("asd")
-//            self.dismiss(animated: false)
-            weak var pvc = self.presentingViewController
-
-            self.dismiss(animated: false, completion: {
-                let vc = CongratViewController()
-                vc.modalPresentationStyle = .overFullScreen
-                pvc?.present(vc, animated: false, completion: nil)
-            })
-        
+//           
         if itemImage.frame.intersects(bowl.frame){
             miniStep += 1
         }
