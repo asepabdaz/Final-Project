@@ -39,7 +39,7 @@ class tutorialScrub2: UIViewController {
         
         kopi😘 = createImageArray(total😘: 20, imagePrefix: "kopiPertama")
         
-
+        
 //        originImageView.alpha = 0
         tempX = itemImage.center.x
         tempY = itemImage.center.y
@@ -105,7 +105,7 @@ class tutorialScrub2: UIViewController {
         
         if recognizer.state == .ended {
 //           
-        if itemImage.frame.intersects(bowl.frame){
+        if itemImage.frame.intersects(mainObject.frame){
             miniStep += 1
         }
         
