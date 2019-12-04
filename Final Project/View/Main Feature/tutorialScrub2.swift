@@ -105,7 +105,7 @@ class tutorialScrub2: UIViewController {
         
         if recognizer.state == .ended {
 //           
-        if itemImage.frame.intersects(mainObject.frame){
+        if itemImage.frame.intersects(bowl.frame){
             miniStep += 1
         }
         
@@ -115,21 +115,21 @@ class tutorialScrub2: UIViewController {
         if currentStep == 0 {
             if miniStep == 1 {
 
-                step(imageView: mainObject, image: kopi😘)
+                step(imageView: bowl, image: kopi😘)
                 updateLabel()
             }
             if miniStep == 2 {
-                step(imageView: mainObject, image: createImageArray(total😘: 12, imagePrefix: "kopiKedua"))
+                step(imageView: bowl, image: createImageArray(total😘: 12, imagePrefix: "kopiKedua"))
                 
             }
             
             if miniStep == 3 {
-                step(imageView: mainObject, image: createImageArray(total😘: 21, imagePrefix: "kopiKetiga"))
+                step(imageView: bowl, image: createImageArray(total😘: 21, imagePrefix: "kopiKetiga"))
                 
                 updateLabel()
             }
             if miniStep == 4 {
-                step(imageView: mainObject, image: createImageArray(total😘: 21, imagePrefix: "kopiKeempat"))
+                step(imageView: bowl, image: createImageArray(total😘: 21, imagePrefix: "kopiKeempat"))
                 currentStep += 1
                 currentItem += 1
                 miniStep = 0
