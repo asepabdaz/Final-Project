@@ -2,12 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardContentView" customModule="Final_Project" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardContentView" customModule="Kavi" customModuleProvider="target">
             <connections>
                 <outlet property="detailLabel" destination="V41-Xp-Lt9" id="dqV-Lp-Zf0"/>
                 <outlet property="imageToBottomAnchor" destination="drH-b2-3VK" id="Yp0-cm-SAe"/>
@@ -41,14 +41,14 @@
                             <rect key="frame" x="0.0" y="278" width="319" height="100"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="81" translatesAutoresizingMaskIntoConstraints="NO" id="g3y-Ax-XCo">
-                                    <rect key="frame" x="20" y="20" width="279" height="41"/>
+                                    <rect key="frame" x="20" y="10" width="279" height="41"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                     <color key="textColor" red="0.21661007400000001" green="0.35713511710000001" blue="0.33333218100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEHIND THE SCENES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37H-gx-9FO">
-                                    <rect key="frame" x="20" y="61" width="113.5" height="13.5"/>
-                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEHIND THE SCENES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37H-gx-9FO">
+                                    <rect key="frame" x="20" y="51" width="279" height="16"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                     <color key="textColor" red="0.38722309469999999" green="0.20918151739999999" blue="0.094083659350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -57,7 +57,8 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="HG6-b7-XGz"/>
                                 <constraint firstAttribute="trailing" secondItem="g3y-Ax-XCo" secondAttribute="trailing" constant="20" id="SjX-lg-Lbj"/>
-                                <constraint firstItem="g3y-Ax-XCo" firstAttribute="top" secondItem="Vuy-bI-vXd" secondAttribute="top" constant="20" id="raG-1c-eA9"/>
+                                <constraint firstAttribute="trailing" secondItem="37H-gx-9FO" secondAttribute="trailing" constant="20" id="avq-6C-olB"/>
+                                <constraint firstItem="g3y-Ax-XCo" firstAttribute="top" secondItem="Vuy-bI-vXd" secondAttribute="top" constant="10" id="raG-1c-eA9"/>
                                 <constraint firstItem="g3y-Ax-XCo" firstAttribute="leading" secondItem="Vuy-bI-vXd" secondAttribute="leading" constant="20" id="uJu-HK-2L6"/>
                                 <constraint firstItem="37H-gx-9FO" firstAttribute="leading" secondItem="Vuy-bI-vXd" secondAttribute="leading" constant="20" id="uMU-jY-OgO"/>
                                 <constraint firstItem="37H-gx-9FO" firstAttribute="top" secondItem="g3y-Ax-XCo" secondAttribute="bottom" id="zSp-Eq-TcS"/>
@@ -89,6 +90,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Cards 1" width="383" height="314"/>
+        <image name="Cards 1" width="414" height="320"/>
     </resources>
 </document>

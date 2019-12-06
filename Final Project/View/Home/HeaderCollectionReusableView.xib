@@ -36,6 +36,11 @@
                 <constraint firstAttribute="bottom" secondItem="HDp-Gg-X1n" secondAttribute="bottom" id="uMr-gO-gfY"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="QNi-WL-FtB"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="imageView" destination="QNi-WL-FtB" id="Hyw-7P-MVe"/>
                 <outlet property="nameAppLabel" destination="HDp-Gg-X1n" id="D9f-cJ-qFV"/>
@@ -44,6 +49,6 @@
         </collectionReusableView>
     </objects>
     <resources>
-        <image name="kopiKedua-0" width="168" height="170"/>
+        <image name="kopiKedua-0" width="329" height="329"/>
     </resources>
 </document>

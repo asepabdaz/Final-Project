@@ -52,7 +52,7 @@
                     <rect key="frame" x="30" y="740" width="354" height="50"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Ayo!">
+                    <state key="normal" title="Ya!">
                         <color key="titleColor" red="0.22035056350000001" green="0.36109706759999999" blue="0.32941257950000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
                     <connections>
@@ -64,7 +64,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="tintColor" red="0.16992765670000001" green="0.36504811050000002" blue="0.32941251989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Bagikan Resep" image="square.and.arrow.up" catalog="system">
+                    <state key="normal" title="Bagikan Resep">
                         <color key="titleColor" red="0.22035056350000001" green="0.36109706759999999" blue="0.32941257950000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
                     <connections>
@@ -95,6 +95,5 @@
         <image name="Pita" width="364" height="62"/>
         <image name="Tepuk Tangan" width="293" height="316"/>
         <image name="multiply.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
     </resources>
 </document>

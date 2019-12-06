@@ -54,6 +54,11 @@
 		0EE313EA237406D000266DAF /* DismissCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313E6237406D000266DAF /* DismissCardAnimator.swift */; };
 		0EE313ED237406EF00266DAF /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313EB237406EF00266DAF /* CardCollectionViewCell.swift */; };
 		0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE313EC237406EF00266DAF /* CardCollectionViewCell.xib */; };
+		D531EFAC239795D000753E49 /* Profile1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531EFAB239795D000753E49 /* Profile1TableViewController.swift */; };
+		D531EFB323979BAD00753E49 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531EFB123979BAD00753E49 /* HeaderView.swift */; };
+		D531EFB423979BAD00753E49 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D531EFB223979BAD00753E49 /* HeaderView.xib */; };
+		D531EFB723991A1000753E49 /* SignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531EFB523991A1000753E49 /* SignTableViewCell.swift */; };
+		D531EFB823991A1000753E49 /* SignTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D531EFB623991A1000753E49 /* SignTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +132,11 @@
 		0EE313E6237406D000266DAF /* DismissCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissCardAnimator.swift; sourceTree = "<group>"; };
 		0EE313EB237406EF00266DAF /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		0EE313EC237406EF00266DAF /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		D531EFAB239795D000753E49 /* Profile1TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile1TableViewController.swift; sourceTree = "<group>"; };
+		D531EFB123979BAD00753E49 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D531EFB223979BAD00753E49 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		D531EFB523991A1000753E49 /* SignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTableViewCell.swift; sourceTree = "<group>"; };
+		D531EFB623991A1000753E49 /* SignTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +244,11 @@
 				0EA58193238F95F800E2A4D4 /* ProfileTableViewController.swift */,
 				0EA58196238F95F800E2A4D4 /* ProfileViewController.swift */,
 				0EA58197238F95F800E2A4D4 /* TextField.swift */,
+				D531EFAB239795D000753E49 /* Profile1TableViewController.swift */,
+				D531EFB123979BAD00753E49 /* HeaderView.swift */,
+				D531EFB223979BAD00753E49 /* HeaderView.xib */,
+				D531EFB523991A1000753E49 /* SignTableViewCell.swift */,
+				D531EFB623991A1000753E49 /* SignTableViewCell.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -461,6 +476,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D531EFB423979BAD00753E49 /* HeaderView.xib in Resources */,
 				0EA58186238F76A800E2A4D4 /* MaterialTableViewCell.xib in Resources */,
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
@@ -472,6 +488,7 @@
 				0EB9E4E0237BD06F004CB195 /* DetailView.xib in Resources */,
 				0EDCA39E235D6FB900760D1C /* Assets.xcassets in Resources */,
 				0EB9E4DE237BCEB1004CB195 /* HomeView.xib in Resources */,
+				D531EFB823991A1000753E49 /* SignTableViewCell.xib in Resources */,
 				0EA58192238F813700E2A4D4 /* CongratViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,10 +534,13 @@
 				0EE313D0237405A600266DAF /* CardContentViewModel.swift in Sources */,
 				0EA58199238F95F800E2A4D4 /* DetailTableViewController.swift in Sources */,
 				0E42673123603DE600643ACC /* MaterialModel.swift in Sources */,
+				D531EFB323979BAD00753E49 /* HeaderView.swift in Sources */,
 				0EE313CE2374058D00266DAF /* CardContentView.swift in Sources */,
 				0E3358FC23790C9800231BFD /* SectionHeaderView.swift in Sources */,
 				0ECCCCB123658DBA0049BBC0 /* CoreDataStack.swift in Sources */,
+				D531EFAC239795D000753E49 /* Profile1TableViewController.swift in Sources */,
 				0EDCA394235D6FB800760D1C /* SceneDelegate.swift in Sources */,
+				D531EFB723991A1000753E49 /* SignTableViewCell.swift in Sources */,
 				0EE313DD2374065B00266DAF /* CardDetailViewController.swift in Sources */,
 				0EE313D62374060400266DAF /* UIView+AutoLayout.swift in Sources */,
 				0EE313DC2374065B00266DAF /* HomeViewController.swift in Sources */,

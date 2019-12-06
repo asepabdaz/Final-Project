@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -82,7 +82,7 @@
                                     <color key="backgroundColor" red="0.22045379879999999" green="0.36116188760000001" blue="0.32940953969999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
-                                    <state key="normal" title="OK">
+                                    <state key="normal" title="Tunjukan caranya!">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
@@ -93,7 +93,7 @@
                                     <rect key="frame" x="20" y="909.5" width="374" height="51"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
-                                    <state key="normal" title="Dapatkan kit lengkap">
+                                    <state key="normal" title="Dapatkan produk">
                                         <color key="titleColor" red="0.22045379879999999" green="0.36116188760000001" blue="0.32940953969999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
