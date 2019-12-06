@@ -26,7 +26,7 @@ extension UILabel {
         
         let attributedString = NSMutableAttributedString(string: String(text))
         for range in rangesOfAttributes {
-            let color = highlightedTextColor ?? #colorLiteral(red: 0.3394442201, green: 0.63580966, blue: 0.5225050449, alpha: 1)
+            let color = highlightedTextColor ?? #colorLiteral(red: 0.3508917391, green: 0.6345050931, blue: 0.4426603317, alpha: 1)
             let font = UIFont.boldSystemFont(ofSize: 17.0)
             attributedString.addAttribute(NSAttributedString.Key.font, value: font, range: range)
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)

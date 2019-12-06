@@ -85,7 +85,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
             descText.append("\n\n\n\(cardViewModel.descTable[desc])")
         }
         
-//        descriptionLabel.text = descText
+
         descriptionLabel.highlightedText = descText
         cardContentView.setFontState(isHighlighted: isFontStateHighlighted)
 
