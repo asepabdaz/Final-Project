@@ -74,8 +74,7 @@ class CongratViewController: UIViewController, UIDocumentInteractionControllerDe
         emitter.emitterCells = generateEmitterCells()
         self.view.layer.addSublayer(emitter)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            print("a")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { 
             self.emitter.lifetime = 0
         }
 

@@ -243,7 +243,12 @@ class tutorialScrub2: UIViewController {
     @objc func rotateGesture(recognizer: CircleGesture){
         
         if let rotation = recognizer.rotation {
-            currentValue += rotation
+            if rotation < 0 {
+                currentValue += 0
+            }else{
+                currentValue += rotation
+            }
+            
             
             //MARK: asset perlu 31 gambar
             
