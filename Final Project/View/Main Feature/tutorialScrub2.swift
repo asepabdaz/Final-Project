@@ -25,7 +25,7 @@ class tutorialScrub2: UIViewController {
     var currentItem = 0
     var imageName = ""
     
-    let stepText = ["Langkah 1: Tuang ampas kopi ke dalam mangkuk", "Langkah 2: Tuang minyak kelapa ", "Langkah 3: Campur semua bahan", "Langkah 4: Tuang tepung tapioka ke dalam mangkuk","Langkah 5: Teteskan minyak essensial", "Langkah 6: Aduk hingga tercampur rata"]
+    let stepText = ["Langkah 1: Tuang ampas kopi ke dalam mangkuk", "Langkah 2: Tuang minyak kelapa ", "Langkah 3: Campur semua bahan", "Langkah 4: Tuang tepung tapioka ke dalam mangkuk","Langkah 5: Teteskan essential oil", "Langkah 6: Aduk hingga tercampur rata"]
     let descriptionText = ["Kurang Lebih 6-8 sendok makan ya guys!", "3 Sendok Makan Ya!", "Diaduk sampai tercampur rata ya, kak!", "Tambahkan sekitar 1 sendok ya","3 tetes sudah cukup", ""]
     let itemName = ["Ampas Kopi", "Minyak kelapa","", "Tepung Maizena","Essential Oil", "", ""]
     

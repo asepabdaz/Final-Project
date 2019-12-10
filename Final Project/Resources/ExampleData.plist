@@ -2,124 +2,124 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>1scrub</key>
-    <dict>
-        <key>nameProduct</key>
-        <string>Tutorial Scrub</string>
-        <key>summery</key>
-        <string>hanya dengan ampas kopi bahan yang kamu gunakan</string>
-        <key>desc</key>
-        <string>Memangnya ampas kopi bisa untuk apa aja sih? Ampas kopi mengandung anti-oksidan yang baik untuk kulit loh, bisa juga untuk mengurangi selulit. Ayo kita coba simulasi cara membuat scrubnya ya… </string>
-        <key>image</key>
-        <string>Cards 1</string>
-        <key>material</key>
-        <array>
-            <dict>
-                <key>name</key>
-                <string>Spent Coffee Grounds</string>
-                <key>image</key>
-                <string>Spent Coffee Grounds</string>
-                <key>desc</key>
-                <string>8-12 tablespoons</string>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Coconut Oil / Olive Oil</string>
-                <key>image</key>
-                <string>Coconut_Oil Material</string>
-                <key>desc</key>
-                <string>1-3 tablespoons(45ml)</string>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Cornstrach</string>
-                <key>image</key>
-                <string>Cornstarch</string>
-                <key>desc</key>
-                <string>3 tablespoons</string>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Essential Oil</string>
-                <key>image</key>
-                <string>Essential Oil-No</string>
-                <key>desc</key>
-                <string>3 tablespoons</string>
-            </dict>
-        </array>
-        <key>after</key>
-        <string>You have finished the simulation of making your coffee scrub using coffe grounds. Would you like to get the real stuffs so you can do some real hands on</string>
-        <key>storyBoard</key>
-        <string>tutorialScrub2</string>
-        <key>descTable</key>
-        <array>
-            <string>&lt;em&gt;Cara menggunakan body scrub&lt;/em&gt;  Penggunaan body scrub dapat dilakukan dengan mandi terlebih dahulu (Hindari air panas karena dapat membuat kulit kering). Gunakan body scrub dengan cara melulur semua bagian tubuh dari ujung kaki sampai leher. Setelah scrub sudah digunakan, tunggu 5-10 menit. Bilas dengan air bersih.</string>
-            <string>&lt;em&gt;Manfaat&lt;/em&gt; yang bisa kamu dapatkan dari body scrub ini tentunya kulitmu bisa menjadi lebih halus, kotoran sel kulit mati terangkat, dan sesulit bisa memudar. Ampas kopi mengandung antioksidan, yang tentunya bagus untuk kulit mu!</string>
-            <string>Jadi, siap mencoba sendiri dirumah?</string>
-        </array>
-    </dict>
-    <key>2cofeAroma</key>
-    <dict>
-        <key>nameProduct</key>
-        <string>Coffee aroma</string>
-        <key>summery</key>
-        <string>indulge your warm, cozy home with scant of coffee!</string>
-        <key>desc</key>
-        <string>fragrances using coffee can eleminate unpleasant odors in the car trunk, the scent can last up to 30 days with right composition. you can make yourself according to taste with the kit that has been provided without having to store product packaging</string>
-        <key>image</key>
-        <string>Cards 2</string>
-        <key>material</key>
-        <array>
-            <dict>
-                <key>name</key>
-                <string>Gelatine</string>
-                <key>image</key>
-                <string>Cards 2</string>
-                <key>desc</key>
-                <string>5 sendok makan</string>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Garam dapur</string>
-                <key>image</key>
-                <string>Cards 2</string>
-                <key>desc</key>
-                <string>1 sendok teh garam dapur</string>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Air</string>
-                <key>image</key>
-                <string>Cards 2</string>
-                <key>desc</key>
-                <string>200 ml</string>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Coffe ground</string>
-                <key>image</key>
-                <string>Cards 2</string>
-                <key>desc</key>
-                <string>5 sendok coffe grounds</string>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>dye</string>
-                <key>image</key>
-                <string>Cards 2</string>
-                <key>desc</key>
-                <string>1 sendok teh</string>
-            </dict>
-        </array>
-        <key>after</key>
-        <string>You have finished the simulation of making your coffee scrub using coffe grounds. Would you like to get the real stuffs so you can do some real hands on</string>
-        <key>storyBoard</key>
-        <string>comingSoon</string>
-        <key>descTable</key>
-        <array>
-            <string></string>
-            <string></string>
-        </array>
-    </dict>
+	<key>1scrub</key>
+	<dict>
+		<key>nameProduct</key>
+		<string>Tutorial Scrub</string>
+		<key>summery</key>
+		<string>Hanya dengan ampas kopi, kembalikan rona alami kulitmu</string>
+		<key>desc</key>
+		<string>Memangnya ampas kopi bisa untuk apa aja sih? Ampas kopi mengandung anti-oksidan yang baik untuk kulit loh, bisa juga untuk mengurangi selulit. Ayo kita coba simulasi cara membuat scrubnya ya… </string>
+		<key>image</key>
+		<string>Cards 1</string>
+		<key>material</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Ampas Kopi</string>
+				<key>image</key>
+				<string>Spent Coffee Grounds</string>
+				<key>desc</key>
+				<string>8-12 Sendok Makan</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Minyak Kelapa</string>
+				<key>image</key>
+				<string>Coconut_Oil Material</string>
+				<key>desc</key>
+				<string>1-3 Sendok Makan (45ml)</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tepung Maizena</string>
+				<key>image</key>
+				<string>Cornstarch</string>
+				<key>desc</key>
+				<string>3 Sendok Makan</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Essential Oil</string>
+				<key>image</key>
+				<string>Essential Oil-No</string>
+				<key>desc</key>
+				<string>3 Sendok Makan</string>
+			</dict>
+		</array>
+		<key>after</key>
+		<string>You have finished the simulation of making your coffee scrub using coffe grounds. Would you like to get the real stuffs so you can do some real hands on</string>
+		<key>storyBoard</key>
+		<string>tutorialScrub2</string>
+		<key>descTable</key>
+		<array>
+			<string>&lt;em&gt;Cara menggunakan body scrub&lt;/em&gt;  Penggunaan body scrub dapat dilakukan dengan mandi terlebih dahulu (Hindari air panas karena dapat membuat kulit kering). Gunakan body scrub dengan cara melulur semua bagian tubuh dari ujung kaki sampai leher. Setelah scrub sudah digunakan, tunggu 5-10 menit. Bilas dengan air bersih.</string>
+			<string>&lt;em&gt;Manfaat&lt;/em&gt; yang bisa kamu dapatkan dari body scrub ini tentunya kulitmu bisa menjadi lebih halus, kotoran sel kulit mati terangkat, dan sesulit bisa memudar. Ampas kopi mengandung antioksidan, yang tentunya bagus untuk kulit mu!</string>
+			<string>Jadi, siap mencoba sendiri dirumah?</string>
+		</array>
+	</dict>
+	<key>2cofeAroma</key>
+	<dict>
+		<key>nameProduct</key>
+		<string>Coffee aroma</string>
+		<key>summery</key>
+		<string>Hilangkan bau di dalam ruangan dan kulkas anda dengan trik berikut ini!</string>
+		<key>desc</key>
+		<string>Ampas kopi dapat digunakan untuk menghilangkan bau tidak sedap dalam bagasi mobil Anda, di toilet, dan bahkan di dalam kulkas anda. Dapat bertahan selama sebulan dengan komposisi yang tepat. Anda sekarang dapat membuat penghilang bau aroma kopi dengan paket yang telah kami sediakan di toko kami  tanpa perlu repot-repot pergi mencari bahan bakunya</string>
+		<key>image</key>
+		<string>Cards 2</string>
+		<key>material</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Gelatine</string>
+				<key>image</key>
+				<string>Cards 2</string>
+				<key>desc</key>
+				<string>5 sendok makan</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Garam dapur</string>
+				<key>image</key>
+				<string>Cards 2</string>
+				<key>desc</key>
+				<string>1 sendok teh garam dapur</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Air</string>
+				<key>image</key>
+				<string>Cards 2</string>
+				<key>desc</key>
+				<string>200 ml</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Coffe ground</string>
+				<key>image</key>
+				<string>Cards 2</string>
+				<key>desc</key>
+				<string>5 sendok coffe grounds</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>dye</string>
+				<key>image</key>
+				<string>Cards 2</string>
+				<key>desc</key>
+				<string>1 sendok teh</string>
+			</dict>
+		</array>
+		<key>after</key>
+		<string>You have finished the simulation of making your coffee scrub using coffe grounds. Would you like to get the real stuffs so you can do some real hands on</string>
+		<key>storyBoard</key>
+		<string>comingSoon</string>
+		<key>descTable</key>
+		<array>
+			<string></string>
+			<string></string>
+		</array>
+	</dict>
 </dict>
 </plist>
