@@ -17,7 +17,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var materialTabel: UITableView!
     @IBOutlet weak var descriptionLabel: UILabel!
-    
+    var indexSelected = 0
     var cardViewModel: CardContentViewModel! {
         didSet {
             if self.cardContentView != nil {

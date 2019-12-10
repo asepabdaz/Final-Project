@@ -114,7 +114,7 @@
 		<key>after</key>
 		<string>You have finished the simulation of making your coffee scrub using coffe grounds. Would you like to get the real stuffs so you can do some real hands on</string>
 		<key>storyBoard</key>
-		<string>comingSoon</string>
+		<string>CoffeeAroma</string>
 		<key>descTable</key>
 		<array>
 			<string></string>

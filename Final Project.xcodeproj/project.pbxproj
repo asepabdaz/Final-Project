@@ -54,6 +54,8 @@
 		0EE313EA237406D000266DAF /* DismissCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313E6237406D000266DAF /* DismissCardAnimator.swift */; };
 		0EE313ED237406EF00266DAF /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE313EB237406EF00266DAF /* CardCollectionViewCell.swift */; };
 		0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE313EC237406EF00266DAF /* CardCollectionViewCell.xib */; };
+		D522BDE7239F39D3003346EF /* CooffeeAromaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522BDE5239F39D3003346EF /* CooffeeAromaViewController.swift */; };
+		D522BDEA239F3A65003346EF /* CoffeeAroma.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D522BDE9239F3A65003346EF /* CoffeeAroma.storyboard */; };
 		D531EFAC239795D000753E49 /* Profile1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531EFAB239795D000753E49 /* Profile1TableViewController.swift */; };
 		D531EFB323979BAD00753E49 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531EFB123979BAD00753E49 /* HeaderView.swift */; };
 		D531EFB423979BAD00753E49 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D531EFB223979BAD00753E49 /* HeaderView.xib */; };
@@ -132,6 +134,8 @@
 		0EE313E6237406D000266DAF /* DismissCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissCardAnimator.swift; sourceTree = "<group>"; };
 		0EE313EB237406EF00266DAF /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		0EE313EC237406EF00266DAF /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		D522BDE5239F39D3003346EF /* CooffeeAromaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooffeeAromaViewController.swift; sourceTree = "<group>"; };
+		D522BDE9239F3A65003346EF /* CoffeeAroma.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoffeeAroma.storyboard; sourceTree = "<group>"; };
 		D531EFAB239795D000753E49 /* Profile1TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile1TableViewController.swift; sourceTree = "<group>"; };
 		D531EFB123979BAD00753E49 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D531EFB223979BAD00753E49 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
@@ -220,6 +224,7 @@
 		0EA58187238F77AB00E2A4D4 /* Main Feature */ = {
 			isa = PBXGroup;
 			children = (
+				D522BDE4239F39A4003346EF /* Coffe Aroma */,
 				0EA58188238F7A6000E2A4D4 /* CircleGesture.swift */,
 				0EA5818A238F7B3900E2A4D4 /* tutorialScrub2.storyboard */,
 				0EA5818C238F7B6200E2A4D4 /* tutorialScrub2.swift */,
@@ -372,6 +377,15 @@
 			path = Transition;
 			sourceTree = "<group>";
 		};
+		D522BDE4239F39A4003346EF /* Coffe Aroma */ = {
+			isa = PBXGroup;
+			children = (
+				D522BDE5239F39D3003346EF /* CooffeeAromaViewController.swift */,
+				D522BDE9239F3A65003346EF /* CoffeeAroma.storyboard */,
+			);
+			path = "Coffe Aroma";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -480,6 +494,7 @@
 				0EA58186238F76A800E2A4D4 /* MaterialTableViewCell.xib in Resources */,
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
+				D522BDEA239F3A65003346EF /* CoffeeAroma.storyboard in Resources */,
 				0E08461023828E9200B2156D /* HeaderCollectionReusableView.xib in Resources */,
 				0EA5818B238F7B3900E2A4D4 /* tutorialScrub2.storyboard in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
@@ -525,6 +540,7 @@
 				0EE313ED237406EF00266DAF /* CardCollectionViewCell.swift in Sources */,
 				0EE313D4237405ED00266DAF /* NibLoadable.swift in Sources */,
 				0EA58189238F7A6000E2A4D4 /* CircleGesture.swift in Sources */,
+				D522BDE7239F39D3003346EF /* CooffeeAromaViewController.swift in Sources */,
 				0EE313E7237406D000266DAF /* CardTransition.swift in Sources */,
 				0EA5819C238F95F800E2A4D4 /* TextField.swift in Sources */,
 				0EDCA392235D6FB800760D1C /* AppDelegate.swift in Sources */,

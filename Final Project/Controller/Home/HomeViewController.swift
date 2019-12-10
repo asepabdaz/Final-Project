@@ -59,8 +59,9 @@ final class HomeViewController: StatusBarAnimatableViewController {
                                          animation: .slide)
     }
     override func viewWillAppear(_ animated: Bool) {
-        collectionView.reloadData()
-        self.navigationController?.isNavigationBarHidden = true
+        super.viewWillAppear(animated)
+//        collectionView.reloadData()
+//        self.navigationController?.isNavigationBarHidden = true
         
     }
 }
@@ -146,7 +147,7 @@ extension HomeViewController {
         // Set up card detail view controller
         let vc = CardDetailViewController(nibName: "DetailView", bundle: nil)
 //        let vc = storyboard!.instantiateViewController(withIdentifier: "cardDetailVc") as! CardDetailViewController
-        vc.cardViewModel = cardModel.highlightedImage()
+        vc.cardViewModel = cardModel
         vc.unhighlightedCardViewModel = cardModel // Keep the original one to restore when dismiss
         let params = CardTransition.Params(fromCardFrame: cardPresentationFrameOnScreen,
                                            fromCardFrameWithoutTransform: cardFrameWithoutTransform,
