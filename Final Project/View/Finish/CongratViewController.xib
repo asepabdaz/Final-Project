@@ -52,7 +52,7 @@
                     <rect key="frame" x="30" y="740" width="354" height="50"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Ya!">
+                    <state key="normal" title="Beli Produk">
                         <color key="titleColor" red="0.22035056350000001" green="0.36109706759999999" blue="0.32941257950000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
                     <connections>

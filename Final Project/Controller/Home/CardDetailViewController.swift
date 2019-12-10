@@ -82,7 +82,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         textView.text = cardViewModel.description
         var descText: String = ""
         for desc in 0..<cardViewModel.descTable.count {
-            descText.append("\n\n\n\(cardViewModel.descTable[desc])")
+            descText.append("\n\n\(cardViewModel.descTable[desc])")
         }
         
 
@@ -129,7 +129,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         var heightTable = 0
 
         for _ in cardViewModel.material{
-            heightTable += 50 // 50 is magic number
+            heightTable += 55 // 50 is magic number
         }
         tableViewHeight = CGFloat(heightTable)
         heightTableMaterial.constant = tableViewHeight
