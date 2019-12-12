@@ -49,7 +49,7 @@
 		<key>summery</key>
 		<string>Hilangkan bau di dalam ruangan dan kulkas anda dengan trik berikut ini!</string>
 		<key>desc</key>
-		<string>Ampas kopi dapat digunakan untuk menghilangkan bau tidak sedap dalam bagasi mobil Anda, di toilet, dan bahkan di dalam kulkas anda. Dapat bertahan selama sebulan dengan komposisi yang tepat. Anda sekarang dapat membuat penghilang bau aroma kopi dengan paket yang telah kami sediakan di toko kami  tanpa perlu repot-repot pergi mencari bahan bakunya</string>
+		<string>Spent coffee grounds can be used to remove odour from your toilet, car trunk, and even your fridge. Using the right ingredients, this DIY odour remover can last up to a month. You can purchase the odour remover kit from our marketplace, which saves you some time and effort to gather the ingredients.</string>
 		<key>image</key>
 		<string>Cards 2</string>
 		<key>material</key>
@@ -60,15 +60,15 @@
 				<key>image</key>
 				<string>Cards 2</string>
 				<key>desc</key>
-				<string>5 sendok makan</string>
+				<string>5 Tablespoons</string>
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>Garam dapur</string>
+				<string>Table salt</string>
 				<key>image</key>
 				<string>Cards 2</string>
 				<key>desc</key>
-				<string>1 sendok teh garam dapur</string>
+				<string>1 tablespoon salt</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -84,7 +84,7 @@
 				<key>image</key>
 				<string>Cards 2</string>
 				<key>desc</key>
-				<string>5 sendok coffe grounds</string>
+				<string>5 tablespoons coffee grounds</string>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -92,7 +92,7 @@
 				<key>image</key>
 				<string>Cards 2</string>
 				<key>desc</key>
-				<string>1 sendok teh</string>
+				<string>1 teaspoon</string>
 			</dict>
 		</array>
 		<key>after</key>
