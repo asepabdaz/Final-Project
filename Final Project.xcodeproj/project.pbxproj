@@ -57,6 +57,9 @@
 		D522BE1723A1D9F7003346EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D522BE1923A1D9F7003346EF /* Localizable.strings */; };
 		D522BE1E23A1EFF0003346EF /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D522BE2023A1EFF0003346EF /* DetailView.xib */; };
 		D522BE2623A1F2D2003346EF /* ExampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = D522BE2823A1F2D2003346EF /* ExampleData.plist */; };
+		D522BE3623A21CCE003346EF /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D522BE3523A21CCE003346EF /* Transaction.storyboard */; };
+		D522BE3A23A21D16003346EF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522BE3923A21D16003346EF /* Transaction.swift */; };
+		D522BE3C23A21D32003346EF /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522BE3B23A21D32003346EF /* TransactionModel.swift */; };
 		D531EFAC239795D000753E49 /* Profile1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531EFAB239795D000753E49 /* Profile1TableViewController.swift */; };
 		D531EFB323979BAD00753E49 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531EFB123979BAD00753E49 /* HeaderView.swift */; };
 		D531EFB423979BAD00753E49 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D531EFB223979BAD00753E49 /* HeaderView.xib */; };
@@ -143,6 +146,9 @@
 		D522BE2523A1F101003346EF /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/DetailView.strings; sourceTree = "<group>"; };
 		D522BE2723A1F2D2003346EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/ExampleData.plist; sourceTree = "<group>"; };
 		D522BE2923A1F2D9003346EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/ExampleData.plist; sourceTree = "<group>"; };
+		D522BE3523A21CCE003346EF /* Transaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
+		D522BE3923A21D16003346EF /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		D522BE3B23A21D32003346EF /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		D531EFAB239795D000753E49 /* Profile1TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile1TableViewController.swift; sourceTree = "<group>"; };
 		D531EFB123979BAD00753E49 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D531EFB223979BAD00753E49 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 		0E42672A23603BA800643ACC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D522BE3823A21CFF003346EF /* Transaction */,
 				0EE313D92374064800266DAF /* Home */,
 				0ECCCCAB2365855B0049BBC0 /* Material */,
 				0E42672B23603BBF00643ACC /* CoreData */,
@@ -199,6 +206,7 @@
 			children = (
 				0EE313CF237405A600266DAF /* CardContentViewModel.swift */,
 				0E42673023603DE600643ACC /* MaterialModel.swift */,
+				D522BE3B23A21D32003346EF /* TransactionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 		0E42672F23603DAB00643ACC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D522BE3723A21CD8003346EF /* Transaction */,
 				0EA5818E238F812100E2A4D4 /* Finish */,
 				0EA58187238F77AB00E2A4D4 /* Main Feature */,
 				0E4267322360432A00643ACC /* Home */,
@@ -394,6 +403,22 @@
 			path = "Coffe Aroma";
 			sourceTree = "<group>";
 		};
+		D522BE3723A21CD8003346EF /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				D522BE3523A21CCE003346EF /* Transaction.storyboard */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		D522BE3823A21CFF003346EF /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				D522BE3923A21D16003346EF /* Transaction.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -501,6 +526,7 @@
 			files = (
 				D531EFB423979BAD00753E49 /* HeaderView.xib in Resources */,
 				0EA58186238F76A800E2A4D4 /* MaterialTableViewCell.xib in Resources */,
+				D522BE3623A21CCE003346EF /* Transaction.storyboard in Resources */,
 				0EDCA3A1235D6FB900760D1C /* LaunchScreen.storyboard in Resources */,
 				0EE313EE237406EF00266DAF /* CardCollectionViewCell.xib in Resources */,
 				D522BDEA239F3A65003346EF /* CoffeeAroma.storyboard in Resources */,
@@ -560,6 +586,7 @@
 				0EE313D0237405A600266DAF /* CardContentViewModel.swift in Sources */,
 				0EA58199238F95F800E2A4D4 /* DetailTableViewController.swift in Sources */,
 				0E42673123603DE600643ACC /* MaterialModel.swift in Sources */,
+				D522BE3C23A21D32003346EF /* TransactionModel.swift in Sources */,
 				D531EFB323979BAD00753E49 /* HeaderView.swift in Sources */,
 				0EE313CE2374058D00266DAF /* CardContentView.swift in Sources */,
 				0E3358FC23790C9800231BFD /* SectionHeaderView.swift in Sources */,
@@ -569,6 +596,7 @@
 				D531EFB723991A1000753E49 /* SignTableViewCell.swift in Sources */,
 				0EE313DD2374065B00266DAF /* CardDetailViewController.swift in Sources */,
 				0EE313D62374060400266DAF /* UIView+AutoLayout.swift in Sources */,
+				D522BE3A23A21D16003346EF /* Transaction.swift in Sources */,
 				0EE313DC2374065B00266DAF /* HomeViewController.swift in Sources */,
 				0ECCCCAD236585710049BBC0 /* MaterialController.swift in Sources */,
 				0EE313EA237406D000266DAF /* DismissCardAnimator.swift in Sources */,
