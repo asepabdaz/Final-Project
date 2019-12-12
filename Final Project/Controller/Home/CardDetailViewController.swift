@@ -57,10 +57,13 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         if cardViewModel.storyBoard == "comingSoon" {
+            let alertTitle = NSLocalizedString("coming_soon", comment: "")
             outletShowMeHow.isUserInteractionEnabled = false
             outletShowMeHow.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-            outletShowMeHow.setTitle("Coming Soon", for: .normal)
+            outletShowMeHow.setTitle(alertTitle, for: .normal)
         }
         if GlobalConstants.isEnabledDebugAnimatingViews {
             scrollView.layer.borderWidth = 3
