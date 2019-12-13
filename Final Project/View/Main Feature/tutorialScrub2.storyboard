@@ -34,8 +34,8 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c3-XN-let">
-                                        <rect key="frame" x="0.0" y="54" width="374" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="0.0" y="46" width="374" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <color key="textColor" red="0.21960784310000001" green="0.36078431370000003" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -85,6 +85,7 @@
                         <outlet property="descriptionLabel" destination="cMC-I4-OJP" id="gP1-UM-HSJ"/>
                         <outlet property="itemImage" destination="kHk-d0-bfl" id="ghV-6K-qfi"/>
                         <outlet property="mainObject" destination="0IN-OF-B1l" id="RQA-Ju-nez"/>
+                        <outlet property="mejaMaterialUIView" destination="POM-oC-UT8" id="1tV-SB-Cdh"/>
                         <outlet property="mejaUIView" destination="C4p-ly-VGA" id="M9H-vA-dlE"/>
                         <outlet property="nameLabel" destination="6c3-XN-let" id="AhK-8Q-PCT"/>
                         <outlet property="stepLabel" destination="z2t-pu-EPE" id="0Sg-Bh-71e"/>

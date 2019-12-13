@@ -17,7 +17,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var materialTabel: UITableView!
     @IBOutlet weak var descriptionLabel: UILabel!
-    
+    var indexSelected = 0
     var cardViewModel: CardContentViewModel! {
         didSet {
             if self.cardContentView != nil {
@@ -57,10 +57,13 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         if cardViewModel.storyBoard == "comingSoon" {
+            let alertTitle = NSLocalizedString("coming_soon", comment: "")
             outletShowMeHow.isUserInteractionEnabled = false
             outletShowMeHow.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-            outletShowMeHow.setTitle("Coming Soon", for: .normal)
+            outletShowMeHow.setTitle(alertTitle, for: .normal)
         }
         if GlobalConstants.isEnabledDebugAnimatingViews {
             scrollView.layer.borderWidth = 3
@@ -82,7 +85,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         textView.text = cardViewModel.description
         var descText: String = ""
         for desc in 0..<cardViewModel.descTable.count {
-            descText.append("\n\n\n\(cardViewModel.descTable[desc])")
+            descText.append("\n\n\(cardViewModel.descTable[desc])")
         }
         
 
@@ -129,7 +132,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
         var heightTable = 0
 
         for _ in cardViewModel.material{
-            heightTable += 50 // 50 is magic number
+            heightTable += 55 // 50 is magic number
         }
         tableViewHeight = CGFloat(heightTable)
         heightTableMaterial.constant = tableViewHeight

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1scrub</key>
+	<dict>
+		<key>nameProduct</key>
+		<string>How to Scrub</string>
+		<key>summery</key>
+		<string>Brighten up your skin to its natural tone</string>
+		<key>desc</key>
+		<string>What can spent coffee grounds do? They contain antioxidants which are great for your skin, while at the same time reducing the appearance of cellulites. Let&apos;s simulate how to make the scrub now, shall we?</string>
+		<key>image</key>
+		<string>Cards 1</string>
+		<key>material</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Cornstarch</string>
+				<key>image</key>
+				<string>Cornstarch</string>
+				<key>desc</key>
+				<string>3 Tablespoons</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Essential Oil</string>
+				<key>image</key>
+				<string>Essential Oil-No</string>
+				<key>desc</key>
+				<string>3 Sendok Makan</string>
+			</dict>
+		</array>
+		<key>after</key>
+		<string>You have finished the simulation of making your coffee scrub using spent coffee grounds. Would you like to get the real stuffs so you can get your hands on it?</string>
+		<key>storyBoard</key>
+		<string>tutorialScrub2</string>
+		<key>descTable</key>
+		<array>
+			<string>&lt;em&gt;How to use body scrub&lt;/em&gt;  Penggunaan body scrub dapat dilakukan dengan mandi terlebih dahulu (Hindari air panas karena dapat membuat kulit kering). Gunakan body scrub dengan cara melulur semua bagian tubuh dari ujung kaki sampai leher. Setelah scrub sudah digunakan, tunggu 5-10 menit. Bilas dengan air bersih.</string>
+			<string>Coffee scrub can smooth out your skin, exfoliate dead skin cells, and hide cellulites. As a bonus, spent coffee grounds also contains antioxidants which is great for your skin!</string>
+			<string>So, are you ready to try it out at home?</string>
+		</array>
+	</dict>
+	<key>2cofeAroma</key>
+	<dict>
+		<key>nameProduct</key>
+		<string>Coffee aroma</string>
+		<key>summery</key>
+		<string>Hilangkan bau di dalam ruangan dan kulkas anda dengan trik berikut ini!</string>
+		<key>desc</key>
+		<string>Spent coffee grounds can be used to remove odour from your toilet, car trunk, and even your fridge. Using the right ingredients, this DIY odour remover can last up to a month. You can purchase the odour remover kit from our marketplace, which saves you some time and effort to gather the ingredients.</string>
+		<key>image</key>
+		<string>Cards 2</string>
+		<key>material</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Gelatine</string>
+				<key>image</key>
+				<string>Cards 2</string>
+				<key>desc</key>
+				<string>5 Tablespoons</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Table salt</string>
+				<key>image</key>
+				<string>Cards 2</string>
+				<key>desc</key>
+				<string>1 tablespoon salt</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Air</string>
+				<key>image</key>
+				<string>Cards 2</string>
+				<key>desc</key>
+				<string>200 ml</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Coffe ground</string>
+				<key>image</key>
+				<string>Cards 2</string>
+				<key>desc</key>
+				<string>5 tablespoons coffee grounds</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>dye</string>
+				<key>image</key>
+				<string>Cards 2</string>
+				<key>desc</key>
+				<string>1 teaspoon</string>
+			</dict>
+		</array>
+		<key>after</key>
+		<string>You have finished the simulation of making your coffee scrub using coffe grounds. Would you like to get the real stuffs so you can do some real hands on</string>
+		<key>storyBoard</key>
+		<string>comingSoon</string>
+		<key>descTable</key>
+		<array>
+			<string></string>
+			<string></string>
+		</array>
+	</dict>
+</dict>
+</plist>

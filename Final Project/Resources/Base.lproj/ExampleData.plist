@@ -7,7 +7,7 @@
         <key>nameProduct</key>
         <string>Tutorial Scrub</string>
         <key>summery</key>
-        <string>hanya dengan ampas kopi bahan yang kamu gunakan</string>
+        <string>Hanya dengan ampas kopi, kembalikan rona alami kulitmu</string>
         <key>desc</key>
         <string>Memangnya ampas kopi bisa untuk apa aja sih? Ampas kopi mengandung anti-oksidan yang baik untuk kulit loh, bisa juga untuk mengurangi selulit. Ayo kita coba simulasi cara membuat scrubnya ya… </string>
         <key>image</key>
@@ -16,27 +16,27 @@
         <array>
             <dict>
                 <key>name</key>
-                <string>Spent Coffee Grounds</string>
+                <string>Ampas Kopi</string>
                 <key>image</key>
                 <string>Spent Coffee Grounds</string>
                 <key>desc</key>
-                <string>8-12 tablespoons</string>
+                <string>8-12 Sendok Makan</string>
             </dict>
             <dict>
                 <key>name</key>
-                <string>Coconut Oil / Olive Oil</string>
+                <string>Minyak Kelapa</string>
                 <key>image</key>
                 <string>Coconut_Oil Material</string>
                 <key>desc</key>
-                <string>1-3 tablespoons(45ml)</string>
+                <string>1-3 Sendok Makan (45ml)</string>
             </dict>
             <dict>
                 <key>name</key>
-                <string>Cornstrach</string>
+                <string>Tepung Maizena</string>
                 <key>image</key>
                 <string>Cornstarch</string>
                 <key>desc</key>
-                <string>3 tablespoons</string>
+                <string>3 Sendok Makan</string>
             </dict>
             <dict>
                 <key>name</key>
@@ -44,7 +44,7 @@
                 <key>image</key>
                 <string>Essential Oil-No</string>
                 <key>desc</key>
-                <string>3 tablespoons</string>
+                <string>3 Sendok Makan</string>
             </dict>
         </array>
         <key>after</key>
@@ -63,9 +63,9 @@
         <key>nameProduct</key>
         <string>Coffee aroma</string>
         <key>summery</key>
-        <string>indulge your warm, cozy home with scant of coffee!</string>
+        <string>Hilangkan bau di dalam ruangan dan kulkas anda dengan trik berikut ini!</string>
         <key>desc</key>
-        <string>fragrances using coffee can eleminate unpleasant odors in the car trunk, the scent can last up to 30 days with right composition. you can make yourself according to taste with the kit that has been provided without having to store product packaging</string>
+        <string>Ampas kopi dapat digunakan untuk menghilangkan bau tidak sedap dalam bagasi mobil Anda, di toilet, dan bahkan di dalam kulkas anda. Dapat bertahan selama sebulan dengan komposisi yang tepat. Anda sekarang dapat membuat penghilang bau aroma kopi dengan paket yang telah kami sediakan di toko kami  tanpa perlu repot-repot pergi mencari bahan bakunya</string>
         <key>image</key>
         <string>Cards 2</string>
         <key>material</key>

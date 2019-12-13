@@ -17,15 +17,16 @@ class tutorialScrub2: UIViewController {
     @IBOutlet weak var bowl: UIImageView!
     @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var mainObject: UIImageView!
-    @IBOutlet weak var originImageView: UIImageView!
+//    @IBOutlet weak var originImageView: UIImageView!
     @IBOutlet weak var mejaUIView: UIView!
+    @IBOutlet weak var mejaMaterialUIView: UIView!
     
     var miniStep = 0
     var currentStep = 0
     var currentItem = 0
     var imageName = ""
     
-    let stepText = ["Langkah 1: Tuang ampas kopi ke dalam mangkuk", "Langkah 2: Tuang minyak kelapa ", "Langkah 3: Campur semua bahan", "Langkah 4: Tuang tepung tapioka ke dalam mangkuk","Langkah 5: Teteskan minyak essensial", "Langkah 6: Aduk hingga tercampur rata"]
+    let stepText = ["Langkah 1: Tuang ampas kopi ke dalam mangkok", "Langkah 2: Tuang minyak kelapa  ke dalam mangkok", "Langkah 3: Campur semua bahan", "Langkah 4: Tuang tepung tapioka ke dalam mangkok","Langkah 5: Teteskan minyak essensial", "Langkah 6: Aduk hingga tercampur rata"]
     let descriptionText = ["Kurang Lebih 6-8 sendok makan ya guys!", "3 Sendok Makan Ya!", "Diaduk sampai tercampur rata ya, kak!", "Tambahkan sekitar 1 sendok ya","3 tetes sudah cukup", ""]
     let itemName = ["Ampas Kopi", "Minyak kelapa","", "Tepung Maizena","Essential Oil", "", ""]
     
@@ -36,10 +37,27 @@ class tutorialScrub2: UIViewController {
     
     override func viewDidLoad() {
          super.viewDidLoad()
-        
+        stepLabel.layer.cornerRadius = 10
+        stepLabel.layer.masksToBounds = true
         kopi😘 = createImageArray(total😘: 20, imagePrefix: "kopiPertama")
+        mejaUIView.layer.shadowPath = UIBezierPath(roundedRect: mejaUIView.bounds, cornerRadius: mejaUIView.layer.cornerRadius).cgPath
+        mejaUIView.layer.cornerRadius = 10
+        mejaUIView.layer.shadowColor = #colorLiteral(red: 0.4324498773, green: 0.5285113454, blue: 0.5138407946, alpha: 1)
+        mejaUIView.layer.shadowOpacity = 0.9
+        mejaUIView.layer.shadowRadius = 10
+        mejaUIView.layer.masksToBounds = false
+        mejaUIView.layer.shadowOffset = CGSize(width: 0, height: 4)
         
         
+        mejaMaterialUIView.layer.cornerRadius = 10
+        mejaMaterialUIView.layer.shadowPath = UIBezierPath(roundedRect: mejaMaterialUIView.bounds, cornerRadius: mejaMaterialUIView.layer.cornerRadius).cgPath
+        mejaMaterialUIView.layer.cornerRadius = 10
+        mejaMaterialUIView.layer.shadowColor = #colorLiteral(red: 0.4324498773, green: 0.5285113454, blue: 0.5138407946, alpha: 1)
+        mejaMaterialUIView.layer.shadowOpacity = 0.9
+        mejaMaterialUIView.layer.shadowRadius = 10
+        mejaMaterialUIView.layer.masksToBounds = false
+        mejaMaterialUIView.layer.shadowOffset = CGSize(width: 0, height: 4)
+                
 //        originImageView.alpha = 0
         tempX = itemImage.center.x
         tempY = itemImage.center.y
@@ -158,6 +176,7 @@ class tutorialScrub2: UIViewController {
                 self.imageName = "S"
                 self.view.addGestureRecognizer(CircleGesture(midPoint: mainObject.center, target: self, action: #selector(self.rotateGesture(recognizer:))))
                 itemImage.isUserInteractionEnabled = false
+                itemImage.alpha = 0
                 
             }
         }
@@ -205,7 +224,7 @@ class tutorialScrub2: UIViewController {
             currentValue = 0
             self.view.addGestureRecognizer(CircleGesture(midPoint: mainObject.center, target: self, action: #selector(self.rotateGesture(recognizer:))))
             itemImage.isUserInteractionEnabled = false
-            
+            itemImage.alpha = 0
 
         }
         
@@ -218,10 +237,12 @@ class tutorialScrub2: UIViewController {
             didSet {
                 if (currentValue > 30) {
                     self.view.gestureRecognizers?.removeAll()
-                    itemImage.isUserInteractionEnabled = true
+                    
                     if currentStep == 2 {
                         currentItem += 1
                         currentStep += 1
+                        itemImage.isUserInteractionEnabled = true
+                        itemImage.alpha = 1
                         updateLabel()
                     } else if currentStep == 5{
                         weak var pvc = self.presentingViewController

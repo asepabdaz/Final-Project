@@ -93,7 +93,7 @@
                                     <rect key="frame" x="20" y="909.5" width="374" height="51"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
-                                    <state key="normal" title="Dapatkan produk">
+                                    <state key="normal" title="Beli Produk">
                                         <color key="titleColor" red="0.22045379879999999" green="0.36116188760000001" blue="0.32940953969999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
