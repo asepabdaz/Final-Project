@@ -10,10 +10,15 @@
 		0E08461023828E9200B2156D /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E08460E23828E9200B2156D /* HeaderCollectionReusableView.xib */; };
 		0E08461123828E9200B2156D /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E08460F23828E9200B2156D /* HeaderCollectionReusableView.swift */; };
 		0E3358FC23790C9800231BFD /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3358FB23790C9800231BFD /* SectionHeaderView.swift */; };
+		0E400D0C23A9BEDD005F6349 /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E400D0A23A9BEDD005F6349 /* AddressTableViewCell.swift */; };
+		0E400D0D23A9BEDD005F6349 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E400D0B23A9BEDD005F6349 /* AddressTableViewCell.xib */; };
 		0E42672D23603BD700643ACC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42672C23603BD700643ACC /* CoreDataHelper.swift */; };
 		0E42673123603DE600643ACC /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42673023603DE600643ACC /* MaterialModel.swift */; };
 		0E53920223A5ECC3006E04BD /* AlamatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E53920123A5ECC3006E04BD /* AlamatTableViewController.swift */; };
 		0E53920423A6386A006E04BD /* NavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E53920323A6386A006E04BD /* NavBarViewController.swift */; };
+		0E66291923A8CDB100ECF492 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66291823A8CDB100ECF492 /* MapViewController.swift */; };
+		0E66291C23A90E0F00ECF492 /* Utilties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E66291B23A90E0F00ECF492 /* Utilties.swift */; };
+		0E930DF823A9A740000D6950 /* AlamatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E930DF723A9A740000D6950 /* AlamatViewController.swift */; };
 		0E9FAD5823A3781E0051CCBD /* Keranjang.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9FAD5723A3781D0051CCBD /* Keranjang.storyboard */; };
 		0E9FAD5A23A37B670051CCBD /* KeranjangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9FAD5923A37B670051CCBD /* KeranjangViewController.swift */; };
 		0E9FAD5C23A4C3EA0051CCBD /* KeranjangTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9FAD5B23A4C3EA0051CCBD /* KeranjangTableViewController.swift */; };
@@ -92,10 +97,15 @@
 		0E08460E23828E9200B2156D /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		0E08460F23828E9200B2156D /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		0E3358FB23790C9800231BFD /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		0E400D0A23A9BEDD005F6349 /* AddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		0E400D0B23A9BEDD005F6349 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
 		0E42672C23603BD700643ACC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		0E42673023603DE600643ACC /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
 		0E53920123A5ECC3006E04BD /* AlamatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamatTableViewController.swift; sourceTree = "<group>"; };
 		0E53920323A6386A006E04BD /* NavBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarViewController.swift; sourceTree = "<group>"; };
+		0E66291823A8CDB100ECF492 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0E66291B23A90E0F00ECF492 /* Utilties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilties.swift; sourceTree = "<group>"; };
+		0E930DF723A9A740000D6950 /* AlamatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamatViewController.swift; sourceTree = "<group>"; };
 		0E9FAD5723A3781D0051CCBD /* Keranjang.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Keranjang.storyboard; sourceTree = "<group>"; };
 		0E9FAD5923A37B670051CCBD /* KeranjangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeranjangViewController.swift; sourceTree = "<group>"; };
 		0E9FAD5B23A4C3EA0051CCBD /* KeranjangTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeranjangTableViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +199,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E400D0923A9BEBD005F6349 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0E400D0A23A9BEDD005F6349 /* AddressTableViewCell.swift */,
+				0E400D0B23A9BEDD005F6349 /* AddressTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		0E42672A23603BA800643ACC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +262,14 @@
 				D522BE2023A1EFF0003346EF /* DetailView.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		0E66291A23A90DF100ECF492 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				0E66291B23A90E0F00ECF492 /* Utilties.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 		0EA58187238F77AB00E2A4D4 /* Main Feature */ = {
@@ -414,11 +441,15 @@
 		D522BE3723A21CD8003346EF /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
+				0E400D0923A9BEBD005F6349 /* Cell */,
+				0E66291A23A90DF100ECF492 /* Misc */,
 				0E9FAD5723A3781D0051CCBD /* Keranjang.storyboard */,
 				0E9FAD5923A37B670051CCBD /* KeranjangViewController.swift */,
 				0E9FAD5B23A4C3EA0051CCBD /* KeranjangTableViewController.swift */,
 				0E53920123A5ECC3006E04BD /* AlamatTableViewController.swift */,
 				0E53920323A6386A006E04BD /* NavBarViewController.swift */,
+				0E66291823A8CDB100ECF492 /* MapViewController.swift */,
+				0E930DF723A9A740000D6950 /* AlamatViewController.swift */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -546,6 +577,7 @@
 				0EA5818B238F7B3900E2A4D4 /* tutorialScrub2.storyboard in Resources */,
 				0EE313CD2374058D00266DAF /* CardContentView.xib in Resources */,
 				0E9FAD5823A3781E0051CCBD /* Keranjang.storyboard in Resources */,
+				0E400D0D23A9BEDD005F6349 /* AddressTableViewCell.xib in Resources */,
 				0EA5819A238F95F800E2A4D4 /* Profile.storyboard in Resources */,
 				D522BE2623A1F2D2003346EF /* ExampleData.plist in Resources */,
 				D522BE1E23A1EFF0003346EF /* DetailView.xib in Resources */,
@@ -588,6 +620,7 @@
 				0EA58198238F95F800E2A4D4 /* ProfileTableViewController.swift in Sources */,
 				0EE313ED237406EF00266DAF /* CardCollectionViewCell.swift in Sources */,
 				0EE313D4237405ED00266DAF /* NibLoadable.swift in Sources */,
+				0E66291923A8CDB100ECF492 /* MapViewController.swift in Sources */,
 				0EA58189238F7A6000E2A4D4 /* CircleGesture.swift in Sources */,
 				D522BDE7239F39D3003346EF /* CooffeeAromaViewController.swift in Sources */,
 				0EE313E7237406D000266DAF /* CardTransition.swift in Sources */,
@@ -596,6 +629,8 @@
 				0EA5819C238F95F800E2A4D4 /* TextField.swift in Sources */,
 				0EDCA392235D6FB800760D1C /* AppDelegate.swift in Sources */,
 				0E53920223A5ECC3006E04BD /* AlamatTableViewController.swift in Sources */,
+				0E930DF823A9A740000D6950 /* AlamatViewController.swift in Sources */,
+				0E400D0C23A9BEDD005F6349 /* AddressTableViewCell.swift in Sources */,
 				0EE313DF2374069600266DAF /* StatusBarAnimatable.swift in Sources */,
 				0EE313D2237405C500266DAF /* GlobalConstants.swift in Sources */,
 				0EDCA39C235D6FB800760D1C /* Final_Project.xcdatamodeld in Sources */,
@@ -603,6 +638,7 @@
 				0EA58199238F95F800E2A4D4 /* DetailTableViewController.swift in Sources */,
 				0E42673123603DE600643ACC /* MaterialModel.swift in Sources */,
 				D522BE3C23A21D32003346EF /* TransactionModel.swift in Sources */,
+				0E66291C23A90E0F00ECF492 /* Utilties.swift in Sources */,
 				D531EFB323979BAD00753E49 /* HeaderView.swift in Sources */,
 				0EE313CE2374058D00266DAF /* CardContentView.swift in Sources */,
 				0E3358FC23790C9800231BFD /* SectionHeaderView.swift in Sources */,

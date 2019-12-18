@@ -10,17 +10,66 @@ import UIKit
 
 class AlamatTableViewController: UITableViewController {
 
+    @IBOutlet weak var noteExtraTextView: UITextView!
+    @IBOutlet weak var mapCaptureImage: UIImageView!
+    @IBOutlet weak var kategoriAlamat: UITextField!
+    @IBOutlet weak var provinsiAlamat: UITextField!
+    @IBOutlet weak var almatLengkapTextView: UITextView!
+    @IBOutlet weak var kotaTextField: UITextField!
+    @IBOutlet weak var kecamatanTextField: UITextField!
+    @IBOutlet weak var kodePosTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Alamat"
-
+        let tap = UITapGestureRecognizer(target: self, action: #selector(pushToMapKit))
+        mapCaptureImage.addGestureRecognizer(tap)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    @objc
+    func pushToMapKit() {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Keranjang", bundle: nil)
+        let newController = storyBoard.instantiateViewController(identifier: "mapKitStoryboard")
+        self.navigationController?.pushViewController(newController, animated: true)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let kategoriAlamat = UserDefaults.standard.value(forKey: "KategoriAlamat") as? String {
+            self.kategoriAlamat.text = kategoriAlamat
+        }
+        if let provAlamat = UserDefaults.standard.value(forKey: "Provinsi") as? String {
+            self.provinsiAlamat.text = provAlamat
+        }
+        
+        if let alamatLengkap = UserDefaults.standard.value(forKey: "AlamatLengkap") as? String {
+            self.almatLengkapTextView.text = alamatLengkap
+        }
+        
+        if let kota = UserDefaults.standard.value(forKey: "Kota")  as? String{
+            self.kotaTextField.text = kota
+        }
+        if let kecamatan = UserDefaults.standard.value(forKey: "Kecamatan") as? String {
+            self.kecamatanTextField.text = kecamatan
+        }
+        
+        if let kodePos = UserDefaults.standard.value(forKey: "KodePos") as? String {
+            self.kodePosTextField.text = kodePos
+        }
+        
+        if let noteExtra = UserDefaults.standard.value(forKey: "NoteExtra") as? String {
+            self.noteExtraTextView.text = noteExtra
+        }
+        
+        if UserDefaults.standard.value(forKey: "coorDinate") != nil{
+            mapCaptureImage.image = UIImage(named: "maps")
+        }
 
+    }
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {

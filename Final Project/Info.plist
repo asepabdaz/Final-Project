@@ -24,6 +24,8 @@
 	<string>this apps want to promise to take picture</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>this apps want to promise to opem Library</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>this apps want to promise to acces location</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

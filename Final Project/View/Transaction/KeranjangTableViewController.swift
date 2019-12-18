@@ -91,6 +91,14 @@ class KeranjangTableViewController: UITableViewController {
         quantityTextField.text = "1"
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if UserDefaults.standard.value(forKey: "coorDinate") != nil {
+            alamat = AddressTableViewCell()
+        }
+        
+    }
+    
     //MARK: Object Selector
     
     @objc
@@ -100,7 +108,7 @@ class KeranjangTableViewController: UITableViewController {
     @objc
     func pushToAddress() {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Keranjang", bundle: nil)
-        let newController = storyBoard.instantiateViewController(identifier: "alamatStoryBoard")
+        let newController = storyBoard.instantiateViewController(identifier: "alamatStoryBoard") as AlamatViewController
         self.navigationController?.pushViewController(newController, animated: true)
     }
     
