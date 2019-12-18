@@ -30,6 +30,8 @@ class KeranjangTableViewController: UITableViewController {
         print(sender.text!)
     }
     
+    @IBOutlet weak var totalPesanan: UILabel!
+    @IBOutlet weak var totalHarga: UILabel!
     
     @IBAction func changeData(_ sender: UITextField) {
         let data = sender.text
@@ -47,9 +49,15 @@ class KeranjangTableViewController: UITableViewController {
         }
         print(dataInt!)
         jumlahBarang.value = Double(dataInt)
+        
+        totalPesanan.text = "Rp. \(Int(dataInt) * 50000)"
+        totalHarga.text = totalPesanan.text
+        
     }
     @IBAction func checkStepper(_ sender: UIStepper) {
         quantityTextField.text = String(Int(jumlahBarang.value))
+        totalPesanan.text = "Rp. \(Int(jumlahBarang.value) * 50000)"
+        totalHarga.text = totalPesanan.text
     }
     
     //MARK: Outlets MISC

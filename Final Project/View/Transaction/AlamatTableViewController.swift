@@ -22,6 +22,7 @@ class AlamatTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Alamat"
+        noteExtraTextView.delegate = self
         let tap = UITapGestureRecognizer(target: self, action: #selector(pushToMapKit))
         mapCaptureImage.addGestureRecognizer(tap)
         // Uncomment the following line to preserve selection between presentations
@@ -29,6 +30,8 @@ class AlamatTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        tableView.keyboardDismissMode = .onDrag
     }
     @objc
     func pushToMapKit() {
@@ -137,4 +140,10 @@ class AlamatTableViewController: UITableViewController {
     }
     */
 
+}
+extension AlamatTableViewController: UITextViewDelegate{
+    func textFieldShouldReturn(_ textField : UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
