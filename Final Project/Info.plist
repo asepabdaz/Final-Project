@@ -17,15 +17,15 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>this apps want to promise to take picture</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>this apps want to promise to opem Library</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>this apps want to promise to acces location</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>this apps want to promise to opem Library</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

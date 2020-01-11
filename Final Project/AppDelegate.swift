@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Thread.sleep(forTimeInterval: 0.6)
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -113,6 +114,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-
+    
 }
 

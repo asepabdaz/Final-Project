@@ -92,7 +92,8 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
 
         descriptionLabel.highlightedText = descText
         cardContentView.setFontState(isHighlighted: isFontStateHighlighted)
-        transactionModel = TransactionModel(cardViewModel.primary, cardViewModel.material, 50_000, 1)
+        transactionModel = TransactionModel(cardViewModel.primary, cardViewModel.material, 50_000, 1, cardViewModel.image)
+        print("test ",cardViewModel.image)
         dismissalPanGesture.addTarget(self, action: #selector(handleDismissalPan(gesture:)))
         dismissalPanGesture.delegate = self
 
@@ -114,8 +115,7 @@ class CardDetailViewController: StatusBarAnimatableViewController, UIScrollViewD
     }
     
     @IBAction func getThecComplete(_ sender: Any) {
-      // guard let url = URL(string: "https://wa.me/+6281296940970?text=Hai%20saya%20ingin%20membeli%20Scrub%20Coffe%20Ground%20bisa%20dibantu%20kak?") else { return }
-       // UIApplication.shared.open(url)
+      
         let storyBoard: UIStoryboard = UIStoryboard(name: "Keranjang", bundle: nil)
         let newController = storyBoard.instantiateViewController(identifier: "Keranjang") as? KeranjangViewController
         newController?.transactionModel = transactionModel

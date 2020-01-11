@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import CoreMotion
 
 class NavBarViewController: UINavigationController {
     var test = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         print(test)
-
+        
     }
     
 

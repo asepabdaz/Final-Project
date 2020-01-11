@@ -16,6 +16,7 @@ class KeranjangTableViewController: UITableViewController {
 
     //MARK: data to get
     
+    @IBOutlet weak var tumnilImageView: UIImageView!
     @IBOutlet weak var quantityTextField: UITextField!
     @IBOutlet weak var namaBarang: UILabel!
     @IBOutlet weak var desBarang: UILabel!
@@ -83,6 +84,7 @@ class KeranjangTableViewController: UITableViewController {
         
         
         namaBarang.text = transactionModel.namaBarang
+        tumnilImageView.image = transactionModel.imageView
         var dataMaterial = ""
         
         for (index, item) in transactionModel.material.enumerated() {
